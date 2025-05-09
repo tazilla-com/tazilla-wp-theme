@@ -105,6 +105,44 @@
       "wideSize": "1340px"
     },
     "spacing": {
+      "defaultSpacingSizes": false,
+      "spacingSizes": [
+        {
+          "name": "2X-Small",
+          "size": "0.25rem",
+          "slug": "4"
+        },
+        {
+          "name": "X-Small",
+          "size": "0.5rem",
+          "slug": "8"
+        },
+        {
+          "name": "Small",
+          "size": "1rem",
+          "slug": "16"
+        },
+        {
+          "name": "Regular",
+          "size": "1.5rem",
+          "slug": "24"
+        },
+        {
+          "name": "Large",
+          "size": "clamp(1.5rem, 5vw, 2rem)",
+          "slug": "32"
+        },
+        {
+          "name": "X-Large",
+          "size": "clamp(2rem, 7vw, 3rem)",
+          "slug": "48"
+        },
+        {
+          "name": "2X-Large",
+          "size": "clamp(3rem, 10vw, 4rem)",
+          "slug": "64"
+        }
+      ],
       "units": [
         "%",
         "px",
@@ -140,7 +178,7 @@
             "min": "1.125rem"
           },
           "name": "Large",
-          "size": "1.38rem",
+          "size": "1.375rem",
           "slug": "large"
         },
         {
@@ -155,10 +193,10 @@
         {
           "fluid": {
             "max": "3rem",
-            "min": "2.15rem"
+            "min": "2.125rem"
           },
           "name": "Extra Extra Large",
-          "size": "2.15rem",
+          "size": "2.125rem",
           "slug": "xx-large"
         }
       ],
@@ -231,6 +269,13 @@
     "color": {
       "background": "var:preset|color|brand-light",
       "text": "var:preset|color|white"
+    },
+    "spacing": {
+      "blockGap": "1rem",
+      "padding": {
+        "left": "var:preset|spacing|48",
+        "right": "var:preset|spacing|48"
+      }
     },
     "typography": {
       "fontFamily": "var:preset|font-family|unbounded"
