@@ -1,296 +1,324 @@
 {
-  "$schema": "https://schemas.wp.org/wp/6.8/theme.json",
-  "version": 3,
-  "settings": {
-    "appearanceTools": true,
-    "color": {
-      "defaultDuotone": false,
-      "defaultGradients": false,
-      "defaultPalette": false,
-      "palette": [
-        {
-          "name": "Black",
-          "slug": "black",
-          "color": "#000000"
-        },
-        {
-          "name": "White",
-          "slug": "white",
-          "color": "#FFFFFF"
-        },
-        {
-          "name": "Brand Dark Green",
-          "slug": "brand-dark",
-          "color": "#0E3C20"
-        },
-        {
-          "name": "Brand Light Green",
-          "slug": "brand-light",
-          "color": "#80C241"
-        },
-        {
-          "name": "Blue",
-          "slug": "blue",
-          "color": "#415BC2"
-        },
-        {
-          "name": "Orange",
-          "slug": "orange",
-          "color": "#D38C34"
-        },
-        {
-          "name": "Red",
-          "slug": "red",
-          "color": "#D33434"
-        },
-        {
-          "name": "Neutral 1",
-          "slug": "neutral-1",
-          "color": "#131D0A"
-        },
-        {
-          "name": "Neutral 2",
-          "slug": "neutral-2",
-          "color": "#2A3322"
-        },
-        {
-          "name": "Neutral 3",
-          "slug": "neutral-3",
-          "color": "#424A3B"
-        },
-        {
-          "name": "Neutral 4",
-          "slug": "neutral-4",
-          "color": "#596053"
-        },
-        {
-          "name": "Neutral 5",
-          "slug": "neutral-5",
-          "color": "#71776C"
-        },
-        {
-          "name": "Neutral 6",
-          "slug": "neutral-6",
-          "color": "#898E85"
-        },
-        {
-          "name": "Neutral 7",
-          "slug": "neutral-7",
-          "color": "#A1A59D"
-        },
-        {
-          "name": "Neutral 8",
-          "slug": "neutral-8",
-          "color": "#B8BBB5"
-        },
-        {
-          "name": "Neutral 9",
-          "slug": "neutral-9",
-          "color": "#D0D2CE"
-        },
-        {
-          "name": "Neutral 10",
-          "slug": "neutral-10",
-          "color": "#E7E8E6"
-        },
-        {
-          "name": "Neutral 11",
-          "slug": "neutral-11",
-          "color": "#F3F3F3"
-        }
-      ]
-    },
-    "layout": {
-      "contentSize": "645px",
-      "wideSize": "1340px"
-    },
-    "spacing": {
-      "defaultSpacingSizes": false,
-      "spacingSizes": [
-        {
-          "name": "2X-Small",
-          "size": "0.25rem",
-          "slug": "4"
-        },
-        {
-          "name": "X-Small",
-          "size": "0.5rem",
-          "slug": "8"
-        },
-        {
-          "name": "Small",
-          "size": "1rem",
-          "slug": "16"
-        },
-        {
-          "name": "Regular",
-          "size": "1.5rem",
-          "slug": "24"
-        },
-        {
-          "name": "Large",
-          "size": "clamp(1.5rem, 5vw, 2rem)",
-          "slug": "32"
-        },
-        {
-          "name": "X-Large",
-          "size": "clamp(2rem, 7vw, 3rem)",
-          "slug": "48"
-        },
-        {
-          "name": "2X-Large",
-          "size": "clamp(3rem, 10vw, 4rem)",
-          "slug": "64"
-        }
-      ],
-      "units": [
-        "%",
-        "px",
-        "em",
-        "rem",
-        "vh",
-        "vw"
-      ]
-    },
-    "typography": {
-      "writingMode": true,
-      "defaultFontSizes": false,
-      "fluid": true,
-      "fontSizes": [
-        {
-          "fluid": false,
-          "name": "Small",
-          "size": "0.875rem",
-          "slug": "small"
-        },
-        {
-          "fluid": {
-            "max": "1.125rem",
-            "min": "1rem"
-          },
-          "name": "Medium",
-          "size": "1rem",
-          "slug": "medium"
-        },
-        {
-          "fluid": {
-            "max": "1.375rem",
-            "min": "1.125rem"
-          },
-          "name": "Large",
-          "size": "1.375rem",
-          "slug": "large"
-        },
-        {
-          "fluid": {
-            "max": "2rem",
-            "min": "1.75rem"
-          },
-          "name": "Extra Large",
-          "size": "1.75rem",
-          "slug": "x-large"
-        },
-        {
-          "fluid": {
-            "max": "3rem",
-            "min": "2.125rem"
-          },
-          "name": "Extra Extra Large",
-          "size": "2.125rem",
-          "slug": "xx-large"
-        }
-      ],
-      "fontFamilies": [
-        {
-          "name": "Unbounded",
-          "slug": "unbounded",
-          "fontFamily": "Unbounded, sans-serif",
-          "fontFace": [
-            {
-              "src": "file:./assets/fonts/unbounded/unbounded-200-normal.woff2",
-              "fontWeight": "200",
-              "fontStyle": "normal",
-              "fontFamily": "Unbounded"
-            },
-            {
-              "src": "file:./assets/fonts/unbounded/unbounded-300-normal.woff2",
-              "fontWeight": "300",
-              "fontStyle": "normal",
-              "fontFamily": "Unbounded"
-            },
-            {
-              "src": "file:./assets/fonts/unbounded/unbounded-400-normal.woff2",
-              "fontWeight": "400",
-              "fontStyle": "normal",
-              "fontFamily": "Unbounded"
-            },
-            {
-              "src": "file:./assets/fonts/unbounded/unbounded-500-normal.woff2",
-              "fontWeight": "500",
-              "fontStyle": "normal",
-              "fontFamily": "Unbounded"
-            },
-            {
-              "src": "file:./assets/fonts/unbounded/unbounded-600-normal.woff2",
-              "fontWeight": "600",
-              "fontStyle": "normal",
-              "fontFamily": "Unbounded"
-            },
-            {
-              "src": "file:./assets/fonts/unbounded/unbounded-700-normal.woff2",
-              "fontWeight": "700",
-              "fontStyle": "normal",
-              "fontFamily": "Unbounded"
-            },
-            {
-              "src": "file:./assets/fonts/unbounded/unbounded-800-normal.woff2",
-              "fontWeight": "800",
-              "fontStyle": "normal",
-              "fontFamily": "Unbounded"
-            },
-            {
-              "src": "file:./assets/fonts/unbounded/unbounded-800-normal.woff2",
-              "fontWeight": "900",
-              "fontStyle": "normal",
-              "fontFamily": "Unbounded"
-            }
-          ]
-        },
-        {
-          "name": "Arial",
-          "slug": "arial",
-          "fontFamily": "Arial, sans-serif"
-        }
-      ]
-    },
-    "useRootPaddingAwareAlignments": true
-  },
-  "styles": {
-    "color": {
-      "background": "var:preset|color|brand-light",
-      "text": "var:preset|color|white"
-    },
-    "spacing": {
-      "blockGap": "1rem",
-      "padding": {
-        "left": "var:preset|spacing|48",
-        "right": "var:preset|spacing|48"
-      }
-    },
-    "typography": {
-      "fontFamily": "var:preset|font-family|unbounded"
-    }
-  },
-  "templateParts": [
-    {
-      "area": "header",
-      "name": "header",
-      "title": "Header"
-    },
-    {
-      "area": "footer",
-      "name": "footer",
-      "title": "Footer"
-    }
-  ]
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"defaultDuotone": false,
+			"defaultGradients": false,
+			"defaultPalette": false,
+			"palette": [
+				{
+					"color": "#000000",
+					"name": "Black",
+					"slug": "black"
+				},
+				{
+					"color": "#FFFFFF",
+					"name": "White",
+					"slug": "white"
+				},
+				{
+					"color": "#0E3C20",
+					"name": "Brand Dark Green",
+					"slug": "brand-dark"
+				},
+				{
+					"color": "#80C241",
+					"name": "Brand Light Green",
+					"slug": "brand-light"
+				},
+				{
+					"color": "#415BC2",
+					"name": "Blue",
+					"slug": "blue"
+				},
+				{
+					"color": "#D38C34",
+					"name": "Orange",
+					"slug": "orange"
+				},
+				{
+					"color": "#D33434",
+					"name": "Red",
+					"slug": "red"
+				},
+				{
+					"color": "#131D0A",
+					"name": "Neutral 1",
+					"slug": "neutral-1"
+				},
+				{
+					"color": "#2A3322",
+					"name": "Neutral 2",
+					"slug": "neutral-2"
+				},
+				{
+					"color": "#424A3B",
+					"name": "Neutral 3",
+					"slug": "neutral-3"
+				},
+				{
+					"color": "#596053",
+					"name": "Neutral 4",
+					"slug": "neutral-4"
+				},
+				{
+					"color": "#71776C",
+					"name": "Neutral 5",
+					"slug": "neutral-5"
+				},
+				{
+					"color": "#898E85",
+					"name": "Neutral 6",
+					"slug": "neutral-6"
+				},
+				{
+					"color": "#A1A59D",
+					"name": "Neutral 7",
+					"slug": "neutral-7"
+				},
+				{
+					"color": "#B8BBB5",
+					"name": "Neutral 8",
+					"slug": "neutral-8"
+				},
+				{
+					"color": "#D0D2CE",
+					"name": "Neutral 9",
+					"slug": "neutral-9"
+				},
+				{
+					"color": "#E7E8E6",
+					"name": "Neutral 10",
+					"slug": "neutral-10"
+				},
+				{
+					"color": "#F3F3F3",
+					"name": "Neutral 11",
+					"slug": "neutral-11"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "645px",
+			"wideSize": "1340px"
+		},
+		"spacing": {
+			"defaultSpacingSizes": false,
+			"spacingSizes": [
+				{
+					"name": "2X-Small",
+					"size": "0.25rem",
+					"slug": "4"
+				},
+				{
+					"name": "X-Small",
+					"size": "0.5rem",
+					"slug": "8"
+				},
+				{
+					"name": "Small",
+					"size": "1rem",
+					"slug": "16"
+				},
+				{
+					"name": "Regular",
+					"size": "1.5rem",
+					"slug": "24"
+				},
+				{
+					"name": "Large",
+					"size": "clamp(1.5rem, 5vw, 2rem)",
+					"slug": "32"
+				},
+				{
+					"name": "X-Large",
+					"size": "clamp(2rem, 7vw, 3rem)",
+					"slug": "48"
+				},
+				{
+					"name": "2X-Large",
+					"size": "clamp(3rem, 10vw, 4rem)",
+					"slug": "64"
+				}
+			],
+			"units": [
+				"%",
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw"
+			]
+		},
+		"typography": {
+			"defaultFontSizes": false,
+			"fluid": true,
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Unbounded",
+							"fontStyle": "normal",
+							"fontWeight": "200",
+							"src": "file:./assets/fonts/unbounded/unbounded-200-normal.woff2"
+						},
+						{
+							"fontFamily": "Unbounded",
+							"fontStyle": "normal",
+							"fontWeight": "300",
+							"src": "file:./assets/fonts/unbounded/unbounded-300-normal.woff2"
+						},
+						{
+							"fontFamily": "Unbounded",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": "file:./assets/fonts/unbounded/unbounded-400-normal.woff2"
+						},
+						{
+							"fontFamily": "Unbounded",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": "file:./assets/fonts/unbounded/unbounded-500-normal.woff2"
+						},
+						{
+							"fontFamily": "Unbounded",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": "file:./assets/fonts/unbounded/unbounded-600-normal.woff2"
+						},
+						{
+							"fontFamily": "Unbounded",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": "file:./assets/fonts/unbounded/unbounded-700-normal.woff2"
+						},
+						{
+							"fontFamily": "Unbounded",
+							"fontStyle": "normal",
+							"fontWeight": "800",
+							"src": "file:./assets/fonts/unbounded/unbounded-800-normal.woff2"
+						},
+						{
+							"fontFamily": "Unbounded",
+							"fontStyle": "normal",
+							"fontWeight": "900",
+							"src": "file:./assets/fonts/unbounded/unbounded-800-normal.woff2"
+						}
+					],
+					"fontFamily": "Unbounded, sans-serif",
+					"name": "Unbounded",
+					"slug": "unbounded"
+				},
+				{
+					"fontFamily": "Arial, sans-serif",
+					"name": "Arial",
+					"slug": "arial"
+				}
+			],
+			"fontSizes": [
+				{
+					"fluid": false,
+					"name": "Small",
+					"size": "0.875rem",
+					"slug": "small"
+				},
+				{
+					"fluid": {
+						"max": "1.125rem",
+						"min": "1rem"
+					},
+					"name": "Medium",
+					"size": "1rem",
+					"slug": "medium"
+				},
+				{
+					"fluid": {
+						"max": "1.375rem",
+						"min": "1.125rem"
+					},
+					"name": "Large",
+					"size": "1.375rem",
+					"slug": "large"
+				},
+				{
+					"fluid": {
+						"max": "2rem",
+						"min": "1.75rem"
+					},
+					"name": "Extra Large",
+					"size": "1.75rem",
+					"slug": "x-large"
+				},
+				{
+					"fluid": {
+						"max": "3rem",
+						"min": "2.125rem"
+					},
+					"name": "Extra Extra Large",
+					"size": "2.125rem",
+					"slug": "xx-large"
+				}
+			],
+			"writingMode": true
+		},
+		"useRootPaddingAwareAlignments": true
+	},
+	"styles": {
+		"color": {
+			"background": "var:preset|color|brand-light",
+			"text": "var:preset|color|white"
+		},
+		"elements": {
+			"button": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|unbounded"
+				}
+			},
+			"caption": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|unbounded"
+				}
+			},
+			"heading": {
+				"color": {
+					"text": "var:preset|color|brand-dark"
+				},
+				"typography": {
+					"fontFamily": "var:preset|font-family|unbounded"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var:preset|color--white"
+				},
+				"typography": {
+					"fontFamily": "var:preset|font-family|unbounded"
+				}
+			}
+		},
+		"spacing": {
+			"blockGap": "1rem",
+			"padding": {
+				"left": "var:preset|spacing|48",
+				"right": "var:preset|spacing|48"
+			}
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|unbounded"
+		}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
+		}
+	]
 }
