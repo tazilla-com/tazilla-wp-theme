@@ -266,6 +266,24 @@
 		"useRootPaddingAwareAlignments": true
 	},
 	"styles": {
+		"blocks": {
+			"core/button": {
+				"border": {
+					"radius": "0px"
+				},
+				"color": {
+					"background": "var:preset|color|brand-dark",
+					"text": "var:preset|color|brand-light"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var:preset|color|brand-light"
+						}
+					}
+				}
+			}
+		},
 		"color": {
 			"background": "var:preset|color|brand-light",
 			"text": "var:preset|color|white"
