@@ -19,7 +19,7 @@ html {
 }
 
 @media (max-width: 767px) {
-    main + footer {
+    footer.wp-block-template-part {
         > .wp-block-group .is-content-justification-space-between {
             justify-content: center;
 
@@ -34,4 +34,8 @@ html {
             }
         }
     }
+}
+
+footer + footer.wp-block-template-part {
+    margin-block-start: 0;
 }

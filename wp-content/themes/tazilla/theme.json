@@ -332,8 +332,7 @@
 			},
 			"h5": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)",
-					"letterSpacing": "0.5px"
+					"fontSize": "var(--wp--preset--font-size--small)"
 				}
 			},
 			"h6": {
@@ -348,8 +347,8 @@
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--unbounded)",
 					"fontWeight": "700",
+					"letterSpacing": "-0.24px",
 					"lineHeight": "1.25",
-					"letterSpacing": "-4%",
 					"textTransform": "uppercase"
 				}
 			},
@@ -384,6 +383,11 @@
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"
+		},
+		{
+			"area": "footer",
+			"name": "footer-partners",
+			"title": "Footer Partners"
 		}
 	],
 	"version": 3,
