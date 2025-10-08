@@ -1,0 +1,4 @@
+# Block all dotfiles (.git, .env, .htaccess, .htpasswd, etc.)
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>

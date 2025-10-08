@@ -72,6 +72,11 @@
 					"slug": "neutral-6"
 				},
 				{
+					"color": "#F3F5F433",
+					"name": "Neutral 6 20% opacity",
+					"slug": "neutral-6-20"
+				},
+				{
 					"color": "#F3F5F4",
 					"name": "Page Background",
 					"slug": "page-bg"
@@ -80,20 +85,20 @@
 		},
 		"layout": {
 			"contentSize": "776px",
-			"wideSize": "12000px"
+			"wideSize": "1200px"
 		},
 		"spacing": {
 			"defaultSpacingSizes": false,
 			"spacingSizes": [
 				{
 					"name": "2X-Small",
-					"size": "0.25rem",
-					"slug": "4"
+					"size": "0.5rem",
+					"slug": "8"
 				},
 				{
 					"name": "X-Small",
-					"size": "0.5rem",
-					"slug": "8"
+					"size": "0.75rem",
+					"slug": "12"
 				},
 				{
 					"name": "Small",
@@ -190,6 +195,25 @@
 					"slug": "unbounded"
 				},
 				{
+					"fontFace": [
+						{
+							"fontFamily": "Plus Jakarta Sans",
+							"fontStyle": "normal",
+							"fontWeight": "200 800",
+							"src": "file:./assets/fonts/plus-jakarta-sans/plus-jakarta-sans-variable-font-wght.woff2"
+						},
+						{
+							"fontFamily": "Plus Jakarta Sans",
+							"fontStyle": "italic",
+							"fontWeight": "200 800",
+							"src": "file:./assets/fonts/plus-jakarta-sans/plus-jakarta-sans-italic-variable-font-wght.woff2"
+						}
+					],
+					"fontFamily": "'Plus Jakarta Sans', sans-serif",
+					"name": "Plus Jakarta Sans",
+					"slug": "plus-jakarta-sans"
+				},
+				{
 					"fontFamily": "Arial, sans-serif",
 					"name": "Arial",
 					"slug": "arial"
@@ -198,15 +222,16 @@
 			"fontSizes": [
 				{
 					"fluid": false,
-					"name": "Small",
+					"name": "Extra Small",
 					"size": "0.625rem",
 					"slug": "x-small"
-				},{
+				},
+				{
 					"fluid": {
-                      "max": "0.875rem",
-                      "min": "0.75rem"
-                    },
-					"name": "Extra Small",
+						"max": "0.875rem",
+						"min": "0.75rem"
+					},
+					"name": "Small",
 					"size": "0.75rem",
 					"slug": "small"
 				},
@@ -333,7 +358,7 @@
 					"text": "var(--wp--preset--color--brand-light)"
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--unbounded)"
+					"fontFamily": "var(--wp--preset--font-family--plus-jakarta-sans)"
 				}
 			}
 		},
@@ -345,7 +370,8 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--unbounded)"
+			"fontFamily": "var(--wp--preset--font-family--plus-jakarta-sans)",
+			"lineHeight": "1.5"
 		}
 	},
 	"templateParts": [

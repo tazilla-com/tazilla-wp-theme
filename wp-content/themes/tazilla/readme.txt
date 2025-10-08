@@ -15,6 +15,10 @@ Tazilla block theme
 
 == Changelog ==
 
+= 0.1.0 =
+* Released: 2025-10-08
+* Added: Footer and Header
+
 = 0.0.1 =
 * Released: 2025-05-09
 * Initial release
