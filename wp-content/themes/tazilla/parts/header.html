@@ -1,45 +1,40 @@
-<!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|brand-dark"}}}},"backgroundColor":"brand-light","textColor":"brand-dark","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-brand-dark-color has-brand-light-background-color has-text-color has-background has-link-color">
-    <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|8","bottom":"var:preset|spacing|8"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"textTransform":"uppercase"}},"backgroundColor":"brand-dark","textColor":"white","fontSize":"small","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-white-color has-brand-dark-background-color has-text-color has-background has-link-color has-small-font-size"
+     style="text-transform:uppercase">
+    <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|16","bottom":"var:preset|spacing|16"}},"position":{"type":""}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
     <div class="wp-block-group alignwide"
-         style="padding-top:var(--wp--preset--spacing--8);padding-bottom:var(--wp--preset--spacing--8)">
-        <!-- wp:social-links {"iconColor":"brand-dark","iconColorValue":"#0E3C20","showLabels":true,"className":"is-style-logos-only"} -->
-        <ul class="wp-block-social-links has-visible-labels has-icon-color is-style-logos-only">
-            <!-- wp:social-link {"url":"info@tazilla.com","service":"mail","label":"info@tazilla.com"} /-->
-        </ul>
-        <!-- /wp:social-links -->
+         style="padding-top:var(--wp--preset--spacing--16);padding-bottom:var(--wp--preset--spacing--16)">
+        <!-- wp:site-logo {"width":128} /-->
 
-        <!-- wp:social-links {"iconColor":"brand-dark","iconColorValue":"#0E3C20","showLabels":true,"className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"left"}} -->
-        <ul class="wp-block-social-links has-visible-labels has-icon-color is-style-logos-only">
-            <!-- wp:social-link {"url":"#","service":"facebook","label":"Facebook"} /-->
+        <!-- wp:group {"className":"hide-mobile","style":{"spacing":{"blockGap":"0","padding":{"right":"var:preset|spacing|8","left":"var:preset|spacing|8","top":"2px","bottom":"2px"},"margin":{"top":"0.25rem"}},"border":{"radius":"2px"},"dimensions":{"minHeight":"1rem"}},"backgroundColor":"neutral-6-20","fontSize":"x-small","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+        <div class="wp-block-group hide-mobile has-neutral-6-20-background-color has-background has-x-small-font-size"
+             style="border-radius:2px;min-height:1rem;margin-top:0.25rem;padding-top:2px;padding-right:var(--wp--preset--spacing--8);padding-bottom:2px;padding-left:var(--wp--preset--spacing--8)">
+            <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|neutral-6"}}}},"textColor":"neutral-6","fontSize":"x-small"} -->
+            <p class="has-neutral-6-color has-text-color has-link-color has-x-small-font-size"><img class="wp-image-165"
+                                                                                                    style="width: 9px;"
+                                                                                                    src="http://tazilla.com.localhost/wp-content/uploads/2025/10/check.png"
+                                                                                                    alt="">
+                <strong>NIS2</strong> <strong>
+                    <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-brand-light-color">
+                        READY
+                    </mark>
+                </strong></p>
+            <!-- /wp:paragraph --></div>
+        <!-- /wp:group -->
 
-            <!-- wp:social-link {"url":"#","service":"linkedin","label":"LinkedIn"} /-->
-        </ul>
-        <!-- /wp:social-links -->
-    </div>
-    <!-- /wp:group -->
-</div>
-<!-- /wp:group -->
+        <!-- wp:navigation {"ref":4,"icon":"menu","style":{"layout":{"selfStretch":"fill","flexSize":null},"spacing":{"blockGap":"var:preset|spacing|48"},"typography":{"fontStyle":"normal","fontWeight":"500"}},"fontFamily":"unbounded","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"center"}} /-->
 
-<!-- wp:group {"backgroundColor":"brand-dark","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-brand-dark-background-color has-background">
-    <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|24","bottom":"var:preset|spacing|24"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-    <div class="wp-block-group alignwide"
-         style="padding-top:var(--wp--preset--spacing--24);padding-bottom:var(--wp--preset--spacing--24)">
-        <!-- wp:site-logo /-->
-
-        <!-- wp:navigation {"ref":4,"style":{"layout":{"selfStretch":"fill","flexSize":null},"spacing":{"blockGap":"var:preset|spacing|48"}},"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"center"}} /-->
-
-        <!-- wp:buttons -->
-        <div class="wp-block-buttons">
-            <!-- wp:button {"backgroundColor":"brand-light","textColor":"brand-dark","style":{"elements":{"link":{"color":{"text":"var:preset|color|brand-dark"}}}}} -->
-            <div class="wp-block-button"><a
-                    class="wp-block-button__link has-brand-dark-color has-brand-light-background-color has-text-color has-background has-link-color wp-element-button">Try
-                for free</a></div>
+        <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"right"}} -->
+        <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
+            <div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button"
+                                                          href="#">Login</a></div>
             <!-- /wp:button -->
-        </div>
-        <!-- /wp:buttons -->
-    </div>
-    <!-- /wp:group -->
-</div>
+
+            <!-- wp:button {"backgroundColor":"brand-light","className":"is-style-fill hide-mobile"} -->
+            <div class="wp-block-button is-style-fill hide-mobile"><a
+                    class="wp-block-button__link has-brand-light-background-color has-background wp-element-button">Try
+                For Free</a></div>
+            <!-- /wp:button --></div>
+        <!-- /wp:buttons --></div>
+    <!-- /wp:group --></div>
 <!-- /wp:group -->

@@ -107,7 +107,7 @@
 				},
 				{
 					"name": "Regular",
-					"size": "1.5rem",
+					"size": "clamp(0.75rem, 5vw, 1.5rem)",
 					"slug": "24"
 				},
 				{
@@ -282,14 +282,33 @@
 				"border": {
 					"radius": "0.25rem"
 				},
-				"color": {
-					"background": "var(--wp--preset--color--brand-dark)",
-					"text": "var(--wp--preset--color--white)"
-				},
-				"elements": {
-					"link": {
+				"variations": {
+					"fill": {
 						"color": {
+							"background": "var(--wp--preset--color--brand-dark)",
 							"text": "var(--wp--preset--color--white)"
+						},
+						"spacing": {
+							"padding": {
+								"bottom": "var(--wp--preset--spacing--12)",
+								"left": "var(--wp--preset--spacing--24)",
+								"right": "var(--wp--preset--spacing--24)",
+								"top": "var(--wp--preset--spacing--12)"
+							}
+						}
+					},
+					"outline": {
+						"border": {
+							"color": "var(--wp--preset--color--brand-light)",
+							"width": "1px"
+						},
+						"spacing": {
+							"padding": {
+								"bottom": "calc(var(--wp--preset--spacing--12) - 1px)",
+								"left": "calc(var(--wp--preset--spacing--24) - 1px)",
+								"right": "calc(var(--wp--preset--spacing--24) - 1px)",
+								"top": "calc(var(--wp--preset--spacing--12) - 1px)"
+							}
 						}
 					}
 				}
@@ -302,7 +321,11 @@
 		"elements": {
 			"button": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--unbounded)"
+					"fontFamily": "var(--wp--preset--font-family--unbounded)",
+					"fontWeight": "700",
+					"letterSpacing": "2.56px",
+					"lineHeight": "1",
+					"textTransform": "uppercase"
 				}
 			},
 			"caption": {
@@ -355,17 +378,14 @@
 			"link": {
 				"color": {
 					"text": "var(--wp--preset--color--brand-light)"
-				},
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--plus-jakarta-sans)"
 				}
 			}
 		},
 		"spacing": {
 			"blockGap": "1rem",
 			"padding": {
-				"left": "var(--wp--preset--spacing--48)",
-				"right": "var(--wp--preset--spacing--48)"
+				"left": "var(--wp--preset--spacing--24)",
+				"right": "var(--wp--preset--spacing--24)"
 			}
 		},
 		"typography": {
