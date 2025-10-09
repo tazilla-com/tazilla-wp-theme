@@ -123,12 +123,12 @@
 				{
 					"name": "2X-Large",
 					"size": "clamp(2.5rem, 7vw, 3rem)",
-					"slug": "48"
+					"slug": "2xl"
 				},
 				{
 					"name": "3X-Large",
 					"size": "clamp(3rem, 10vw, 4rem)",
-					"slug": "64"
+					"slug": "3xl"
 				}
 			],
 			"units": [
@@ -280,12 +280,12 @@
 			"core/button": {
 				"variations": {
 					"fill-secondary": {
+						"border": {
+							"color": "var(--wp--preset--color--brand-light)"
+						},
 						"color": {
 							"background": "var(--wp--preset--color--brand-light)",
 							"text": "var(--wp--preset--color--white)"
-						},
-						"border": {
-							"color": "var(--wp--preset--color--brand-light)"
 						}
 					},
 					"outline": {
@@ -314,11 +314,17 @@
 		},
 		"elements": {
 			"button": {
+				":hover": {
+					"color": {
+						"background": "var(--wp--preset--color--neutral-7)",
+						"text": "var(--wp--preset--color--brand-dark)"
+					}
+				},
 				"border": {
-					"width": "1px",
-					"style": "solid",
 					"color": "var(--wp--preset--color--brand-dark)",
-					"radius": "0.25rem"
+					"radius": "0.25rem",
+					"style": "solid",
+					"width": "1px"
 				},
 				"color": {
 					"background": "var(--wp--preset--color--brand-dark)",
@@ -339,12 +345,6 @@
 					"letterSpacing": "2.56px",
 					"lineHeight": "1",
 					"textTransform": "uppercase"
-				},
-				":hover": {
-					"color": {
-						"background": "var(--wp--preset--color--neutral-7)",
-						"text": "var(--wp--preset--color--brand-dark)"
-					}
 				}
 			},
 			"caption": {
