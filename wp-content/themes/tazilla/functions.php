@@ -29,14 +29,33 @@ if ( ! function_exists( 'tazilla_enqueue_styles' ) ) :
 	 */
 	function tazilla_enqueue_styles(): void {
 		wp_enqueue_style(
-			'tazilla-style',
-			get_parent_theme_file_uri( 'style.css' ),
+			'tazilla',
+			get_stylesheet_uri(),
 			array(),
 			wp_get_theme()->get( 'Version' )
+		);
+
+		wp_enqueue_script(
+			'tazilla',
+			get_template_directory_uri() . '/assets/js/script.js',
+			array(),
+			wp_get_theme()->get( 'Version' ),
+			true
 		);
 	}
 endif;
 add_action( 'wp_enqueue_scripts', 'tazilla_enqueue_styles' );
+
+add_action( 'init', function () {
+	// Fill Secondary button
+	register_block_style(
+		'core/button',
+		[
+			'name'  => 'fill-secondary',
+			'label' => __( 'Fill Secondary', 'tazilla' ),
+		]
+	);
+} );
 
 /**
  * Shortcodes.
