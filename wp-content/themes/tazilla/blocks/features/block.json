@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tazilla/features",
+  "title": "Tazilla Features",
+  "category": "layout",
+  "icon": "feedback",
+  "description": "Feature list with synced buttons and content",
+  "editorScript": "file:./build/index.jsx.js",
+  "viewScript": "file:./view.js",
+  "style": "file:./style.css",
+  "attributes": {
+    "activeFeatureId": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "html": false
+  }
+}

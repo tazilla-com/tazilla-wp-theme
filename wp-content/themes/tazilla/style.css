@@ -18,17 +18,19 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Sticky header */
 .wp-site-blocks {
-    > main {
+    > main,
+    > main > .wp-block-group,
+    > footer {
         margin-block-start: 0;
     }
+}
 
-    > header:has(> .is-position-sticky) {
-        position: sticky;
-        top: 0;
-        z-index: 100;
-    }
+/* Sticky header */
+.wp-site-blocks > header:has(> .is-position-sticky) {
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 /* Header and footer */

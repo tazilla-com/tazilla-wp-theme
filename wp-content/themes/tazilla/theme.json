@@ -373,8 +373,12 @@
 				}
 			},
 			"h5": {
+				"color": {
+					"text": "var(--wp--preset--color--brand-light)"
+				},
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--sm)"
+					"fontSize": "var(--wp--preset--font-size--sm)",
+					"fontWeight": "500"
 				}
 			},
 			"h6": {

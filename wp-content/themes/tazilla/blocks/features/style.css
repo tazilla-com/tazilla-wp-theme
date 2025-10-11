@@ -1,0 +1,14 @@
+.tazilla-feature-content {
+    transition: opacity 0.2s ease;
+
+    &:not(.is-active):not(.is-selected):not(.has-child-selected) {
+        opacity: 0;
+        pointer-events: none;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+.tazilla-feature-button.is-active {
+    font-weight: bold;
+}
