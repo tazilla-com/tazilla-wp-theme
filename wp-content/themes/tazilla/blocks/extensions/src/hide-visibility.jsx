@@ -14,6 +14,7 @@ addFilter(
         settings.attributes = Object.assign( settings.attributes || {}, {
             hideOnMobile: { type: 'boolean', default: false },
             hideOnDesktop: { type: 'boolean', default: false },
+            fullWidthOnMobile: { type: 'boolean', default: false },
         } );
         return settings;
     }
@@ -25,7 +26,7 @@ addFilter(
 const withVisibilityControls = createHigherOrderComponent( ( BlockEdit ) => {
     return ( props ) => {
         const { attributes, setAttributes, isSelected } = props;
-        const { hideOnMobile, hideOnDesktop } = attributes;
+        const { hideOnMobile, hideOnDesktop, fullWidthOnMobile } = attributes;
 
         return (
             <Fragment>
@@ -42,6 +43,11 @@ const withVisibilityControls = createHigherOrderComponent( ( BlockEdit ) => {
                                 label="Hide on desktop"
                                 checked={ !!hideOnDesktop }
                                 onChange={ ( value ) => setAttributes( { hideOnDesktop: value } ) }
+                            />
+                            <ToggleControl
+                                label="Full width on mobile"
+                                checked={ !!fullWidthOnMobile }
+                                onChange={ ( value ) => setAttributes( { fullWidthOnMobile: value } ) }
                             />
                         </PanelBody>
                     </InspectorControls>
@@ -63,11 +69,12 @@ addFilter(
 const withEditorClassNames = createHigherOrderComponent( ( BlockListBlock ) => {
     return ( props ) => {
         const { attributes } = props;
-        const { hideOnMobile, hideOnDesktop } = attributes || {};
+        const { hideOnMobile, hideOnDesktop, fullWidthOnMobile } = attributes || {};
 
         let extraClasses = '';
-        if ( hideOnMobile ) extraClasses += ' hide-mobile';
-        if ( hideOnDesktop ) extraClasses += ' hide-desktop';
+        if ( hideOnMobile ) extraClasses += ' hide-on-mobile';
+        if ( hideOnDesktop ) extraClasses += ' hide-on-desktop';
+        if ( fullWidthOnMobile ) extraClasses += ' full-width-on-mobile';
 
         return <BlockListBlock { ...props } className={ ( props.className || '' ) + extraClasses } />;
     };
@@ -87,11 +94,12 @@ addFilter(
     'tazilla/apply-visibility-classes',
     ( extraProps, blockType, attributes ) => {
         if ( ! attributes ) return extraProps;
-        const { hideOnMobile, hideOnDesktop } = attributes;
+        const { hideOnMobile, hideOnDesktop, fullWidthOnMobile } = attributes;
         const classes = [];
 
-        if ( hideOnMobile ) classes.push( 'hide-mobile' );
-        if ( hideOnDesktop ) classes.push( 'hide-desktop' );
+        if ( hideOnMobile ) classes.push( 'hide-on-mobile' );
+        if ( hideOnDesktop ) classes.push( 'hide-on-desktop' );
+        if ( fullWidthOnMobile ) classes.push( 'full-width-on-mobile' );
 
         if ( classes.length ) {
             extraProps.className = [ extraProps.className, ...classes ].filter(Boolean).join(' ');

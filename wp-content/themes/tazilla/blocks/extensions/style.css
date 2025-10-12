@@ -1,8 +1,16 @@
 /* Hide elements */
 @media (max-width: 767px) {
-  .hide-mobile { display: none !important; }
+    .hide-on-mobile {
+        display: none !important;
+    }
+
+    .full-width-on-mobile {
+        width: 100%;
+    }
 }
 
 @media (min-width: 768px) {
-  .hide-desktop { display: none !important; }
+    .hide-on-desktop {
+        display: none !important;
+    }
 }

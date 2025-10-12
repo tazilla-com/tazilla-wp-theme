@@ -21,12 +21,12 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button">Pricing</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline","fullWidthOnMobile":true} -->
+<div class="wp-block-button is-style-outline full-width-on-mobile"><a class="wp-block-button__link wp-element-button">Pricing</a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"className":"is-style-fill-secondary"} -->
-<div class="wp-block-button is-style-fill-secondary"><a class="wp-block-button__link wp-element-button">Try For Free</a></div>
+<!-- wp:button {"className":"is-style-fill-secondary","fullWidthOnMobile":true} -->
+<div class="wp-block-button is-style-fill-secondary full-width-on-mobile"><a class="wp-block-button__link wp-element-button">Try For Free</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -128,8 +128,8 @@
 <!-- /wp:group -->
 
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Try For Free</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"fullWidthOnMobile":true} -->
+<div class="wp-block-button full-width-on-mobile"><a class="wp-block-button__link wp-element-button">Try For Free</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -324,7 +324,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"var:preset|spacing|3xl","bottom":"var:preset|spacing|3xl"}}},"backgroundColor":"brand-dark","textColor":"white","layout":{"type":"constrained"},"hideOnMobile":true} -->
-<section class="wp-block-group alignfull has-white-color has-brand-dark-background-color has-text-color has-background has-link-color hide-mobile" style="padding-top:var(--wp--preset--spacing--3-xl);padding-bottom:var(--wp--preset--spacing--3-xl)"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"},"blockGap":"var:preset|spacing|xs"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<section class="wp-block-group alignfull has-white-color has-brand-dark-background-color has-text-color has-background has-link-color hide-on-mobile" style="padding-top:var(--wp--preset--spacing--3-xl);padding-bottom:var(--wp--preset--spacing--3-xl)"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"},"blockGap":"var:preset|spacing|xs"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:heading {"level":5} -->
 <h5 class="wp-block-heading">Game-changing innovations on the way.</h5>
 <!-- /wp:heading -->
@@ -480,11 +480,11 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:latest-posts {"postsToShow":3,"postLayout":"grid","displayFeaturedImage":true,"addLinkToFeaturedImage":true,"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|2xl","bottom":"var:preset|spacing|xl"},"margin":{"top":"0","bottom":"0"}}}} /-->
+<!-- wp:latest-posts {"postsToShow":3,"postLayout":"grid","displayFeaturedImage":true,"addLinkToFeaturedImage":true,"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|2xl","bottom":"var:preset|spacing|xl"},"margin":{"top":"0","bottom":"0","left":"0","right":"0"}}}} /-->
 
 <!-- wp:buttons {"align":"wide","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|xl"},"margin":{"top":"0","bottom":"0"}}}} -->
-<div class="wp-block-buttons alignwide" style="margin-top:0;margin-bottom:0;padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="http://tazilla.com.localhost/university/">All News</a></div>
+<div class="wp-block-buttons alignwide" style="margin-top:0;margin-bottom:0;padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:button {"className":"is-style-outline","fullWidthOnMobile":true} -->
+<div class="wp-block-button is-style-outline full-width-on-mobile"><a class="wp-block-button__link wp-element-button" href="http://tazilla.com.localhost/university/">All News</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></section>
 <!-- /wp:group -->
