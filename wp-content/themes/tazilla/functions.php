@@ -99,12 +99,12 @@ function tazilla_latest_posts_read_more( $block_content, $block ) {
 add_filter( 'render_block', 'tazilla_latest_posts_read_more', 10, 2 );
 
 /**
- * Disable pattern directory from WordPress.org
+ * Disable pattern directory from WordPress.org.
  */
 add_filter( 'should_load_remote_block_patterns', '__return_false' );
 
 /**
- * Disable bundled “core” patterns that ship with WP itself
+ * Disable bundled “core” patterns that ship with WP itself.
  */
 remove_theme_support( 'core-block-patterns' );
 
@@ -112,3 +112,8 @@ remove_theme_support( 'core-block-patterns' );
  * Shortcodes.
  */
 require get_stylesheet_directory() . '/inc/shortcodes.php';
+
+/**
+ * Custom post types.
+ */
+require get_stylesheet_directory() . '/inc/custom-post-types.php';
