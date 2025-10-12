@@ -98,6 +98,11 @@ function tazilla_latest_posts_read_more( $block_content, $block ) {
 
 add_filter( 'render_block', 'tazilla_latest_posts_read_more', 10, 2 );
 
+/**
+ * Disable pattern directory from WordPress.org
+ */
+add_filter( 'should_load_remote_block_patterns', '__return_false' );
+
 
 /**
  * Shortcodes.

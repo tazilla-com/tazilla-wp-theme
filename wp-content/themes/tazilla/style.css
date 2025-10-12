@@ -14,10 +14,6 @@ Text Domain: tazilla
 Tags: 
 */
 
-:root {
-    --tazilla--radius-md: 0.5rem;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -124,7 +120,7 @@ footer + footer.wp-block-template-part {
         margin-bottom: var(--wp--preset--spacing--xl, 1.5rem);
 
         img {
-            border-radius: var(--tazilla--radius-md, 0.5rem);
+            border-radius: var(--wp--custom--radius--md, 0.5rem);
         }
     }
 
@@ -134,7 +130,7 @@ footer + footer.wp-block-template-part {
         font-size: var(--wp--preset--font-size--lg, 1.5rem);
         font-style: normal;
         font-weight: 700;
-        line-height: 1.33;
+        line-height: var(--wp--custom--line-height--heading, 1.33);
         letter-spacing: -0.03rem;
         text-transform: uppercase;
         text-decoration: none;
