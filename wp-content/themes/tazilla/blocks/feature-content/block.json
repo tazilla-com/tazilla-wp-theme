@@ -6,6 +6,7 @@
   "category": "layout",
   "icon": "text",
   "editorScript": "file:./build/index.jsx.js",
+  "style": "file:./build/style-style.scss.css",
   "ancestor": [
     "tazilla/features"
   ],

@@ -1,0 +1,1 @@
+.tazilla-feature-content{transition:opacity .4s ease}.tazilla-feature-content:not(.is-active):not(.is-selected):not(.has-child-selected){height:0;opacity:0;overflow:hidden;pointer-events:none}

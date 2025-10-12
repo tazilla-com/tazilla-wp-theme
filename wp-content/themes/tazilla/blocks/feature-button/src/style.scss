@@ -1,0 +1,35 @@
+.tazilla-feature-button {
+  border-radius: 0.5rem;
+  border: 1px solid var(--wp--preset--color--neutral-8, #F9FCF5);
+  background: linear-gradient(180deg, var(--wp--preset--color--white, #FFFFFF) 0%, var(--wp--preset--color--neutral-6, #F2F3F2) 100%);
+  box-shadow: 0 1rem 2rem -0.8125rem rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
+
+  .tazilla-feature-button__link {
+    display: inline-block;
+    background-image: url('./feature-icon.png');
+    background-repeat: no-repeat;
+    background-position: var(--wp--preset--spacing--sm, 0.75rem) center;
+    padding: var(--wp--preset--spacing--xs, 0.5rem) var(--wp--preset--spacing--sm, 0.75rem) var(--wp--preset--spacing--xs, 0.5rem) calc(var(--wp--preset--spacing--sm, 0.75rem) + 24px + var(--wp--preset--spacing--xs, 0.5rem));
+    cursor: pointer;
+    color: var(--wp--preset--color--neutral-2, #676A68);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--wp--preset--font-family--unbounded) sans-serif;
+    font-size: var(--wp--preset--font-size--sm, 0.75rem);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem; /* 133.333% */
+  }
+
+  &.is-active {
+    border-color: var(--wp--preset--color--white, #FFFFFF);
+    background: var(--wp--preset--color--white, #FFFFFF);
+    box-shadow: 0.25rem 0.25rem 0.6875rem -0.125rem rgba(0, 0, 0, 0.17) inset;
+
+    .tazilla-feature-button__link {
+      color: var(--wp--preset--color--brand-light, #80C241);
+    }
+  }
+}

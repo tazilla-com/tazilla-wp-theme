@@ -32,7 +32,7 @@ registerBlockType(metadata.name, {
         };
 
         const blockProps = useBlockProps({
-            className: `tazilla-feature ${isActive ? 'is-active' : ''}`,
+            className: `tazilla-feature-button ${isActive ? 'is-active' : ''}`,
         });
 
         return (

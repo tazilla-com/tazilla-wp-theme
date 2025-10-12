@@ -85,6 +85,11 @@
 					"color": "#F3F5F433",
 					"name": "Neutral 7 20% opacity",
 					"slug": "neutral-7-20"
+				},
+				{
+					"color": "#F9FCF5",
+					"name": "Neutral 8",
+					"slug": "neutral-8"
 				}
 			]
 		},

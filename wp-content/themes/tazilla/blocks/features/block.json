@@ -8,7 +8,7 @@
   "description": "Feature list with synced buttons and content",
   "editorScript": "file:./build/index.jsx.js",
   "viewScript": "file:./view.js",
-  "style": "file:./style.css",
+  "style": "file:./build/style-style.scss.css",
   "attributes": {
     "activeFeatureId": {
       "type": "string"
