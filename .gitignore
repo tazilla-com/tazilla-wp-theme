@@ -11,3 +11,16 @@ Thumbs.db
 # Project
 .env
 node_modules
+
+# WordPress
+/*.*
+!/.gitignore
+!/robots.txt
+/wp-admin/
+/wp-content/*
+!/wp-content/
+/wp-content/themes/*
+!/wp-content/themes/
+!/wp-content/themes/tazilla/
+/wp-content/themes/tazilla/templates/development.html
+/wp-includes/

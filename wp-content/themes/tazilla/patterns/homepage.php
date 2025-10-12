@@ -1,0 +1,490 @@
+<?php
+/**
+ * Title: Homepage Layout
+ * Slug: tazilla/homepage
+ * Categories: featured
+ * Description: The main homepage layout with hero, services, and contact blocks.
+ */
+?>
+<!-- wp:group {"tagName":"section","align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"var:preset|spacing|3xl","bottom":"var:preset|spacing|3xl"}}},"backgroundColor":"brand-dark","textColor":"white","layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignfull has-white-color has-brand-dark-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--3-xl);padding-bottom:var(--wp--preset--spacing--3-xl)"><!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"33.33%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33.33%"><!-- wp:heading {"level":1,"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
+<h1 class="wp-block-heading has-white-color has-text-color has-link-color">
+    <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-brand-light-color">Enhance your security</mark> governance with Tazilla
+</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Do you need to <strong>fulfill the criteria of NIS2</strong>? Do so while using the opportunity to <strong>really
+    improve your security</strong> using a <strong>down to earth simple tool</strong>!</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button">Pricing</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-fill-secondary"} -->
+<div class="wp-block-button is-style-fill-secondary"><a class="wp-block-button__link wp-element-button">Try For Free</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","width":"66.66%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/tazilla-hero-section-1.png" alt=""/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","align":"full","style":{"spacing":{"padding":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignfull" style="padding-top:0;padding-bottom:0"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|xs","padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|lg","left":"0","right":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--xl);padding-right:0;padding-bottom:var(--wp--preset--spacing--lg);padding-left:0"><!-- wp:heading {"textAlign":"center","level":5} -->
+<h5 class="wp-block-heading has-text-align-center">Our Partners</h5>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Trusted partnerships success</h3>
+<!-- /wp:heading --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","style":{"border":{"bottom":{"color":"var:preset|color|neutral-7-20","width":"1px"}},"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"0","bottom":"var:preset|spacing|xl","left":"0","right":"0"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group alignwide" style="border-bottom-color:var(--wp--preset--color--neutral-7-20);border-bottom-width:1px;margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:var(--wp--preset--spacing--xl);padding-left:0"><!-- wp:gallery {"columns":6,"imageCrop":false,"linkTo":"none","align":"wide"} -->
+<figure class="wp-block-gallery alignwide has-nested-images columns-6"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/logo-google.png" alt=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/logo-apple.png" alt=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/logo-ey.png" alt=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/logo-bratislava.png" alt=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/logo-transpetrol.png" alt=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/logo-kpmg.png" alt=""/></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|3xl"}},"background":{"backgroundImage":{"url":"http://tazilla.com.localhost/wp-content/uploads/2025/10/section-bg.png","id":251,"source":"file","title":"section-bg"},"backgroundSize":"cover"}},"backgroundColor":"neutral-7","layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignfull has-neutral-7-background-color has-background" style="padding-top:var(--wp--preset--spacing--3-xl)"><!-- wp:tazilla/features {"activeFeatureId":"feature-1760226494944-3fxjx","align":"wide"} -->
+<div class="wp-block-tazilla-features alignwide tazilla-features" data-active-feature-id="feature-1760226494944-3fxjx"><!-- wp:columns {"style":{"spacing":{"padding":{"top":"var:preset|spacing|xl"},"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xl)"><!-- wp:column {"width":"50%"} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:heading {"level":5} -->
+<h5 class="wp-block-heading">The smart way to manage cyber risk</h5>
+<!-- /wp:heading -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">
+    <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-brand-light-color">Powerful.<br>Intuitive.</mark><br>Built for CISOs.
+</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xs"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:tazilla/feature-button {"featureId":"feature-1760226494944-3fxjx","activeFeatureId":"feature-1760226494944-3fxjx"} -->
+<div class="wp-block-tazilla-feature-button tazilla-feature-button" data-feature-id="feature-1760226494944-3fxjx"><a class="tazilla-feature-button__link">Threat Intelligence</a></div>
+<!-- /wp:tazilla/feature-button -->
+
+<!-- wp:tazilla/feature-button {"featureId":"feature-1760227094295-y72gj","activeFeatureId":"feature-1760226494944-3fxjx"} -->
+<div class="wp-block-tazilla-feature-button tazilla-feature-button" data-feature-id="feature-1760227094295-y72gj"><a class="tazilla-feature-button__link">Insights</a></div>
+<!-- /wp:tazilla/feature-button -->
+
+<!-- wp:tazilla/feature-button {"featureId":"feature-1760269367661-1ghev","activeFeatureId":"feature-1760226494944-3fxjx"} -->
+<div class="wp-block-tazilla-feature-button tazilla-feature-button" data-feature-id="feature-1760269367661-1ghev"><a class="tazilla-feature-button__link">AI Advisor</a></div>
+<!-- /wp:tazilla/feature-button -->
+
+<!-- wp:tazilla/feature-button {"featureId":"feature-1760269555054-eky7a","activeFeatureId":"feature-1760226494944-3fxjx"} -->
+<div class="wp-block-tazilla-feature-button tazilla-feature-button" data-feature-id="feature-1760269555054-eky7a"><a class="tazilla-feature-button__link">Third Party Mangement</a></div>
+<!-- /wp:tazilla/feature-button -->
+
+<!-- wp:tazilla/feature-button {"featureId":"feature-1760269642112-r58tf","activeFeatureId":"feature-1760226494944-3fxjx"} -->
+<div class="wp-block-tazilla-feature-button tazilla-feature-button" data-feature-id="feature-1760269642112-r58tf"><a class="tazilla-feature-button__link">Risk Anlaysis</a></div>
+<!-- /wp:tazilla/feature-button -->
+
+<!-- wp:tazilla/feature-button {"featureId":"feature-1760269735175-rw144","activeFeatureId":"feature-1760226494944-3fxjx"} -->
+<div class="wp-block-tazilla-feature-button tazilla-feature-button" data-feature-id="feature-1760269735175-rw144"><a class="tazilla-feature-button__link">Employee Awareness</a></div>
+<!-- /wp:tazilla/feature-button -->
+
+<!-- wp:tazilla/feature-button {"featureId":"feature-1760269812896-73uta","activeFeatureId":"feature-1760226494944-3fxjx"} -->
+<div class="wp-block-tazilla-feature-button tazilla-feature-button" data-feature-id="feature-1760269812896-73uta"><a class="tazilla-feature-button__link">Asset Management</a></div>
+<!-- /wp:tazilla/feature-button -->
+
+<!-- wp:tazilla/feature-button {"featureId":"feature-1760269886718-pbxde","activeFeatureId":"feature-1760226494944-3fxjx"} -->
+<div class="wp-block-tazilla-feature-button tazilla-feature-button" data-feature-id="feature-1760269886718-pbxde"><a class="tazilla-feature-button__link">Control Mangement</a></div>
+<!-- /wp:tazilla/feature-button --></div>
+<!-- /wp:group -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Try For Free</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"50%","style":{"spacing":{"padding":{"top":"var:preset|spacing|lg","left":"var:preset|spacing|lg"}},"border":{"radius":{"topLeft":"1rem","topRight":"1rem"}}},"backgroundColor":"white"} -->
+<div class="wp-block-column has-white-background-color has-background" style="border-top-left-radius:1rem;border-top-right-radius:1rem;padding-top:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--lg);flex-basis:50%"><!-- wp:tazilla/feature-content {"featureId":"feature-1760226494944-3fxjx","activeFeatureId":"feature-1760226494944-3fxjx","className":"tazilla-feature-content"} -->
+<div class="wp-block-tazilla-feature-content tazilla-feature-content" data-feature-id="feature-1760226494944-3fxjx"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xs","padding":{"top":"var:preset|spacing|md","bottom":"var:preset|spacing|lg","left":"var:preset|spacing|lg","right":"var:preset|spacing|2xl"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--md);padding-right:var(--wp--preset--spacing--2-xl);padding-bottom:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--lg)"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Security intelligence. Your way.</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Combine views across assets, risks, and controls to uncover real-time insights. Build tailored dashboards that
+    give you clarity over your company’s security posture — from what’s protected to what’s exposed.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill-secondary"} -->
+<div class="wp-block-button is-style-fill-secondary"><a class="wp-block-button__link wp-element-button">More Info</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:tazilla/feature-content -->
+
+<!-- wp:tazilla/feature-content {"featureId":"feature-1760227094295-y72gj","activeFeatureId":"feature-1760226494944-3fxjx","className":"tazilla-feature-content"} -->
+<div class="wp-block-tazilla-feature-content tazilla-feature-content" data-feature-id="feature-1760227094295-y72gj"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xs","padding":{"top":"var:preset|spacing|md","bottom":"var:preset|spacing|lg","left":"var:preset|spacing|lg","right":"var:preset|spacing|2xl"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--md);padding-right:var(--wp--preset--spacing--2-xl);padding-bottom:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--lg)"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Insights.</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie dictum lectus, nec ornare elit dignissim
+    ut. Ut ullamcorper luctus nisl. Phasellus eu pellentesque orci, et ullamcorper tortor.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill-secondary"} -->
+<div class="wp-block-button is-style-fill-secondary"><a class="wp-block-button__link wp-element-button">More Info</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:tazilla/feature-content -->
+
+<!-- wp:tazilla/feature-content {"featureId":"feature-1760269367661-1ghev","activeFeatureId":"feature-1760226494944-3fxjx","className":"tazilla-feature-content"} -->
+<div class="wp-block-tazilla-feature-content tazilla-feature-content" data-feature-id="feature-1760269367661-1ghev"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xs","padding":{"top":"var:preset|spacing|md","bottom":"var:preset|spacing|lg","left":"var:preset|spacing|lg","right":"var:preset|spacing|2xl"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--md);padding-right:var(--wp--preset--spacing--2-xl);padding-bottom:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--lg)"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">AI Advisor.</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie dictum lectus, nec ornare elit dignissim
+    ut. Ut ullamcorper luctus nisl. Phasellus eu pellentesque orci, et ullamcorper tortor.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill-secondary"} -->
+<div class="wp-block-button is-style-fill-secondary"><a class="wp-block-button__link wp-element-button">More Info</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:tazilla/feature-content -->
+
+<!-- wp:tazilla/feature-content {"featureId":"feature-1760269555054-eky7a","activeFeatureId":"feature-1760226494944-3fxjx","className":"tazilla-feature-content"} -->
+<div class="wp-block-tazilla-feature-content tazilla-feature-content" data-feature-id="feature-1760269555054-eky7a"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xs","padding":{"top":"var:preset|spacing|md","bottom":"var:preset|spacing|lg","left":"var:preset|spacing|lg","right":"var:preset|spacing|2xl"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--md);padding-right:var(--wp--preset--spacing--2-xl);padding-bottom:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--lg)"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Third Party Mangement.</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie dictum lectus, nec ornare elit dignissim
+    ut. Ut ullamcorper luctus nisl. Phasellus eu pellentesque orci, et ullamcorper tortor.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill-secondary"} -->
+<div class="wp-block-button is-style-fill-secondary"><a class="wp-block-button__link wp-element-button">More Info</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:tazilla/feature-content -->
+
+<!-- wp:tazilla/feature-content {"featureId":"feature-1760269642112-r58tf","activeFeatureId":"feature-1760226494944-3fxjx","className":"tazilla-feature-content"} -->
+<div class="wp-block-tazilla-feature-content tazilla-feature-content" data-feature-id="feature-1760269642112-r58tf"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xs","padding":{"top":"var:preset|spacing|md","bottom":"var:preset|spacing|lg","left":"var:preset|spacing|lg","right":"var:preset|spacing|2xl"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--md);padding-right:var(--wp--preset--spacing--2-xl);padding-bottom:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--lg)"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Risk Anlaysis.</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie dictum lectus, nec ornare elit dignissim
+    ut. Ut ullamcorper luctus nisl. Phasellus eu pellentesque orci, et ullamcorper tortor.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill-secondary"} -->
+<div class="wp-block-button is-style-fill-secondary"><a class="wp-block-button__link wp-element-button">More Info</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:tazilla/feature-content -->
+
+<!-- wp:tazilla/feature-content {"featureId":"feature-1760269735175-rw144","activeFeatureId":"feature-1760226494944-3fxjx","className":"tazilla-feature-content"} -->
+<div class="wp-block-tazilla-feature-content tazilla-feature-content" data-feature-id="feature-1760269735175-rw144"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xs","padding":{"top":"var:preset|spacing|md","bottom":"var:preset|spacing|lg","left":"var:preset|spacing|lg","right":"var:preset|spacing|2xl"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--md);padding-right:var(--wp--preset--spacing--2-xl);padding-bottom:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--lg)"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Employee Awareness.</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie dictum lectus, nec ornare elit dignissim
+    ut. Ut ullamcorper luctus nisl. Phasellus eu pellentesque orci, et ullamcorper tortor.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill-secondary"} -->
+<div class="wp-block-button is-style-fill-secondary"><a class="wp-block-button__link wp-element-button">More Info</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:tazilla/feature-content -->
+
+<!-- wp:tazilla/feature-content {"featureId":"feature-1760269812896-73uta","activeFeatureId":"feature-1760226494944-3fxjx","className":"tazilla-feature-content"} -->
+<div class="wp-block-tazilla-feature-content tazilla-feature-content" data-feature-id="feature-1760269812896-73uta"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xs","padding":{"top":"var:preset|spacing|md","bottom":"var:preset|spacing|lg","left":"var:preset|spacing|lg","right":"var:preset|spacing|2xl"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--md);padding-right:var(--wp--preset--spacing--2-xl);padding-bottom:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--lg)"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Asset Management.</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie dictum lectus, nec ornare elit dignissim
+    ut. Ut ullamcorper luctus nisl. Phasellus eu pellentesque orci, et ullamcorper tortor.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill-secondary"} -->
+<div class="wp-block-button is-style-fill-secondary"><a class="wp-block-button__link wp-element-button">More Info</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:tazilla/feature-content -->
+
+<!-- wp:tazilla/feature-content {"featureId":"feature-1760269886718-pbxde","activeFeatureId":"feature-1760226494944-3fxjx","className":"tazilla-feature-content"} -->
+<div class="wp-block-tazilla-feature-content tazilla-feature-content" data-feature-id="feature-1760269886718-pbxde"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xs","padding":{"top":"var:preset|spacing|md","bottom":"var:preset|spacing|lg","left":"var:preset|spacing|lg","right":"var:preset|spacing|2xl"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--md);padding-right:var(--wp--preset--spacing--2-xl);padding-bottom:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--lg)"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Control Mangement.</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie dictum lectus, nec ornare elit dignissim
+    ut. Ut ullamcorper luctus nisl. Phasellus eu pellentesque orci, et ullamcorper tortor.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill-secondary"} -->
+<div class="wp-block-button is-style-fill-secondary"><a class="wp-block-button__link wp-element-button">More Info</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:tazilla/feature-content --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:tazilla/features --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"var:preset|spacing|3xl","bottom":"var:preset|spacing|3xl"}}},"backgroundColor":"brand-dark","textColor":"white","layout":{"type":"constrained"},"hideOnMobile":true} -->
+<section class="wp-block-group alignfull has-white-color has-brand-dark-background-color has-text-color has-background has-link-color hide-mobile" style="padding-top:var(--wp--preset--spacing--3-xl);padding-bottom:var(--wp--preset--spacing--3-xl)"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"},"blockGap":"var:preset|spacing|xs"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:heading {"level":5} -->
+<h5 class="wp-block-heading">Game-changing innovations on the way.</h5>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
+<h3 class="wp-block-heading has-white-color has-text-color has-link-color">Discover what’s next and be part of tazilla’s evolution.</h3>
+<!-- /wp:heading -->
+
+<!-- wp:columns {"isStackedOnMobile":false,"style":{"spacing":{"blockGap":{"top":"0","left":"0"},"margin":{"top":"var:preset|spacing|2xl","bottom":"var:preset|spacing|2xl"}}}} -->
+<div class="wp-block-columns is-not-stacked-on-mobile" style="margin-top:var(--wp--preset--spacing--2-xl);margin-bottom:var(--wp--preset--spacing--2-xl)"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|md"}}}} -->
+<figure class="wp-block-image size-full" style="margin-bottom:var(--wp--preset--spacing--md)"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/milestone-connector-1.png" alt=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":4,"style":{"elements":{"link":{"color":{"text":"var:preset|color|brand-light"}}}},"textColor":"brand-light"} -->
+<h4 class="wp-block-heading has-text-align-center has-brand-light-color has-text-color has-link-color">Expanded<br>AI Agents</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Q3/2025</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|md"}}}} -->
+<figure class="wp-block-image size-full" style="margin-bottom:var(--wp--preset--spacing--md)"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/milestone-connector-2.png" alt=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":4,"style":{"elements":{"link":{"color":{"text":"var:preset|color|brand-light"}}}},"textColor":"brand-light"} -->
+<h4 class="wp-block-heading has-text-align-center has-brand-light-color has-text-color has-link-color">GDPR<br>compliance</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Q3/2025</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|md"}}}} -->
+<figure class="wp-block-image size-full" style="margin-bottom:var(--wp--preset--spacing--md)"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/milestone-connector-3.png" alt=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":4,"style":{"elements":{"link":{"color":{"text":"var:preset|color|brand-light"}}}},"textColor":"brand-light"} -->
+<h4 class="wp-block-heading has-text-align-center has-brand-light-color has-text-color has-link-color">Active Directory<br>Integration</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Q3/2025</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|md"}}}} -->
+<figure class="wp-block-image size-full" style="margin-bottom:var(--wp--preset--spacing--md)"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/milestone-connector-4.png" alt=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":4,"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
+<h4 class="wp-block-heading has-text-align-center has-white-color has-text-color has-link-color">Export<br>All Your Data</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","className":"opacity-50"} -->
+<p class="has-text-align-center opacity-50">Q4/2025</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|md"}}}} -->
+<figure class="wp-block-image size-full" style="margin-bottom:var(--wp--preset--spacing--md)"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/milestone-connector-5.png" alt=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":4,"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
+<h4 class="wp-block-heading has-text-align-center has-white-color has-text-color has-link-color">AI Honeypot<br>Deployment</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","className":"opacity-50"} -->
+<p class="has-text-align-center opacity-50">Q4/2025</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|lg"}},"border":{"radius":"0.5rem"}},"backgroundColor":"brand-dark-2"} -->
+<div class="wp-block-columns has-brand-dark-2-background-color has-background" style="border-radius:0.5rem"><!-- wp:column {"verticalAlignment":"center","width":"30%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:30%"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
+<h3 class="wp-block-heading has-white-color has-text-color has-link-color">Prepared for<br><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-brand-light-color">GDPR and NIS 2</mark></h3>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"35%"} -->
+<div class="wp-block-column" style="flex-basis:35%"><!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|md"}}}} -->
+<div class="wp-block-columns"><!-- wp:column {"width":"3rem"} -->
+<div class="wp-block-column" style="flex-basis:3rem"><!-- wp:image {"scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/gdpr-nis2-ready.png" alt="" style="object-fit:cover"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"","style":{"spacing":{"blockGap":"var:preset|spacing|xs"}}} -->
+<div class="wp-block-column"><!-- wp:heading {"level":4,"style":{"elements":{"link":{"color":{"text":"var:preset|color|brand-light"}}}},"textColor":"brand-light"} -->
+<h4 class="wp-block-heading has-brand-light-color has-text-color has-link-color">GDPR ready</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Fully GDPR compliant. Your data stays safe and transparent.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"35%"} -->
+<div class="wp-block-column" style="flex-basis:35%"><!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|md"}}}} -->
+<div class="wp-block-columns"><!-- wp:column {"width":"3rem"} -->
+<div class="wp-block-column" style="flex-basis:3rem"><!-- wp:image {"scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/gdpr-nis2-ready.png" alt="" style="object-fit:cover"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"","style":{"spacing":{"blockGap":"var:preset|spacing|xs"}}} -->
+<div class="wp-block-column"><!-- wp:heading {"level":4,"style":{"elements":{"link":{"color":{"text":"var:preset|color|brand-light"}}}},"textColor":"brand-light"} -->
+<h4 class="wp-block-heading has-brand-light-color has-text-color has-link-color">NIS 2 ready</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Aligned with NIS 2. Stronger security, future-proof systems.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|3xl","bottom":"var:preset|spacing|3xl"}}},"layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--3-xl);padding-bottom:var(--wp--preset--spacing--3-xl)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|md"},"padding":{"top":"var:preset|spacing|xl"}}}} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center" style="padding-top:var(--wp--preset--spacing--xl)"><!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:heading -->
+<h2 class="wp-block-heading"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-brand-light-color">Stay updated</mark><br>with our latest posts</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph -->
+<p>Keep up with the latest tips, and insights on how to improve your security, or just to learn how to improve your security the most effective way.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:latest-posts {"postsToShow":3,"postLayout":"grid","displayFeaturedImage":true,"addLinkToFeaturedImage":true,"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|2xl","bottom":"var:preset|spacing|xl"},"margin":{"top":"0","bottom":"0"}}}} /-->
+
+<!-- wp:buttons {"align":"wide","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|xl"},"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-buttons alignwide" style="margin-top:0;margin-bottom:0;padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="http://tazilla.com.localhost/university/">All News</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></section>
+<!-- /wp:group -->
