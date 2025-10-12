@@ -1,5 +1,15 @@
+.tazilla-features {
+    .is-layout-flow .tazilla-feature-content {
+        margin-block-start: 0;
+    }
+
+    > .wp-block-columns {
+        margin-bottom: 0;
+    }
+}
+
 .tazilla-feature-content {
-    transition: opacity 0.2s ease;
+    transition: opacity 0.4s ease;
 
     &:not(.is-active):not(.is-selected):not(.has-child-selected) {
         opacity: 0;
