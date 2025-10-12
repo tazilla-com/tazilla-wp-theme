@@ -80,6 +80,26 @@ function tazilla_register_blocks(): void {
 add_action( 'init', 'tazilla_register_blocks' );
 
 /**
+ * Add a "Read more" text after each title link in the Latest Posts block.
+ */
+function tazilla_latest_posts_read_more( $block_content, $block ) {
+	if ( $block['blockName'] !== 'core/latest-posts' ) {
+		return $block_content;
+	}
+
+	$read_more = esc_html__( 'Read more', 'tazilla' );
+
+	return preg_replace(
+		'/(<a[^>]+class="[^"]*wp-block-latest-posts__post-title[^"]*"[^>]*>.*?)(<\/a>)/is',
+		'$1 <div class="read-more-text">' . $read_more . '</div>$2',
+		$block_content
+	);
+}
+
+add_filter( 'render_block', 'tazilla_latest_posts_read_more', 10, 2 );
+
+
+/**
  * Shortcodes.
  */
 require get_stylesheet_directory() . '/inc/shortcodes.php';
