@@ -91,15 +91,6 @@ footer + footer.wp-block-template-part {
     margin-block-start: 0;
 }
 
-/* Hide elements */
-@media (max-width: 767px) {
-    .hide-mobile { display: none !important; }
-}
-
-@media (min-width: 768px) {
-    .hide-desktop { display: none !important; }
-}
-
 /* Buttons - hover state */
 .wp-block-button {
     &.is-style-outline .wp-block-button__link:hover {

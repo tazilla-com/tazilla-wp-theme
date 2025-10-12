@@ -3,6 +3,7 @@
   "private": true,
   "author": "Neotrendy",
   "scripts": {
+    "build:extensions": "wp-scripts build blocks/extensions/src/index.js --output-path=blocks/extensions/build",
     "build": "npm run build:features && npm run build:feature-button && npm run build:feature-content",
     "build:features": "wp-scripts build blocks/features/src/*.* --output-path=blocks/features/build",
     "start:features": "wp-scripts start blocks/features/src/*.* --output-path=blocks/features/build",

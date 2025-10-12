@@ -2,19 +2,26 @@
 /**
  * Enqueues style.css in the editors.
  */
-if ( ! function_exists( 'tazilla_editor_style' ) ) :
-	/**
-	 * Enqueues editor-style.css in the editors.
-	 *
-	 * @return void
-	 * @since Tazilla 0.1.0
-	 *
-	 */
-	function tazilla_editor_style(): void {
-		add_editor_style( get_parent_theme_file_uri( 'style.css' ) );
-	}
-endif;
+function tazilla_editor_style(): void {
+	add_editor_style( get_template_directory_uri() . '/blocks/extensions/build/style-index.css' );
+	add_editor_style( get_template_directory_uri() . '/style.css' );
+}
+
 add_action( 'after_setup_theme', 'tazilla_editor_style' );
+
+/**
+ * Enqueues the block editor assets.
+ */
+function tazilla_enqueue_block_editor_assets(): void {
+	wp_enqueue_script(
+		'tazilla-extensions',
+		get_template_directory_uri() . '/blocks/extensions/build/index.js',
+		[ 'wp-hooks', 'wp-element', 'wp-components', 'wp-block-editor' ],
+		wp_get_theme()->get( 'Version' )
+	);
+}
+
+add_action( 'enqueue_block_editor_assets', 'tazilla_enqueue_block_editor_assets' );
 
 /**
  * Enqueues style.css on the front.
@@ -23,7 +30,15 @@ add_action( 'after_setup_theme', 'tazilla_editor_style' );
  * @since Tazilla 0.1.0
  *
  */
-function tazilla_enqueue_styles(): void {
+function tazilla_enqueue_scripts_and_styles(): void {
+	wp_enqueue_style(
+		'tazilla-extensions',
+		get_template_directory_uri() . '/blocks/extensions/build/style-index.css',
+		array(),
+		wp_get_theme()->get( 'Version' )
+	);
+	wp_style_add_data( 'tazilla-extensions', 'rtl', 'replace' );
+
 	wp_enqueue_style(
 		'tazilla',
 		get_stylesheet_uri(),
@@ -40,7 +55,7 @@ function tazilla_enqueue_styles(): void {
 	);
 }
 
-add_action( 'wp_enqueue_scripts', 'tazilla_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'tazilla_enqueue_scripts_and_styles' );
 
 /**
  * Register Gutenberg Blocks.
@@ -57,9 +72,9 @@ function tazilla_register_blocks(): void {
 	);
 
 	// Custom Block Features
-	register_block_type( get_theme_file_path('blocks/features'));
-	register_block_type( get_theme_file_path('blocks/feature-button'));
-	register_block_type( get_theme_file_path('blocks/feature-content'));
+	register_block_type( get_theme_file_path( 'blocks/features' ) );
+	register_block_type( get_theme_file_path( 'blocks/feature-button' ) );
+	register_block_type( get_theme_file_path( 'blocks/feature-content' ) );
 }
 
 add_action( 'init', 'tazilla_register_blocks' );
