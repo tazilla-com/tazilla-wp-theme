@@ -7,7 +7,7 @@ Description: Tazilla block theme
 Requires at least: 6.8
 Tested up to: 6.8
 Requires PHP: 7.2
-Version: 0.2.2
+Version: 0.2.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: tazilla
@@ -120,6 +120,7 @@ footer + footer.wp-block-template-part {
     transition: background 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
+/* HomePage */
 .wp-block-latest-posts {
     .wp-block-latest-posts__featured-image {
         margin-bottom: var(--wp--preset--spacing--xl, 1.5rem);
@@ -149,6 +150,35 @@ footer + footer.wp-block-template-part {
 
         &:hover .read-more-text {
             text-decoration-line: none;
+        }
+    }
+}
+
+.section-features {
+    .wp-block-cover {
+        min-height: 200px;
+
+        .wp-block-heading {
+            padding: var(--wp--preset--spacing--sm, 0.75rem) var(--wp--preset--spacing--lg, 1.25rem);
+
+            a {
+                display: block;
+                text-decoration: none;
+            }
+        }
+
+        .wp-block-image {
+            position: absolute;
+            pointer-events: none;
+            right: var(--wp--preset--spacing--lg, 1.25rem);
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .section-features {
+        .wp-block-cover {
+            min-height: 400px;
         }
     }
 }

@@ -488,3 +488,55 @@
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></section>
 <!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","align":"full","className":"section-features","style":{"background":{"backgroundImage":{"url":"http://tazilla.com.localhost/wp-content/uploads/2025/10/section-bg.png","id":251,"source":"file","title":"section-bg"},"backgroundSize":"cover"},"spacing":{"padding":{"top":"var:preset|spacing|3xl","bottom":"var:preset|spacing|3xl"}}},"backgroundColor":"neutral-7","layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignfull section-features has-neutral-7-background-color has-background" style="padding-top:var(--wp--preset--spacing--3-xl);padding-bottom:var(--wp--preset--spacing--3-xl)"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"0"},"blockGap":"var:preset|spacing|xs"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:0"><!-- wp:heading {"level":5} -->
+<h5 class="wp-block-heading">The platform that understands your challenges.</h5>
+<!-- /wp:heading -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Built by cisos. <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-brand-light-color">For cisos.</mark></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>This platform was <strong>designed by CISO professionals</strong> who deeply understand the realities of the role. Grounded in first-hand experience, it reflects the everyday challenges, responsibilities, and priorities CISOs face. Every feature is purpose-built to reduce complexity, save time, and bring clarity to your security operations — <strong>so you can focus on what truly matters</strong>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|2xl","bottom":"var:preset|spacing|2xl"}}}} -->
+<div class="wp-block-columns alignwide" style="padding-top:var(--wp--preset--spacing--2-xl);padding-bottom:var(--wp--preset--spacing--2-xl)"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:cover {"url":"http://tazilla.com.localhost/wp-content/uploads/2025/10/section-features-1.jpg","dimRatio":0,"isUserOverlayColor":true,"contentPosition":"bottom center","sizeSlug":"full","style":{"layout":{"selfStretch":"fill","flexSize":null},"border":{"radius":"0.5rem"}}} -->
+<div class="wp-block-cover has-custom-content-position is-position-bottom-center" style="border-radius:0.5rem"><img class="wp-block-cover__image-background size-full" alt="" src="http://tazilla.com.localhost/wp-content/uploads/2025/10/section-features-1.jpg" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"border":{"radius":"0.5rem"}},"backgroundColor":"brand-dark","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group has-brand-dark-background-color has-background" style="border-radius:0.5rem"><!-- wp:heading {"level":3,"style":{"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
+<h3 class="wp-block-heading has-white-color has-text-color has-link-color"><a href="http://tazilla.com.localhost/feature/risk-analysis/" data-type="feature" data-id="561">We detect,<br><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-brand-light-color">you stay protected</mark></a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/arrow-right.png" alt=""/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:cover --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:cover {"url":"http://tazilla.com.localhost/wp-content/uploads/2025/10/section-features-2.jpg","dimRatio":0,"isUserOverlayColor":true,"contentPosition":"bottom center","isDark":false,"sizeSlug":"full","style":{"layout":{"selfStretch":"fill","flexSize":null},"border":{"radius":"0.5rem"}}} -->
+<div class="wp-block-cover is-light has-custom-content-position is-position-bottom-center" style="border-radius:0.5rem"><img class="wp-block-cover__image-background size-full" alt="" src="http://tazilla.com.localhost/wp-content/uploads/2025/10/section-features-2.jpg" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"border":{"radius":"0.5rem"}},"backgroundColor":"brand-dark","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group has-brand-dark-background-color has-background" style="border-radius:0.5rem"><!-- wp:heading {"level":3,"style":{"layout":{"selfStretch":"fill","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
+<h3 class="wp-block-heading has-white-color has-text-color has-link-color"><a href="http://tazilla.com.localhost/feature/threat-intel/" data-type="feature" data-id="562">We detect,<br><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-brand-light-color">you stay protected</mark></a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/arrow-right.png" alt=""/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:cover --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:buttons {"align":"wide","style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|xl"}}}} -->
+<div class="wp-block-buttons alignwide" style="padding-top:0;padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:button {"className":"is-style-fill-secondary"} -->
+<div class="wp-block-button is-style-fill-secondary"><a class="wp-block-button__link wp-element-button" href="http://tazilla.com.localhost/features/">Discover all features</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></section>
+<!-- /wp:group -->
