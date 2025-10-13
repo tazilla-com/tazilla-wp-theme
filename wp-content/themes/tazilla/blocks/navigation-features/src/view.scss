@@ -1,0 +1,56 @@
+.tazilla-navigation-features__list {
+  display: flex;
+  gap: var(--wp--preset--spacing--xs, 0.5rem);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tazilla-feature-navigation__item {
+  border-radius: var(--wp--custom--radius--sm, 0.25rem);
+
+  &.current-menu-item,
+  &:hover {
+    background: var(--wp--preset--color--neutral-8, #F9FCF5);
+
+    .tazilla-navigation-features__link {
+      color: var(--wp--preset--color--brand-light, #80C241);
+    }
+
+    .tazilla-navigation-features__icon {
+      background: var(--wp--preset--color--brand-light, #80C241);
+    }
+  }
+}
+
+.tazilla-navigation-features__link {
+  transition: color 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: var(--wp--preset--spacing--xs, 0.5rem);
+  padding: var(--wp--preset--spacing--xs, 0.5rem) var(--wp--preset--spacing--lg, 1.25rem);
+  color: var(--wp--preset--color--brand-100, #E6F3D9);
+  font-family: var(--wp--preset--font-family--unbounded), sans-serif;
+  font-size: var(--wp--preset--font-size--sm, 0.625rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.tazilla-navigation-features__icon {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background: var(--wp--preset--color--brand-100, #E6F3D9);;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+.tazilla-feature-navigation__item,
+.tazilla-navigation-features__icon {
+  transition: background 0.2s ease-in-out;
+}

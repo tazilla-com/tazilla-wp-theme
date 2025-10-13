@@ -1,0 +1,19 @@
+{
+  "apiVersion": 3,
+  "name": "tazilla/navigation-features",
+  "title": "Navigation Features",
+  "category": "widgets",
+  "icon": "menu",
+  "description": "Displays navigation links to all Feature posts.",
+  "textdomain": "tazilla",
+  "editorScript": "file:./build/index.jsx.js",
+  "render": "file:./render.php",
+  "viewStyle": "file:./build/view.scss.css",
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "html": false
+  }
+}

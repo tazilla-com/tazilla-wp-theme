@@ -8,7 +8,7 @@
  * @package Tazilla
  */
 
-function tazilla_custom_post_types() {
+function tazilla_custom_post_types(): void {
 	// Features
 	$labels = array(
 		'name'                  => _x( 'Features', 'Post Type General Name', 'tazilla' ),
@@ -44,7 +44,7 @@ function tazilla_custom_post_types() {
 		'description'         => __( 'Holds our features and feature specific data', 'tazilla' ),
 		'labels'              => $labels,
 		'menu_icon'           => 'dashicons-lightbulb',
-		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'author' ),
+		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'author', 'custom-fields' ),
 		'taxonomies'          => array(),
 		'hierarchical'        => false,
 		'public'              => true,

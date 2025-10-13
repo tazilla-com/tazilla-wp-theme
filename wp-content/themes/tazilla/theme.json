@@ -107,7 +107,8 @@
 				"heading": 1.25
 			},
 			"radius": {
-				"md": "0.5rem"
+				"md": "0.5rem",
+				"sm": "0.25rem"
 			}
 		},
 		"layout": {
@@ -443,6 +444,11 @@
 			"area": "header",
 			"name": "header",
 			"title": "Header"
+		},
+		{
+			"area": "header",
+			"name": "header-features",
+			"title": "Header Features"
 		},
 		{
 			"area": "footer",

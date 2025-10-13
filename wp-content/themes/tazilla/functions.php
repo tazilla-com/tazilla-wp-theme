@@ -19,6 +19,14 @@ function tazilla_enqueue_block_editor_assets(): void {
 		[ 'wp-hooks', 'wp-element', 'wp-components', 'wp-block-editor' ],
 		wp_get_theme()->get( 'Version' )
 	);
+
+	wp_enqueue_script(
+		'tazilla-feature-icon',
+		get_template_directory_uri() . '/inc/editor/build/index.js',
+		[ 'wp-plugins', 'wp-edit-post', 'wp-components', 'wp-data', 'wp-core-data', 'wp-element' ],
+		wp_get_theme()->get( 'Version' ),
+		true
+	);
 }
 
 add_action( 'enqueue_block_editor_assets', 'tazilla_enqueue_block_editor_assets' );
@@ -75,6 +83,9 @@ function tazilla_register_blocks(): void {
 	register_block_type( get_theme_file_path( 'blocks/features' ) );
 	register_block_type( get_theme_file_path( 'blocks/feature-button' ) );
 	register_block_type( get_theme_file_path( 'blocks/feature-content' ) );
+
+	// Custom Block Navigation Features
+	register_block_type( get_template_directory() . '/blocks/navigation-features' );
 }
 
 add_action( 'init', 'tazilla_register_blocks' );
@@ -111,9 +122,14 @@ remove_theme_support( 'core-block-patterns' );
 /**
  * Shortcodes.
  */
-require get_stylesheet_directory() . '/inc/shortcodes.php';
+require get_template_directory() . '/inc/shortcodes.php';
 
 /**
  * Custom post types.
  */
-require get_stylesheet_directory() . '/inc/custom-post-types.php';
+require get_template_directory() . '/inc/custom-post-types.php';
+
+/**
+ * Custom meta fields.
+ */
+require get_template_directory() . '/inc/custom-meta-fields.php';
