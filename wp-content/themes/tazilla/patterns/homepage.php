@@ -16,13 +16,12 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Do you need to <strong>fulfill the criteria of NIS2</strong>? Do so while using the opportunity to <strong>really
-    improve your security</strong> using a <strong>down to earth simple tool</strong>!</p>
+<p>Do you need to <strong>fulfill the criteria of NIS2</strong>? Do so while using the opportunity to <strong>really improve your security</strong> using a <strong>down to earth simple tool</strong>!</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline","fullWidthOnMobile":true} -->
-<div class="wp-block-button is-style-outline full-width-on-mobile"><a class="wp-block-button__link wp-element-button">Pricing</a></div>
+<div class="wp-block-button is-style-outline full-width-on-mobile"><a class="wp-block-button__link wp-element-button" href="http://tazilla.com.localhost/pricing/">Pricing</a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"className":"is-style-fill-secondary","fullWidthOnMobile":true} -->
@@ -674,7 +673,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","className":"homepage-section-vision","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"var:preset|spacing|3xl","bottom":"var:preset|spacing|3xl"}}},"backgroundColor":"brand-dark","textColor":"white","layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull homepage-section-vision has-white-color has-brand-dark-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--3-xl);padding-bottom:var(--wp--preset--spacing--3-xl)"><!-- wp:columns {"verticalAlignment":null,"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}}} -->
+<section class="wp-block-group alignfull homepage-section-vision has-white-color has-brand-dark-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--3-xl);padding-bottom:var(--wp--preset--spacing--3-xl)"><!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}}} -->
 <div class="wp-block-columns alignwide" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|lg"}}} -->
 <div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xs"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":5} -->
@@ -700,7 +699,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline","fullWidthOnMobile":true} -->
-<div class="wp-block-button is-style-outline full-width-on-mobile"><a class="wp-block-button__link wp-element-button">Pricing</a></div>
+<div class="wp-block-button is-style-outline full-width-on-mobile"><a class="wp-block-button__link wp-element-button" href="http://tazilla.com.localhost/pricing/">Pricing</a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"className":"is-style-fill-secondary","fullWidthOnMobile":true} -->
@@ -711,7 +710,7 @@
 
 <!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/vision.png" alt="" class=""/></figure>
+<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/vision.png" alt=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></section>

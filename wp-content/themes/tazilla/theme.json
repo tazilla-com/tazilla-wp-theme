@@ -249,7 +249,7 @@
 			"fontSizes": [
 				{
 					"fluid": {
-						"max": "0.875rem",
+						"max": "0.75rem",
 						"min": "0.625rem"
 					},
 					"name": "Small",
