@@ -1,0 +1,14 @@
+{
+  "apiVersion": 3,
+  "name": "tazilla/features-title",
+  "title": "Tazilla Feature Title",
+  "category": "theme",
+  "description": "Displays the title of Feature posts.",
+  "textdomain": "tazilla",
+  "editorScript": "file:./build/index.jsx.js",
+  "render": "file:./render.php",
+  "style": "file:./build/style-style.scss.css",
+  "supports": {
+    "html": false
+  }
+}

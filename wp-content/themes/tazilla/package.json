@@ -14,8 +14,10 @@
     "start:feature-button": "wp-scripts start blocks/feature-button/src/*.* --output-path=blocks/feature-button/build",
     "build:feature-content": "wp-scripts build blocks/feature-content/src/*.* --output-path=blocks/feature-content/build",
     "start:feature-content": "wp-scripts start blocks/feature-content/src/*.* --output-path=blocks/feature-content/build",
-    "build:navigation-features": "wp-scripts build blocks/navigation-features/src/*.* --output-path=blocks/navigation-features/build",
-    "start:navigation-features": "wp-scripts start blocks/navigation-features/src/*.* --output-path=blocks/navigation-features/build"
+    "build:features-navigation": "wp-scripts build blocks/features-navigation/src/*.* --output-path=blocks/features-navigation/build",
+    "start:features-navigation": "wp-scripts start blocks/features-navigation/src/*.* --output-path=blocks/features-navigation/build",
+    "build:features-title": "wp-scripts build blocks/features-title/src/*.* --output-path=blocks/features-title/build",
+    "start:features-title": "wp-scripts start blocks/features-title/src/*.* --output-path=blocks/features-title/build"
   },
   "devDependencies": {
     "@wordpress/scripts": "^30.25.0"

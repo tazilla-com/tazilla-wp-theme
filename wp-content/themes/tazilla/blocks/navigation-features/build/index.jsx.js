@@ -1,1 +1,0 @@
-(()=>{"use strict";const e=window.wp.blocks,i=window.wp.blockEditor,a=JSON.parse('{"UU":"tazilla/navigation-features"}'),t=window.ReactJSXRuntime;(0,e.registerBlockType)(a.UU,{edit(){const e=(0,i.useBlockProps)({className:"tazilla-navigation-features"});return(0,t.jsx)("div",{...e,children:(0,t.jsx)("p",{children:"Feature Navigation (Preview only)"})})},save:()=>null})})();

@@ -1,9 +1,12 @@
-.tazilla-navigation-features__list {
+.tazilla-features-navigation__list {
   display: flex;
   gap: var(--wp--preset--spacing--xs, 0.5rem);
   list-style: none;
   margin: 0;
   padding: 0;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  white-space: nowrap;
 }
 
 .tazilla-feature-navigation__item {
@@ -13,17 +16,13 @@
   &:hover {
     background: var(--wp--preset--color--neutral-8, #F9FCF5);
 
-    .tazilla-navigation-features__link {
+    .tazilla-features-navigation__link {
       color: var(--wp--preset--color--brand-light, #80C241);
-    }
-
-    .tazilla-navigation-features__icon {
-      background: var(--wp--preset--color--brand-light, #80C241);
     }
   }
 }
 
-.tazilla-navigation-features__link {
+.tazilla-features-navigation__link {
   transition: color 0.2s ease-in-out;
   display: flex;
   align-items: center;
@@ -40,17 +39,18 @@
   text-transform: uppercase;
 }
 
-.tazilla-navigation-features__icon {
+.tazilla-features-navigation__icon {
   display: inline-block;
   width: 1rem;
   height: 1rem;
-  background: var(--wp--preset--color--brand-100, #E6F3D9);;
+  flex-shrink: 0;
+  background: currentColor;
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
 }
 
 .tazilla-feature-navigation__item,
-.tazilla-navigation-features__icon {
+.tazilla-features-navigation__icon {
   transition: background 0.2s ease-in-out;
 }

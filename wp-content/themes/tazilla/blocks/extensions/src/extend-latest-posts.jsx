@@ -1,6 +1,7 @@
 import { addFilter } from '@wordpress/hooks';
 import { createHigherOrderComponent } from '@wordpress/compose';
 import { useEffect } from '@wordpress/element';
+import {__} from '@wordpress/i18n';
 
 /**
  * Append "Read more" text in the editor live preview
@@ -20,7 +21,7 @@ const withReadMoreEditor = createHigherOrderComponent( ( BlockListBlock ) => {
                     if (!link.querySelector('.read-more-text')) {
                         const span = document.createElement('span');
                         span.className = 'read-more-text';
-                        span.textContent = ' Read more';
+                        span.textContent = ' ' + __('Read more', 'tazilla');
                         link.appendChild(span);
                     }
                 });

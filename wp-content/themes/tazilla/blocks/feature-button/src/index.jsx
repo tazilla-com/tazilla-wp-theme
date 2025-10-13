@@ -2,6 +2,7 @@ import {registerBlockType} from '@wordpress/blocks';
 import {useBlockProps, RichText, store as blockEditorStore} from '@wordpress/block-editor';
 import {useEffect} from '@wordpress/element';
 import {select, useDispatch} from '@wordpress/data';
+import {__} from '@wordpress/i18n';
 import metadata from './../block.json';
 
 registerBlockType(metadata.name, {
@@ -42,7 +43,7 @@ registerBlockType(metadata.name, {
                     className="tazilla-feature-button__link"
                     value={title}
                     onChange={(value) => setAttributes({title: value})}
-                    placeholder="Feature label..."
+                    placeholder={__('Feature label...', 'tazilla')}
                 />
             </div>
         );

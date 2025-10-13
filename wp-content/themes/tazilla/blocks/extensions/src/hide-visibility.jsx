@@ -1,8 +1,9 @@
-import { addFilter } from '@wordpress/hooks';
-import { createHigherOrderComponent } from '@wordpress/compose';
-import { InspectorControls } from '@wordpress/block-editor';
-import { PanelBody, ToggleControl } from '@wordpress/components';
-import { Fragment } from '@wordpress/element';
+import {addFilter} from '@wordpress/hooks';
+import {createHigherOrderComponent} from '@wordpress/compose';
+import {InspectorControls} from '@wordpress/block-editor';
+import {PanelBody, ToggleControl} from '@wordpress/components';
+import {Fragment} from '@wordpress/element';
+import {__} from '@wordpress/i18n';
 
 /**
  * Add attributes to every block
@@ -10,12 +11,12 @@ import { Fragment } from '@wordpress/element';
 addFilter(
     'blocks.registerBlockType',
     'tazilla/extend-visibility-attrs',
-    ( settings ) => {
-        settings.attributes = Object.assign( settings.attributes || {}, {
-            hideOnMobile: { type: 'boolean', default: false },
-            hideOnDesktop: { type: 'boolean', default: false },
-            fullWidthOnMobile: { type: 'boolean', default: false },
-        } );
+    (settings) => {
+        settings.attributes = Object.assign(settings.attributes || {}, {
+            hideOnMobile: {type: 'boolean', default: false},
+            hideOnDesktop: {type: 'boolean', default: false},
+            fullWidthOnMobile: {type: 'boolean', default: false},
+        });
         return settings;
     }
 );
@@ -23,39 +24,39 @@ addFilter(
 /**
  * Add controls to block sidebar
  */
-const withVisibilityControls = createHigherOrderComponent( ( BlockEdit ) => {
-    return ( props ) => {
-        const { attributes, setAttributes, isSelected } = props;
-        const { hideOnMobile, hideOnDesktop, fullWidthOnMobile } = attributes;
+const withVisibilityControls = createHigherOrderComponent((BlockEdit) => {
+    return (props) => {
+        const {attributes, setAttributes, isSelected} = props;
+        const {hideOnMobile, hideOnDesktop, fullWidthOnMobile} = attributes;
 
         return (
             <Fragment>
-                <BlockEdit { ...props } />
-                { isSelected && (
+                <BlockEdit {...props} />
+                {isSelected && (
                     <InspectorControls>
-                        <PanelBody title="Responsive visibility" initialOpen={ false }>
+                        <PanelBody title={__('Responsive visibility')} initialOpen={false}>
                             <ToggleControl
-                                label="Hide on mobile"
-                                checked={ !!hideOnMobile }
-                                onChange={ ( value ) => setAttributes( { hideOnMobile: value } ) }
+                                label={__('Hide on mobile', 'tazilla')}
+                                checked={!!hideOnMobile}
+                                onChange={(value) => setAttributes({hideOnMobile: value})}
                             />
                             <ToggleControl
-                                label="Hide on desktop"
-                                checked={ !!hideOnDesktop }
-                                onChange={ ( value ) => setAttributes( { hideOnDesktop: value } ) }
+                                label={__('Hide on desktop', 'tazilla')}
+                                checked={!!hideOnDesktop}
+                                onChange={(value) => setAttributes({hideOnDesktop: value})}
                             />
                             <ToggleControl
-                                label="Full width on mobile"
-                                checked={ !!fullWidthOnMobile }
-                                onChange={ ( value ) => setAttributes( { fullWidthOnMobile: value } ) }
+                                label={__('Full width on mobile', 'tazilla')}
+                                checked={!!fullWidthOnMobile}
+                                onChange={(value) => setAttributes({fullWidthOnMobile: value})}
                             />
                         </PanelBody>
                     </InspectorControls>
-                ) }
+                )}
             </Fragment>
         );
     };
-}, 'withVisibilityControls' );
+}, 'withVisibilityControls');
 
 addFilter(
     'editor.BlockEdit',
@@ -66,19 +67,19 @@ addFilter(
 /**
  * Add CSS classes to the block wrapper in the editor (so it's visible in the editor)
  */
-const withEditorClassNames = createHigherOrderComponent( ( BlockListBlock ) => {
-    return ( props ) => {
-        const { attributes } = props;
-        const { hideOnMobile, hideOnDesktop, fullWidthOnMobile } = attributes || {};
+const withEditorClassNames = createHigherOrderComponent((BlockListBlock) => {
+    return (props) => {
+        const {attributes} = props;
+        const {hideOnMobile, hideOnDesktop, fullWidthOnMobile} = attributes || {};
 
         let extraClasses = '';
-        if ( hideOnMobile ) extraClasses += ' hide-on-mobile';
-        if ( hideOnDesktop ) extraClasses += ' hide-on-desktop';
-        if ( fullWidthOnMobile ) extraClasses += ' full-width-on-mobile';
+        if (hideOnMobile) extraClasses += ' hide-on-mobile';
+        if (hideOnDesktop) extraClasses += ' hide-on-desktop';
+        if (fullWidthOnMobile) extraClasses += ' full-width-on-mobile';
 
-        return <BlockListBlock { ...props } className={ ( props.className || '' ) + extraClasses } />;
+        return <BlockListBlock {...props} className={(props.className || '') + extraClasses}/>;
     };
-}, 'withEditorClassNames' );
+}, 'withEditorClassNames');
 
 addFilter(
     'editor.BlockListBlock',
@@ -92,17 +93,17 @@ addFilter(
 addFilter(
     'blocks.getSaveContent.extraProps',
     'tazilla/apply-visibility-classes',
-    ( extraProps, blockType, attributes ) => {
-        if ( ! attributes ) return extraProps;
-        const { hideOnMobile, hideOnDesktop, fullWidthOnMobile } = attributes;
+    (extraProps, blockType, attributes) => {
+        if (!attributes) return extraProps;
+        const {hideOnMobile, hideOnDesktop, fullWidthOnMobile} = attributes;
         const classes = [];
 
-        if ( hideOnMobile ) classes.push( 'hide-on-mobile' );
-        if ( hideOnDesktop ) classes.push( 'hide-on-desktop' );
-        if ( fullWidthOnMobile ) classes.push( 'full-width-on-mobile' );
+        if (hideOnMobile) classes.push('hide-on-mobile');
+        if (hideOnDesktop) classes.push('hide-on-desktop');
+        if (fullWidthOnMobile) classes.push('full-width-on-mobile');
 
-        if ( classes.length ) {
-            extraProps.className = [ extraProps.className, ...classes ].filter(Boolean).join(' ');
+        if (classes.length) {
+            extraProps.className = [extraProps.className, ...classes].filter(Boolean).join(' ');
         }
         return extraProps;
     }

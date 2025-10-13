@@ -1,7 +1,7 @@
 {
   "apiVersion": 3,
-  "name": "tazilla/navigation-features",
-  "title": "Navigation Features",
+  "name": "tazilla/features-navigation",
+  "title": "Tazilla Features Navigation",
   "category": "widgets",
   "icon": "menu",
   "description": "Displays navigation links to all Feature posts.",

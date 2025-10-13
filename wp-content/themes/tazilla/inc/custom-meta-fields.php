@@ -1,6 +1,8 @@
 <?php
 /**
  * Register a custom meta fields.
+ *
+ * @package Tazilla
  */
 function tazilla_register_custom_meta_field(): void {
 	// Custom meta-field for the Feature post type.
@@ -9,8 +11,8 @@ function tazilla_register_custom_meta_field(): void {
 		'single'            => true,
 		'show_in_rest'      => true,
 		'sanitize_callback' => 'absint',
-		'auth_callback'     => function ( $allowed, $meta_key, $post_id ) {
-			return get_post_type( $post_id ) === 'feature' && current_user_can( 'edit_post', $post_id );
+		'auth_callback'     => function() {
+			return current_user_can( 'edit_posts' );
 		},
 	] );
 }

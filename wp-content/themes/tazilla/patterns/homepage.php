@@ -2,7 +2,7 @@
 /**
  * Title: Homepage Layout
  * Slug: tazilla/homepage
- * Categories: featured
+ * Categories: about
  * Description: The main homepage layout with hero, services, and contact blocks.
  */
 ?>
