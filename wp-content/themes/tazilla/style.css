@@ -189,6 +189,13 @@ footer + footer.wp-block-template-part {
             grid-template-columns: repeat(2, 1fr);
         }
     }
+
+    .homepage-section-vision {
+        .wp-block-column:first-child {
+            order: 2;
+            text-align: center;
+        }
+    }
 }
 
 .homepage-section-benefits {
