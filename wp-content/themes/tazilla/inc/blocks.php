@@ -40,6 +40,15 @@ function tazilla_register_blocks(): void {
 		]
 	);
 
+	// Link button
+	register_block_style(
+		'core/button',
+		[
+			'name'  => 'link',
+			'label' => __( 'Link', 'tazilla' ),
+		]
+	);
+
 	// Custom Block Features
 	register_block_type( get_theme_file_path( 'blocks/features' ) );
 	register_block_type( get_theme_file_path( 'blocks/feature-button' ) );

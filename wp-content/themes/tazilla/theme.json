@@ -311,6 +311,19 @@
 							"text": "var(--wp--preset--color--white)"
 						}
 					},
+					"link": {
+						"border": {
+							"color": "transparent"
+						},
+						"color": {
+							"background": "transparent",
+							"text": "var(--wp--preset--color--brand-dark)"
+						},
+						"typography": {
+							"fontFamily": "var(--wp--preset--font-family--plus-jakarta-sans)",
+							"textDecoration": "underline"
+						}
+					},
 					"outline": {
 						"border": {
 							"color": "var(--wp--preset--color--brand-light)",

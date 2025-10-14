@@ -7,7 +7,7 @@ Description: Tazilla block theme
 Requires at least: 6.8
 Tested up to: 6.8
 Requires PHP: 7.2
-Version: 0.3.2
+Version: 0.3.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: tazilla
@@ -57,8 +57,8 @@ html {
 }
 
 body.scrolled .navigation-container {
-    padding-top: var(--wp--preset--spacing--xs) !important;
-    padding-bottom: var(--wp--preset--spacing--xs) !important;
+    padding-top: var(--wp--preset--spacing--xs, 0.5rem) !important;
+    padding-bottom: var(--wp--preset--spacing--xs, 0.5rem) !important;
 }
 
 @media (max-width: 767px) {
@@ -81,7 +81,7 @@ body.scrolled .navigation-container {
     html:not(.has-modal-open) {
         header .wp-block-navigation {
             position: absolute;
-            right: var(--wp--style--root--padding-right);
+            right: var(--wp--style--root--padding-right, 0.75rem);
         }
     }
 
@@ -95,7 +95,7 @@ body.scrolled .navigation-container {
         }
 
         svg path {
-            fill: var(--wp--preset--color--brand-light);
+            fill: var(--wp--preset--color--brand-light, #80C241);
         }
 
         + .wp-block-buttons {
@@ -112,15 +112,19 @@ footer + footer.wp-block-template-part {
 /* Buttons - hover state */
 .wp-block-button {
     &.is-style-outline .wp-block-button__link:hover {
-        background: var(--wp--preset--color--brand-100);
-        border-color: var(--wp--preset--color--brand-dark);
-        color: var(--wp--preset--color--brand-dark);
+        background: var(--wp--preset--color--brand-100, #E6F3D9);
+        border-color: var(--wp--preset--color--brand-dark, #0E3C20);
+        color: var(--wp--preset--color--brand-dark, #0E3C20);
     }
 
     &.is-style-fill-secondary .wp-block-button__link:hover {
-        background: var(--wp--preset--color--brand-100);
-        border-color: var(--wp--preset--color--brand-100);
-        color: var(--wp--preset--color--brand-dark);
+        background: var(--wp--preset--color--brand-100, #E6F3D9);
+        border-color: var(--wp--preset--color--brand-100, #E6F3D9);
+        color: var(--wp--preset--color--brand-dark, #0E3C20);
+    }
+
+    &.is-style-link .wp-block-button__link:hover {
+        text-decoration: none;
     }
 }
 
