@@ -8,7 +8,7 @@
  * @package Tazilla
  */
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|3xl"}}},"layout":{"type":"constrained"}} -->
+<!-- wp:group {"metadata":{"categories":["columns"],"patternName":"tazilla/features-body","name":"Features Body"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|3xl"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--3-xl)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|xl"}}}} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center" style="margin-top:var(--wp--preset--spacing--xl)"><!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"1rem"}}} -->

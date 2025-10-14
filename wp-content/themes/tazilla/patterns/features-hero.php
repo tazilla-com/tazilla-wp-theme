@@ -8,7 +8,7 @@
  * @package Tazilla
  */
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"0"}},"backgroundColor":"neutral-6","layout":{"type":"constrained"}} -->
+<!-- wp:group {"metadata":{"categories":["header"],"patternName":"tazilla/features-hero","name":"Features Hero Section"},"align":"full","style":{"spacing":{"blockGap":"0"}},"backgroundColor":"neutral-6","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-neutral-6-background-color has-background"><!-- wp:heading {"textAlign":"center"} -->
 <h2 class="wp-block-heading has-text-align-center"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-brand-light-color">Don't guess</mark> what<br>cybersecurity to implement.</h2>
 <!-- /wp:heading -->

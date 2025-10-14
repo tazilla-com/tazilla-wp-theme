@@ -7,7 +7,7 @@ Description: Tazilla block theme
 Requires at least: 6.8
 Tested up to: 6.8
 Requires PHP: 7.2
-Version: 0.3.4
+Version: 0.5.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: tazilla
@@ -94,7 +94,7 @@ footer + footer.wp-block-template-part {
 }
 
 /* Navigation */
-.wp-block-navigation {
+header .wp-block-navigation {
     .wp-block-navigation-item {
         border-radius: var(--wp--custom--radius--sm, 0.25rem);
         transition: background-color 0.2s ease-in-out;
@@ -115,7 +115,7 @@ footer + footer.wp-block-template-part {
 }
 
 @media (max-width: 767px) {
-    .wp-block-navigation {
+    header .wp-block-navigation {
         gap: var(--wp--preset--spacing--2-xl, 2.5rem);
     }
 }
@@ -224,5 +224,82 @@ footer + footer.wp-block-template-part {
 .homepage-section-benefits {
     .is-layout-grid > .wp-block-group {
         box-shadow: 0 6px 12px -6px rgba(24, 39, 75, 0.12), 0 8px 24px -4px rgba(24, 39, 75, 0.08);
+    }
+}
+
+/* Contact */
+.wp-block-social-links .wp-social-link {
+    span.wp-block-social-link-label {
+        color: var(--wp--preset--color--brand-dark, #0E3C20);
+        font-family: var(--wp--preset--font-family--unbounded), sans-serif;
+        text-transform: uppercase;
+        font-size: var(--wp--preset--font-size--sm, 0.75rem);
+    }
+}
+
+
+/* Contact form */
+.wpcf7 {
+    .wpcf7-form-control-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .wpcf7-form-control {
+        flex-basis: 100%;
+        padding: 0.75rem 0.75rem 0.75rem 1rem;
+        border-radius: var(--wp--custom--radius--sm, 0.25rem);
+        border: 1px solid var(--wp--preset--color--neutral-5, #E6E6E6);
+        background: var(--wp--preset--color--neutral-6, #F2F3F2);
+        font-family: var(--wp--preset--font-family--plus-jakarta-sans) sans-serif;
+        font-size: var(--wp--preset--font-size--md, 1rem);
+    }
+
+    .wpcf7-textarea {
+        height: 7rem;
+    }
+
+    .wpcf7-not-valid-tip {
+        font-size: 0.875rem;
+    }
+
+    .wpcf7-submit {
+        background-color: var(--wp--preset--color--brand-dark, #0E3C20);
+        border-radius: var(--wp--custom--radius--sm, 0.25rem);
+        border-color: var(--wp--preset--color--brand-dark, #0E3C20);
+        border-width: 1px;
+        border-style: solid;
+        color: var(--wp--preset--color--white, #FFFFFF);
+        font-family: var(--wp--preset--font-family--unbounded) sans-serif;
+        font-size: var(--wp--preset--font-size--sm, 0.75rem);
+        font-weight: 700;
+        letter-spacing: 2.56px;
+        line-height: 1;
+        padding: var(--wp--preset--spacing--sm, 0.75rem) var(--wp--preset--spacing--lg, 1.25rem);
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+        &:hover {
+            background-color: var(--wp--preset--color--neutral-7, #F3F5F4);
+            color: var(--wp--preset--color--brand-dark, #0E3C20);
+        }
+    }
+
+    .wpcf7-spinner {
+        top: 0.5rem;
+    }
+
+    form .wpcf7-response-output {
+        margin: 1rem 0 0 0;
+    }
+
+    p {
+        margin: var(--wp--preset--spacing--lg, 1.25rem) 0;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
 }
