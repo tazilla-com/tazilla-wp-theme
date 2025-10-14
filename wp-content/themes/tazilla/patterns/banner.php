@@ -2,15 +2,17 @@
 /**
  * Title: Banner
  * Slug: tazilla/banner
- * Categories: banner
+ * Categories: banner, call-to-action
  * Description: The banner section.
+ *
+ * @package Tazilla
  */
 ?>
 <!-- wp:group {"metadata":{"categories":["banner"],"patternName":"tazilla/banner","name":"Banner"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|3xl","bottom":"var:preset|spacing|3xl"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--3-xl);padding-bottom:var(--wp--preset--spacing--3-xl)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"},"blockGap":{"top":"0","left":"var:preset|spacing|2xl"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"}},"border":{"radius":"1rem"}},"backgroundColor":"orange"} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center has-orange-background-color has-background" style="border-radius:1rem;margin-top:var(--wp--preset--spacing--xl);margin-bottom:var(--wp--preset--spacing--xl);padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/banner-risk-analysis.png" alt=""/></figure>
+<figure class="wp-block-image aligncenter size-full"><img src="/wp-content/uploads/2025/10/banner-risk-analysis.png" alt=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 

@@ -4,6 +4,8 @@
  * Slug: tazilla/features-hero
  * Categories: featured, posts, header
  * Description: The hero section for Features page.
+ *
+ * @package Tazilla
  */
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"0"}},"backgroundColor":"neutral-6","layout":{"type":"constrained"}} -->
@@ -23,7 +25,7 @@
 
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:image {"id":672,"scale":"cover","sizeSlug":"full","linkDestination":"none","align":"center","className":"is-style-default","style":{"spacing":{"margin":{"top":"var:preset|spacing|2xl"}},"border":{"radius":{"topLeft":"0.5rem","topRight":"0.5rem"}}}} -->
-<figure class="wp-block-image aligncenter size-full has-custom-border is-style-default" style="margin-top:var(--wp--preset--spacing--2-xl)"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/screenshot-risk-analysis.png" alt="" class="wp-image-672" style="border-top-left-radius:0.5rem;border-top-right-radius:0.5rem;object-fit:cover"/></figure>
+<figure class="wp-block-image aligncenter size-full has-custom-border is-style-default" style="margin-top:var(--wp--preset--spacing--2-xl)"><img src="/wp-content/uploads/2025/10/screenshot-risk-analysis.png" alt="" class="wp-image-672" style="border-top-left-radius:0.5rem;border-top-right-radius:0.5rem;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

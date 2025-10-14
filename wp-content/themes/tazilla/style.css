@@ -18,25 +18,9 @@ html {
     scroll-behavior: smooth;
 }
 
-.wp-site-blocks {
-    > main,
-    > .entry-content,
-    > .entry-content > section,
-    > .wp-block-group,
-    > header,
-    > footer {
-        margin-block-start: 0;
-    }
-}
-
-.block-editor-iframe__body .is-root-container > section {
+:where(.wp-site-blocks) > * {
     margin-block-start: 0;
-}
-
-@media (max-width: 767px) {
-    .mobile-order-first {
-        order: -1;
-    }
+    margin-block-end: 0;
 }
 
 /* Opacity */

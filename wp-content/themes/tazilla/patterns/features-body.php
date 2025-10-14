@@ -4,13 +4,15 @@
  * Slug: tazilla/features-body
  * Categories: featured, posts, text, columns
  * Description: The body section for the Features page.
+ *
+ * @package Tazilla
  */
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|3xl"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--3-xl)"><!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|xl"}}}} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center" style="margin-top:var(--wp--preset--spacing--xl)"><!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"1rem"}}} -->
-<figure class="wp-block-image size-full has-custom-border"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/features-placeholder.png" alt="" style="border-radius:1rem"/></figure>
+<figure class="wp-block-image size-full has-custom-border"><img src="/wp-content/uploads/2025/10/features-placeholder.png" alt="" style="border-radius:1rem"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -44,7 +46,7 @@
 
 <!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"1rem"}}} -->
-<figure class="wp-block-image size-full has-custom-border"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/features-placeholder.png" alt="" style="border-radius:1rem"/></figure>
+<figure class="wp-block-image size-full has-custom-border"><img src="/wp-content/uploads/2025/10/features-placeholder.png" alt="" style="border-radius:1rem"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
