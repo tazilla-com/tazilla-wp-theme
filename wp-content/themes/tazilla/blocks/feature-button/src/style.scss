@@ -7,9 +7,9 @@
 
   .tazilla-feature-button__link {
     display: inline-block;
-    background-image: url('./feature-icon.png');
+    background-image: url('./feature-icon.png'), url('./ellipse-bg.png');
     background-repeat: no-repeat;
-    background-position: var(--wp--preset--spacing--sm, 0.75rem) center;
+    background-position: var(--wp--preset--spacing--sm, 0.75rem) center, center right;
     padding: var(--wp--preset--spacing--xs, 0.5rem) var(--wp--preset--spacing--sm, 0.75rem) var(--wp--preset--spacing--xs, 0.5rem) calc(var(--wp--preset--spacing--sm, 0.75rem) + 24px + var(--wp--preset--spacing--xs, 0.5rem));
     cursor: pointer;
     color: var(--wp--preset--color--neutral-2, #676A68);
