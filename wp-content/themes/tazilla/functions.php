@@ -44,6 +44,27 @@ function tazilla_enqueue_scripts_and_styles(): void {
 add_action( 'wp_enqueue_scripts', 'tazilla_enqueue_scripts_and_styles' );
 
 /**
+ * SMTP email settings.
+ *
+ * This function will connect wp_mail to your authenticated
+ * SMTP server. Values are constants set in wp-config.php
+ */
+function use_smtp_email( $phpmailer ) {
+	$phpmailer->isSMTP();
+	$phpmailer->Host       = SMTP_HOST;
+	$phpmailer->SMTPAuth   = SMTP_AUTH;
+	$phpmailer->Port       = SMTP_PORT;
+	$phpmailer->Username   = SMTP_USER;
+	$phpmailer->Password   = SMTP_PASS;
+	$phpmailer->SMTPSecure = SMTP_SECURE;
+	$phpmailer->From       = SMTP_FROM;
+	$phpmailer->FromName   = SMTP_NAME;
+	$phpmailer->SMTPDebug  = SMTP_DEBUG;
+}
+
+add_action( 'phpmailer_init', 'use_smtp_email' );
+
+/**
  * Editor Blocks.
  */
 require get_template_directory() . '/inc/blocks.php';
