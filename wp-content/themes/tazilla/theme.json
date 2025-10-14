@@ -60,6 +60,11 @@
 					"slug": "neutral-1"
 				},
 				{
+					"color": "#01060366",
+					"name": "Neutral 1 40% opacity",
+					"slug": "neutral-1-40"
+				},
+				{
 					"color": "#676A68",
 					"name": "Neutral 2",
 					"slug": "neutral-2"
@@ -358,7 +363,7 @@
 				},
 				"border": {
 					"color": "var(--wp--preset--color--brand-dark)",
-					"radius": "0.25rem",
+					"radius": "var(--wp--custom--radius--sm)",
 					"style": "solid",
 					"width": "1px"
 				},

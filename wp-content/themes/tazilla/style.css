@@ -7,7 +7,7 @@ Description: Tazilla block theme
 Requires at least: 6.8
 Tested up to: 6.8
 Requires PHP: 7.2
-Version: 0.3.3
+Version: 0.3.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: tazilla
@@ -109,16 +109,43 @@ footer + footer.wp-block-template-part {
     margin-block-start: 0;
 }
 
+/* Navigation */
+.wp-block-navigation {
+    .wp-block-navigation-item {
+        border-radius: var(--wp--custom--radius--sm, 0.25rem);
+        transition: background-color 0.2s ease-in-out;
+        border: 1px solid transparent;
+
+        &.current-menu-item,
+        &:hover {
+            background-color: var(--wp--preset--color--neutral-1-40, #01060366);
+        }
+
+        .wp-block-navigation-item__content {
+            padding: var(--wp--preset--spacing--sm, 0.75rem) var(--wp--preset--spacing--md, 1rem);
+            font-size: 0.625rem;
+            letter-spacing: 2.56px;
+            line-height: 1;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .wp-block-navigation {
+        gap: var(--wp--preset--spacing--2-xl, 2.5rem);
+    }
+}
+
 /* Buttons - hover state */
 .wp-block-button {
     &.is-style-outline .wp-block-button__link:hover {
-        background: var(--wp--preset--color--brand-100, #E6F3D9);
+        background-color: var(--wp--preset--color--brand-100, #E6F3D9);
         border-color: var(--wp--preset--color--brand-dark, #0E3C20);
         color: var(--wp--preset--color--brand-dark, #0E3C20);
     }
 
     &.is-style-fill-secondary .wp-block-button__link:hover {
-        background: var(--wp--preset--color--brand-100, #E6F3D9);
+        background-color: var(--wp--preset--color--brand-100, #E6F3D9);
         border-color: var(--wp--preset--color--brand-100, #E6F3D9);
         color: var(--wp--preset--color--brand-dark, #0E3C20);
     }
@@ -129,7 +156,7 @@ footer + footer.wp-block-template-part {
 }
 
 .wp-element-button {
-    transition: background 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 /* HomePage */
