@@ -7,7 +7,7 @@ Description: Tazilla block theme
 Requires at least: 6.8
 Tested up to: 6.8
 Requires PHP: 7.2
-Version: 0.3.1
+Version: 0.3.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: tazilla
@@ -31,6 +31,12 @@ html {
 
 .block-editor-iframe__body .is-root-container > section {
     margin-block-start: 0;
+}
+
+@media (max-width: 767px) {
+    .mobile-order-first {
+        order: -1;
+    }
 }
 
 /* Opacity */

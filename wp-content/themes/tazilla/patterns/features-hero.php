@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Features Hero section
+ * Title: Features Hero Section
  * Slug: tazilla/features-hero
  * Categories: featured, posts, header
  * Description: The hero section for Features page.
