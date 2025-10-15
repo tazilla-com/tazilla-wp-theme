@@ -1,15 +1,15 @@
 <?php
 /**
- * Title: Grid with Icons
+ * Title: Grid Boxes
  * Slug: tazilla/grid
  * Categories: featured, columns, text
- * Description: The grid section.
+ * Description: The grid section with boxes with icons.
  *
  * @package Tazilla
  */
 ?>
-<!-- wp:group {"metadata":{"categories":["featured"],"patternName":"tazilla/grid","name":"Grid with Icons"},"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|xs"}},"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":null}} -->
-<div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|lg","bottom":"var:preset|spacing|lg","left":"var:preset|spacing|lg","right":"var:preset|spacing|lg"},"blockGap":"var:preset|spacing|md"},"border":{"radius":"0.5rem"}},"backgroundColor":"white","layout":{"type":"flex","orientation":"vertical"}} -->
+<!-- wp:group {"metadata":{"categories":["featured"],"patternName":"tazilla/grid","name":"Grid Boxes"},"align":"wide","className":"grid-boxes","style":{"spacing":{"blockGap":"var:preset|spacing|xs","padding":{"top":"0","bottom":"var:preset|spacing|xl"}}},"layout":{"type":"grid","columnCount":null,"minimumColumnWidth":"18rem"}} -->
+<div class="wp-block-group alignwide grid-boxes" style="padding-top:0;padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|lg","bottom":"var:preset|spacing|lg","left":"var:preset|spacing|lg","right":"var:preset|spacing|lg"},"blockGap":"var:preset|spacing|md"},"border":{"radius":"0.5rem"}},"backgroundColor":"white","layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-white-background-color has-background" style="border-radius:0.5rem;padding-top:var(--wp--preset--spacing--lg);padding-right:var(--wp--preset--spacing--lg);padding-bottom:var(--wp--preset--spacing--lg);padding-left:var(--wp--preset--spacing--lg)"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/10/icon-tazilla.png" alt="" class=""/></figure>
 <!-- /wp:image -->

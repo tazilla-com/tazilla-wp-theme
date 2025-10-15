@@ -7,7 +7,7 @@ Description: Tazilla block theme
 Requires at least: 6.8
 Tested up to: 6.8
 Requires PHP: 7.2
-Version: 0.5.1
+Version: 0.5.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: tazilla
@@ -221,10 +221,8 @@ header .wp-block-navigation {
     }
 }
 
-.homepage-section-benefits {
-    .is-layout-grid > .wp-block-group {
-        box-shadow: 0 6px 12px -6px rgba(24, 39, 75, 0.12), 0 8px 24px -4px rgba(24, 39, 75, 0.08);
-    }
+.grid-boxes .wp-block-group {
+    box-shadow: 0 6px 12px -6px rgba(24, 39, 75, 0.12), 0 8px 24px -4px rgba(24, 39, 75, 0.08);
 }
 
 /* Contact */
@@ -246,6 +244,7 @@ header .wp-block-navigation {
     }
 
     .wpcf7-form-control {
+        width: 100%;
         flex-basis: 100%;
         padding: 0.75rem 0.75rem 0.75rem 1rem;
         border-radius: var(--wp--custom--radius--sm, 0.25rem);
