@@ -7,7 +7,7 @@ Description: Tazilla block theme
 Requires at least: 6.8
 Tested up to: 6.8
 Requires PHP: 7.2
-Version: 0.5.3
+Version: 0.6.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: tazilla
@@ -192,8 +192,8 @@ header .wp-block-navigation {
 
         .wp-block-image {
             position: absolute;
-            pointer-events: none;
             right: var(--wp--preset--spacing--lg, 1.25rem);
+            pointer-events: none;
         }
     }
 }
@@ -234,7 +234,6 @@ header .wp-block-navigation {
         font-size: var(--wp--preset--font-size--sm, 0.75rem);
     }
 }
-
 
 /* Contact form */
 .wpcf7 {
@@ -299,6 +298,126 @@ header .wp-block-navigation {
 
         &:last-of-type {
             margin-bottom: 0;
+        }
+    }
+}
+
+/* Blog */
+.block-query-blog {
+    .wp-block-post + .wp-block-post,
+    .wp-block-query-pagination {
+        margin-block-start: var(--wp--preset--spacing--2-xl, 2.5rem);
+    }
+
+    .wp-block-post {
+        position: relative;
+
+        .wp-block-post-featured-image img {
+            height: 20rem;
+        }
+
+        > .wp-block-group {
+            position: absolute;
+            inset: var(--wp--preset--spacing--lg, 1.25rem);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .taxonomy-category {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.125rem;
+
+            > a {
+                display: inline-block;
+                padding: 0.1875rem var(--wp--preset--spacing--xs, 0.5rem);
+                border-radius: 22rem;
+                background-color: var(--wp--preset--color--neutral-8, #F9FCF5);
+                color: var(--wp--preset--brand-light, #80C241);
+                font-size: 0.625rem;
+                text-decoration: none;
+            }
+
+            .wp-block-post-terms__separator {
+                display: none;
+            }
+        }
+
+        h2 {
+            margin-top: var(--wp--preset--spacing--xs, 0.5rem);
+        }
+
+        .wp-block-post-excerpt__more-text {
+            margin-top: var(--wp--preset--spacing--md, 1rem);
+        }
+
+        .wp-block-post-excerpt__more-link {
+            text-transform: uppercase;
+            font-size: var(--wp--preset--font-size--sm, 0.75rem);
+        }
+
+        &:hover {
+            .wp-block-post-excerpt__more-link {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .wp-block-query-pagination-previous,
+    .wp-block-query-pagination-next,
+    .page-numbers {
+        border-radius: var(--wp--custom--radius--sm, 0.25rem);
+        border-width: 1px;
+        border-style: solid;
+        font-family: var(--wp--preset--font-family--unbounded) sans-serif;
+        font-size: var(--wp--preset--font-size--sm, 0.75rem);
+        font-weight: 700;
+        letter-spacing: 2.56px;
+        line-height: 1;
+        padding: var(--wp--preset--spacing--sm, 0.75rem) var(--wp--preset--spacing--lg, 1.25rem);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    }
+
+    .wp-block-query-pagination-previous,
+    .wp-block-query-pagination-next {
+        background-color: var(--wp--preset--color--brand-dark, #0E3C20);
+        border-color: var(--wp--preset--color--brand-dark, #0E3C20);
+        color: var(--wp--preset--color--white, #FFFFFF);
+        cursor: pointer;
+        text-align: center;
+
+        &:hover {
+            background-color: var(--wp--preset--color--neutral-7, #F3F5F4);
+            color: var(--wp--preset--color--brand-dark, #0E3C20);
+        }
+    }
+
+    .page-numbers {
+        display: inline-block;
+    }
+
+    a.page-numbers:hover {
+        background-color: var(--wp--preset--color--brand-100, #E6F3D9);
+        border-color: var(--wp--preset--color--brand-dark, #0E3C20);
+        color: var(--wp--preset--color--brand-dark, #0E3C20);
+    }
+}
+
+@media (max-width: 767px) {
+    .block-query-blog{
+        .wp-block-query-pagination-previous,
+        .wp-block-query-pagination-next {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .block-query-blog .wp-block-post {
+        > .wp-block-group {
+            width: 50%
         }
     }
 }

@@ -3,8 +3,8 @@
  * Enqueues style.css in the editors.
  */
 function tazilla_editor_style(): void {
-	add_editor_style( get_template_directory_uri() . '/blocks/extensions/build/style-index.css' );
-	add_editor_style( get_template_directory_uri() . '/style.css' );
+	add_editor_style( 'blocks/extensions/build/style-index.css' );
+	add_editor_style( 'style.css' );
 }
 
 add_action( 'after_setup_theme', 'tazilla_editor_style' );
