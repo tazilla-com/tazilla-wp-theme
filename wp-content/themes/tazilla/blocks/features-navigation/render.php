@@ -3,6 +3,11 @@
  * Server-side render for Features Navigation block
  */
 
+// Don't load directly.
+if ( ! defined( 'ABSPATH' ) ) {
+    die( '-1' );
+}
+
 $block_attributes = get_block_wrapper_attributes( [ 'class' => 'tazilla-features-navigation' ] );
 
 // Fetch all "feature" posts

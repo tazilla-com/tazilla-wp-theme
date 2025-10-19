@@ -57,6 +57,9 @@ function tazilla_register_blocks(): void {
 	// Custom Blocks Features Navigation and Title
 	register_block_type( get_template_directory() . '/blocks/features-navigation' );
 	register_block_type( get_template_directory() . '/blocks/features-title' );
+
+	// Custom Block Posts Filter
+	register_block_type( get_template_directory() . '/blocks/category-filter' );
 }
 
 add_action( 'init', 'tazilla_register_blocks' );
@@ -89,3 +92,62 @@ add_filter( 'should_load_remote_block_patterns', '__return_false' );
  * Disable bundled “core” patterns that ship with WP itself.
  */
 remove_theme_support( 'core-block-patterns' );
+
+
+/**
+ * Category Filter - filter main query
+ */
+add_filter( 'pre_get_posts', function ( $query ) {
+	// do nothing if it is not a main query
+	if ( ! $query->is_main_query() ) {
+		return;
+	}
+
+	$tax_query = tazilla_query_loop_prepare_tax_query( $query->get( 'tax_query' ) );
+
+	$query->set( 'tax_query', $tax_query );
+} );
+
+/**
+ * Category Filter - filter Query Loop
+ */
+function tazilla_query_loop_block_query_vars( $query, $block, $page ) {
+	$query_tax_query = ! empty( $query['tax_query'] ) ? $query['tax_query'] : array();
+	$query_id        = $block->context['queryId'] ?? '';
+
+	if ( $tax_query = tazilla_query_loop_prepare_tax_query( $query_tax_query, $query_id ) ) {
+		$query['tax_query'] = $tax_query;
+	}
+
+	return $query;
+}
+
+add_filter( 'query_loop_block_query_vars', 'tazilla_query_loop_block_query_vars', 999, 3 );
+
+/**
+ * Category Filter - prepare taxonomy query
+ */
+function tazilla_query_loop_prepare_tax_query( $query_tax_query, $query_id = null ) {
+	$tax_query = array();
+
+	$key = isset( $query_id ) ? "category-filter-{$query_id}" : "category-filter";
+
+	$selected_categories = ! empty( $_REQUEST[ $key ] ) ? sanitize_text_field( wp_unslash( $_REQUEST[ $key ] ) ) : null;
+	if ( ! $selected_categories ) {
+		return $query_tax_query;
+	}
+
+	$terms = ( str_contains( $selected_categories, ',' ) ) ? array_map( 'trim', explode( ',', $selected_categories ) ) : array( $selected_categories );
+
+	$tax_query[] = array(
+		'taxonomy' => 'category',
+		'field'    => 'slug',
+		'terms'    => $terms,
+	);
+
+	if ( ! empty( $tax_query ) && ! empty( $query_tax_query ) ) {
+		$tax_query = array( 'relation' => 'AND', $query_tax_query, $tax_query );
+	}
+
+	return $tax_query;
+}

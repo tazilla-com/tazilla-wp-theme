@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tazilla/category-filter",
+  "title": "Category Filter",
+  "category": "widgets",
+  "icon": "filter",
+  "description": "Filter posts by multiple categories and update Query Loop.",
+  "editorScript": "file:./build/index.jsx.js",
+  "viewScriptModule": "file:./view.js",
+  "render": "file:./render.php",
+  "style": "file:./build/style-style.scss.css",
+  "ancestor": [
+    "core/query"
+  ],
+  "usesContext": [
+    "queryId",
+    "query"
+  ],
+  "supports": {
+    "html": false,
+    "interactivity": true
+  }
+}
