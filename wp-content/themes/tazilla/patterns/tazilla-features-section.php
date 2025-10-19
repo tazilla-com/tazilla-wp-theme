@@ -7,7 +7,7 @@
  * @package Tazilla
  */
 ?>
-<!-- wp:group {"tagName":"section","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|3xl"}},"background":{"backgroundImage":{"url":"http://tazilla.com.localhost/wp-content/uploads/2025/10/section-bg.png","id":251,"source":"file","title":"section-bg"},"backgroundSize":"cover"}},"backgroundColor":"neutral-7","layout":{"type":"constrained"}} -->
+<!-- wp:group {"tagName":"section","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|3xl"}},"background":{"backgroundImage":{"url":"/wp-content/uploads/2025/10/section-bg.png","id":251,"source":"file","title":"section-bg"},"backgroundSize":"cover"}},"backgroundColor":"neutral-7","layout":{"type":"constrained"}} -->
 <section class="wp-block-group alignfull has-neutral-7-background-color has-background" style="padding-top:var(--wp--preset--spacing--3-xl)"><!-- wp:tazilla/features {"activeFeatureId":"feature-1760226494944-3fxjx","align":"wide"} -->
 <div class="wp-block-tazilla-features alignwide tazilla-features" data-active-feature-id="feature-1760226494944-3fxjx"><!-- wp:columns {"style":{"spacing":{"padding":{"top":"var:preset|spacing|xl"},"margin":{"top":"0","bottom":"0"}}}} -->
 <div class="wp-block-columns" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xl)"><!-- wp:column {"width":"50%"} -->
@@ -82,7 +82,7 @@
 <!-- /wp:group -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
+<figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:tazilla/feature-content -->
 
@@ -105,7 +105,7 @@
 <!-- /wp:group -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
+<figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:tazilla/feature-content -->
 
@@ -128,7 +128,7 @@
 <!-- /wp:group -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
+<figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:tazilla/feature-content -->
 
@@ -151,7 +151,7 @@
 <!-- /wp:group -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
+<figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:tazilla/feature-content -->
 
@@ -174,7 +174,7 @@
 <!-- /wp:group -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
+<figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:tazilla/feature-content -->
 
@@ -197,7 +197,7 @@
 <!-- /wp:group -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
+<figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:tazilla/feature-content -->
 
@@ -220,7 +220,7 @@
 <!-- /wp:group -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
+<figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:tazilla/feature-content -->
 
@@ -243,7 +243,7 @@
 <!-- /wp:group -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="http://tazilla.com.localhost/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
+<figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/10/tazilla-insights.png" alt=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:tazilla/feature-content --></div>
 <!-- /wp:column --></div>
