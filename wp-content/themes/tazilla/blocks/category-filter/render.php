@@ -3,29 +3,46 @@
  * Category Filter Block
  */
 
-// Don't load directly.
 if ( ! defined( 'ABSPATH' ) ) {
-    die( '-1' );
+    exit;
 }
 
-$block_attributes = get_block_wrapper_attributes();
-$categories       = get_categories( [ 'hide_empty' => true ] );
-$query_id         = $block->context['queryId'] ?? '';
-$is_main_query    = isset( $block->context['query']['inherit'] ) && $block->context['query']['inherit'];
-$key              = isset( $block->context['queryId'] ) && ! $is_main_query ? "category-filter-{$block->context[ 'queryId' ]}" : "category-filter";
-$query_categories = ! empty( $_REQUEST[ $key ] ) ? sanitize_text_field( wp_unslash( $_REQUEST[ $key ] ) ) : null;
-if ( ! $query_categories ) {
-    $selected_categories = array();
-} else {
-    $selected_categories = ( str_contains( $query_categories, ',' ) ) ? array_map( 'trim', explode( ',', $query_categories ) ) : array( $query_categories );
+// Fetch all visible categories (cached for 1 hour)
+$categories = get_transient( 'tazilla_filter_categories' );
+if ( false === $categories ) {
+    $categories = get_categories( [ 'hide_empty' => true ] );
+    set_transient( 'tazilla_filter_categories', $categories, HOUR_IN_SECONDS );
 }
+
+if ( empty( $categories ) ) {
+    echo '<p>' . esc_html__( 'No categories available.', 'tazilla' ) . '</p>';
+
+    return;
+}
+
+$query_id      = $block->context['queryId'] ?? '';
+$is_main_query = isset( $block->context['query']['inherit'] ) && $block->context['query']['inherit'];
+$key           = ( isset( $query_id ) && ! $is_main_query )
+        ? "category-filter-{$query_id}"
+        : 'category-filter';
+
+$query_categories    = isset( $_REQUEST[ $key ] ) ? sanitize_text_field( wp_unslash( $_REQUEST[ $key ] ) ) : '';
+$selected_categories = $query_categories ? array_map( 'trim', explode( ',', $query_categories ) ) : [];
+
+$data_context = [
+        'selectedCategories' => $selected_categories,
+        'queryId'            => $query_id,
+        'isMainQuery'        => $is_main_query,
+];
+
+$block_attributes = get_block_wrapper_attributes();
 ?>
 <div
         <?php echo $block_attributes; ?>
         data-wp-interactive="tazilla/category-filter"
-        data-wp-context='{"selectedCategories": <?php echo json_encode( $selected_categories ); ?>, "queryId": "<?php echo esc_attr( $query_id ); ?>", "isMainQuery": <?php echo (int) $is_main_query; ?>}'
+        data-wp-context="<?php echo esc_attr( wp_json_encode( $data_context ) ); ?>"
 >
-    <form>
+    <form novalidate>
         <?php foreach ( $categories as $category ) : ?>
             <label>
                 <input

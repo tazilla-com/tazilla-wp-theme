@@ -3,9 +3,8 @@
  * Server-side render for Features Title block.
  */
 
-// Don't load directly.
 if ( ! defined( 'ABSPATH' ) ) {
-    die( '-1' );
+    exit;
 }
 
 global $post;

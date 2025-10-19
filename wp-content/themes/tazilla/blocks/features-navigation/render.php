@@ -3,9 +3,8 @@
  * Server-side render for Features Navigation block
  */
 
-// Don't load directly.
 if ( ! defined( 'ABSPATH' ) ) {
-    die( '-1' );
+    exit;
 }
 
 $block_attributes = get_block_wrapper_attributes( [ 'class' => 'tazilla-features-navigation' ] );
