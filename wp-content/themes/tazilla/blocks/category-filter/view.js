@@ -13,7 +13,7 @@ store('tazilla/category-filter', {
                 context.selectedCategories = selectedCategories.filter(v => v !== checkbox.value);
             }
 
-            const key = queryId && !isMainQuery ? `category-filter-${queryId}` : 'category-filter';
+            const key = typeof queryId !== 'undefined' && !isMainQuery ? `category-filter-${queryId}` : 'category-filter';
 
             const params = new URLSearchParams(window.location.search);
             if (context.selectedCategories.length) {

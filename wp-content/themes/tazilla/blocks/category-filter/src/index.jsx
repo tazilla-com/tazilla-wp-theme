@@ -25,7 +25,8 @@ registerBlockType(metadata.name, {
 
         return (
             <div {...blockProps}>
-                <p>{__('Category Filter (frontend only)', 'tazilla')}</p>
+                <h3 className="tazilla-category-filter__title">{__('Quick filter', 'tazilla')}</h3>
+                <p>({__('frontend only', 'tazilla')})</p>
                 <ul>
                     {categories.map((cat) => (
                         <li>{cat.name}</li>

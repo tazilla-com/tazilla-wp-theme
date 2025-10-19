@@ -35,13 +35,16 @@ $data_context = [
         'isMainQuery'        => $is_main_query,
 ];
 
-$block_attributes = get_block_wrapper_attributes();
+$block_attributes = get_block_wrapper_attributes(
+        [ 'class' => 'tazilla-category-filter' ]
+);
 ?>
 <div
         <?php echo $block_attributes; ?>
         data-wp-interactive="tazilla/category-filter"
         data-wp-context="<?php echo esc_attr( wp_json_encode( $data_context ) ); ?>"
 >
+    <h3 class="tazilla-category-filter__title"><?php echo esc_html__( 'Quick filter', 'tazilla' ); ?></h3>
     <form novalidate>
         <?php foreach ( $categories as $category ) : ?>
             <label>

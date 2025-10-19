@@ -30,6 +30,11 @@
 					"slug": "brand-dark-2"
 				},
 				{
+					"color": "#CFD8D2",
+					"name": "Brand Dark Green 100",
+					"slug": "brand-dark-100"
+				},
+				{
 					"color": "#80C241",
 					"name": "Brand Light Green",
 					"slug": "brand-light"
