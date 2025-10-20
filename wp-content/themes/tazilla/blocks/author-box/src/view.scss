@@ -1,0 +1,67 @@
+.tazilla-author-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--wp--preset--spacing--md, 1rem);
+  padding: var(--wp--preset--spacing--md, 1rem) var(--wp--preset--spacing--lg, 1.25rem);
+  border-radius: var(--wp--custom--radius--md, 0.5rem);
+  background-color: var(--wp--preset--color--neutral-7, #F3F5F4);
+}
+
+.tazilla-author-box__avatar img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.tazilla-author-box__content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--wp--preset--spacing--xs, 0.5rem);
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: var(--wp--preset--spacing--md, 1rem);
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.tazilla-author-box__name {
+  margin: 0;
+  color: var(--wp--preset--color--brand-dark, #0E3C20);
+  font-family: var(--wp--preset--font-family--unbounded), sans-serif;
+  text-transform: uppercase;
+  font-size: var(--wp--preset--font-size--lg, 1.5rem);
+}
+
+.tazilla-author-box__bio {
+  margin: 0;
+}
+
+.tazilla-author-box__social {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--wp--preset--spacing--md, 1rem);
+
+  li {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    transition: transform .1s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    path {
+      fill: var(--wp--preset--color--brand-light, #80C241);
+    }
+  }
+}

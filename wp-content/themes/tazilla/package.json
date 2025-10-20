@@ -7,7 +7,6 @@
     "start:editor": "wp-scripts start inc/editor/src/index.js --output-path=inc/editor/build",
     "build:extensions": "wp-scripts build blocks/extensions/src/index.js --output-path=blocks/extensions/build",
     "start:extensions": "wp-scripts start blocks/extensions/src/index.js --output-path=blocks/extensions/build",
-    "build": "npm run build:features && npm run build:feature-button && npm run build:feature-content",
     "build:features": "wp-scripts build blocks/features/src/*.* --output-path=blocks/features/build",
     "start:features": "wp-scripts start blocks/features/src/*.* --output-path=blocks/features/build",
     "build:feature-button": "wp-scripts build blocks/feature-button/src/*.* --output-path=blocks/feature-button/build",
@@ -19,7 +18,9 @@
     "build:features-title": "wp-scripts build blocks/features-title/src/*.* --output-path=blocks/features-title/build",
     "start:features-title": "wp-scripts start blocks/features-title/src/*.* --output-path=blocks/features-title/build",
     "build:category-filter": "wp-scripts build blocks/category-filter/src/*.* --output-path=blocks/category-filter/build --experimental-modules",
-    "start:category-filter": "wp-scripts start blocks/category-filter/src/*.* --output-path=blocks/category-filter/build --experimental-modules"
+    "start:category-filter": "wp-scripts start blocks/category-filter/src/*.* --output-path=blocks/category-filter/build --experimental-modules",
+    "build:author-box": "wp-scripts build blocks/author-box/src/*.* --output-path=blocks/author-box/build",
+    "start:author-box": "wp-scripts start blocks/author-box/src/*.* --output-path=blocks/author-box/build"
   },
   "devDependencies": {
     "@wordpress/scripts": "^30.25.0"

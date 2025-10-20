@@ -1,6 +1,8 @@
 <?php
 /**
  * Server-side render for Features Title block.
+ *
+ * @package Tazilla
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

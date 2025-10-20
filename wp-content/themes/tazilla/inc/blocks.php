@@ -60,6 +60,9 @@ function tazilla_register_blocks(): void {
 
 	// Custom Block Posts Filter
 	register_block_type( get_template_directory() . '/blocks/category-filter' );
+
+	// Custom Block Author Box
+	register_block_type( get_template_directory() . '/blocks/author-box' );
 }
 
 add_action( 'init', 'tazilla_register_blocks' );

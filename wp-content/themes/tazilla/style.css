@@ -7,7 +7,7 @@ Description: Tazilla block theme
 Requires at least: 6.8
 Tested up to: 6.8
 Requires PHP: 7.2
-Version: 0.6.2
+Version: 0.6.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: tazilla
@@ -261,7 +261,9 @@ header .wp-block-navigation {
         flex-wrap: wrap;
     }
 
-    .wpcf7-form-control {
+    .wpcf7-text,
+    .wpcf7-email,
+    .wpcf7-textarea {
         width: 100%;
         flex-basis: 100%;
         padding: 0.75rem 0.75rem 0.75rem 1rem;

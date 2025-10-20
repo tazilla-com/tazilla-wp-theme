@@ -1,6 +1,8 @@
 <?php
 /**
  * Category Filter Block
+ *
+ * @package Tazilla
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

@@ -1,0 +1,14 @@
+{
+  "apiVersion": 3,
+  "name": "tazilla/author-box",
+  "title": "Tazilla Author Box",
+  "category": "theme",
+  "description": "Displays post author details such as name, profile picture, bio and social links.",
+  "textdomain": "tazilla",
+  "editorScript": "file:./build/index.jsx.js",
+  "render": "file:./render.php",
+  "viewStyle": "file:./build/view.scss.css",
+  "supports": {
+    "html": false
+  }
+}

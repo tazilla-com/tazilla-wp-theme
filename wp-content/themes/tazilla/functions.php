@@ -10,7 +10,7 @@ function tazilla_editor_style(): void {
 add_action( 'after_setup_theme', 'tazilla_editor_style' );
 
 /**
- * Enqueues style.css on the front.
+ * Enqueues front-end styles and scripts.
  *
  * @return void
  * @since Tazilla 0.1.0
@@ -42,6 +42,22 @@ function tazilla_enqueue_scripts_and_styles(): void {
 }
 
 add_action( 'wp_enqueue_scripts', 'tazilla_enqueue_scripts_and_styles' );
+
+/**
+ * Enqueues admin styles.
+ *
+ * @return void
+ */
+function tazilla_admin_enqueue_scripts_and_styles(): void {
+	wp_enqueue_style(
+		'tazilla-admin',
+		get_template_directory_uri() . '/assets/css/admin.css',
+		array(),
+		wp_get_theme()->get( 'Version' )
+	);
+}
+
+add_action( 'admin_enqueue_scripts', 'tazilla_admin_enqueue_scripts_and_styles' );
 
 /**
  * SMTP email settings.
@@ -83,3 +99,8 @@ require get_template_directory() . '/inc/custom-post-types.php';
  * Custom meta fields.
  */
 require get_template_directory() . '/inc/custom-meta-fields.php';
+
+/**
+ * User Profile Customization.
+ */
+require get_template_directory() . '/inc/user-profile.php';
