@@ -474,6 +474,11 @@
 			"title": "Header Features"
 		},
 		{
+			"area": "header",
+			"name": "header-blog",
+			"title": "Header Blog"
+		},
+		{
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"

@@ -7,7 +7,7 @@ Description: Tazilla block theme
 Requires at least: 6.8
 Tested up to: 6.8
 Requires PHP: 7.2
-Version: 0.6.1
+Version: 0.6.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: tazilla
@@ -137,9 +137,28 @@ header .wp-block-navigation {
     &.is-style-link .wp-block-button__link:hover {
         text-decoration: none;
     }
+
+    &.back-button {
+        a::before {
+            content: "";
+            display: inline-block;
+            width: 0.75rem;
+            height: 0.75rem;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+            mask-image: url(assets/images/arrow-left.svg);
+            mask-repeat: no-repeat;
+            background-color: var(--wp--preset--color--brand-light, #80C241);
+        }
+
+        &:hover a::before {
+            background-color: var(--wp--preset--color--brand-dark, #0E3C20);
+        }
+    }
 }
 
-.wp-element-button {
+.wp-element-button,
+.wp-block-button a::before {
     transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
@@ -323,26 +342,6 @@ header .wp-block-navigation {
             pointer-events: none;
         }
 
-        .taxonomy-category {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.125rem;
-
-            > a {
-                display: inline-block;
-                padding: 0.1875rem var(--wp--preset--spacing--xs, 0.5rem);
-                border-radius: 22rem;
-                background-color: var(--wp--preset--color--neutral-8, #F9FCF5);
-                color: var(--wp--preset--brand-light, #80C241);
-                font-size: 0.625rem;
-                text-decoration: none;
-            }
-
-            .wp-block-post-terms__separator {
-                display: none;
-            }
-        }
-
         h2 {
             margin-top: var(--wp--preset--spacing--xs, 0.5rem);
         }
@@ -420,4 +419,28 @@ header .wp-block-navigation {
             width: 50%
         }
     }
+}
+
+.taxonomy-category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.125rem;
+
+    > a {
+        display: inline-block;
+        padding: 0.1875rem var(--wp--preset--spacing--xs, 0.5rem);
+        border-radius: 22rem;
+        background-color: var(--wp--preset--color--neutral-8, #F9FCF5);
+        color: var(--wp--preset--brand-light, #80C241);
+        font-size: 0.625rem;
+        text-decoration: none;
+    }
+
+    .wp-block-post-terms__separator {
+        display: none;
+    }
+}
+
+.wp-block-post-featured-image.alignwide {
+    max-width: 976px;
 }
