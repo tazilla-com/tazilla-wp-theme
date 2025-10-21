@@ -6,6 +6,16 @@
  */
 
 /**
+ * Disable the pattern directory from WordPress.org.
+ */
+add_filter( 'should_load_remote_block_patterns', '__return_false' );
+
+/**
+ * Disable bundled “core” patterns that ship with WP itself.
+ */
+remove_theme_support( 'core-block-patterns' );
+
+/**
  * Enqueues the block editor assets.
  */
 function tazilla_enqueue_block_editor_assets(): void {
@@ -101,19 +111,9 @@ function tazilla_latest_posts_read_more( $block_content, $block ) {
 add_filter( 'render_block', 'tazilla_latest_posts_read_more', 10, 2 );
 
 /**
- * Disable the pattern directory from WordPress.org.
- */
-add_filter( 'should_load_remote_block_patterns', '__return_false' );
-
-/**
- * Disable bundled “core” patterns that ship with WP itself.
- */
-remove_theme_support( 'core-block-patterns' );
-
-/**
  * Category Filter - filter main query
  */
-function tazilla_category_filter_main_query( $query ) {
+function tazilla_category_filter_main_query( $query ): void {
 	if ( ! $query->is_main_query() || is_admin() || wp_doing_ajax() || wp_is_json_request() ) {
 		return;
 	}
@@ -167,3 +167,25 @@ function tazilla_category_filter_prepare_query( $query_tax_query, $query_id = nu
 
 	return $filter;
 }
+
+/**
+ * Replace the link in button blocks with the try-for-free URL.
+ */
+function tazilla_replace_try_for_free_urls( $block_content, $block ) {
+	// Check if this is a button block with the try-for-free data attribute
+	if ( 'core/button' === $block['blockName'] && ! empty( $block['attrs']['isTryForFreeLink'] ) ) {
+
+		$try_free_url = get_option( 'tazilla_try_for_free_url', '#' );
+
+		// Replace href with the try-for-free URL
+		$block_content = preg_replace(
+			'/(<a[^>]+href=")[^"]*(")/i',
+			'$1' . esc_url( $try_free_url ) . '$2',
+			$block_content
+		);
+	}
+
+	return $block_content;
+}
+
+add_filter( 'render_block', 'tazilla_replace_try_for_free_urls', 10, 2 );

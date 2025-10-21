@@ -104,3 +104,8 @@ require get_template_directory() . '/inc/custom-meta-fields.php';
  * User Profile Customization.
  */
 require get_template_directory() . '/inc/user-profile.php';
+
+/**
+ * Custom theme settings section in WordPress admin.
+ */
+require get_template_directory() . '/inc/theme-settings.php';

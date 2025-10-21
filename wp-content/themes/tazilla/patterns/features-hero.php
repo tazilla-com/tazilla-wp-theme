@@ -20,8 +20,8 @@
 
     <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|lg","bottom":"var:preset|spacing|lg"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
     <div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--lg);margin-bottom:var(--wp--preset--spacing--lg)">
-        <!-- wp:button {"className":"is-style-fill-secondary"} -->
-        <div class="wp-block-button is-style-fill-secondary"><a class="wp-block-button__link wp-element-button">Try for free</a></div>
+        <!-- wp:button {"className":"is-style-fill-secondary","isTryForFreeLink":true} -->
+        <div class="wp-block-button is-style-fill-secondary" data-try-for-free="true"><a class="wp-block-button__link wp-element-button" href="#" target="_blank" rel="noreferrer noopener nofollow">Try for free</a></div>
         <!-- /wp:button -->
     </div>
     <!-- /wp:buttons -->

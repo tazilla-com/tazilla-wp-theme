@@ -56,8 +56,8 @@
 <!-- /wp:group -->
 
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"fullWidthOnMobile":true} -->
-<div class="wp-block-button full-width-on-mobile"><a class="wp-block-button__link wp-element-button">Try For Free</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"fullWidthOnMobile":true,"isTryForFreeLink":true} -->
+<div class="wp-block-button full-width-on-mobile" data-try-for-free="true"><a class="wp-block-button__link wp-element-button" href="#" target="_blank" rel="noreferrer noopener nofollow">Try For Free</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->

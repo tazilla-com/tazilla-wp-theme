@@ -26,8 +26,8 @@
 <div class="wp-block-button is-style-outline full-width-on-mobile"><a class="wp-block-button__link wp-element-button" href="/pricing/">Pricing</a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"className":"is-style-fill-secondary","fullWidthOnMobile":true} -->
-<div class="wp-block-button is-style-fill-secondary full-width-on-mobile"><a class="wp-block-button__link wp-element-button">Try For Free</a></div>
+<!-- wp:button {"className":"is-style-fill-secondary","fullWidthOnMobile":true,"isTryForFreeLink":true} -->
+<div class="wp-block-button is-style-fill-secondary full-width-on-mobile" data-try-for-free="true"><a class="wp-block-button__link wp-element-button" href="#" target="_blank" rel="noreferrer noopener nofollow">Try For Free</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -129,8 +129,8 @@
 <!-- /wp:group -->
 
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"fullWidthOnMobile":true} -->
-<div class="wp-block-button full-width-on-mobile"><a class="wp-block-button__link wp-element-button">Try For Free</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"fullWidthOnMobile":true,"isTryForFreeLink":true} -->
+<div class="wp-block-button full-width-on-mobile" data-try-for-free="true"><a class="wp-block-button__link wp-element-button" href="#" target="_blank" rel="noreferrer noopener nofollow">Try For Free</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -668,8 +668,8 @@
 <!-- /wp:group -->
 
 <!-- wp:buttons {"align":"wide","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-<div class="wp-block-buttons alignwide" style="margin-top:0;margin-bottom:0"><!-- wp:button {"className":"is-style-fill","fullWidthOnMobile":true} -->
-<div class="wp-block-button is-style-fill full-width-on-mobile"><a class="wp-block-button__link wp-element-button">Try it for free</a></div>
+<div class="wp-block-buttons alignwide" style="margin-top:0;margin-bottom:0"><!-- wp:button {"className":"is-style-fill","fullWidthOnMobile":true,"isTryForFreeLink":true} -->
+<div class="wp-block-button is-style-fill full-width-on-mobile" data-try-for-free="true"><a class="wp-block-button__link wp-element-button" href="#" target="_blank" rel="noreferrer noopener nofollow">Try it for free</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></section>
 <!-- /wp:group -->
@@ -704,8 +704,8 @@
 <div class="wp-block-button is-style-outline full-width-on-mobile"><a class="wp-block-button__link wp-element-button" href="/pricing/">Pricing</a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"className":"is-style-fill-secondary","fullWidthOnMobile":true} -->
-<div class="wp-block-button is-style-fill-secondary full-width-on-mobile"><a class="wp-block-button__link wp-element-button">Tryit for free</a></div>
+<!-- wp:button {"className":"is-style-fill-secondary","fullWidthOnMobile":true,"isTryForFreeLink":true} -->
+<div class="wp-block-button is-style-fill-secondary full-width-on-mobile" data-try-for-free="true"><a class="wp-block-button__link wp-element-button" href="#" target="_blank" rel="noreferrer noopener nofollow">Tryit for free</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->

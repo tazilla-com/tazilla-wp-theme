@@ -5,7 +5,9 @@ import {PanelBody, ToggleControl} from '@wordpress/components';
 import {Fragment} from '@wordpress/element';
 import {__} from '@wordpress/i18n';
 
-// Add custom attribute
+/**
+ * Add read more attribute to the Latest Posts block
+ */
 function addReadMoreAttribute(settings, name) {
     if (name !== 'core/latest-posts') {
         return settings;
@@ -29,7 +31,9 @@ addFilter(
     addReadMoreAttribute
 );
 
-// Add block editor control
+/**
+ * Add control to the Latest Posts block
+ */
 const withReadMoreControl = createHigherOrderComponent((BlockEdit) => {
     return (props) => {
         if (props.name !== 'core/latest-posts') {

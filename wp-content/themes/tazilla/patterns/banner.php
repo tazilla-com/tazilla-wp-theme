@@ -31,8 +31,8 @@
 <div class="wp-block-button full-width-on-mobile"><a class="wp-block-button__link wp-element-button">Contact sales</a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"className":"is-style-link","fullWidthOnMobile":true} -->
-<div class="wp-block-button is-style-link full-width-on-mobile"><a class="wp-block-button__link wp-element-button">Try for free</a></div>
+<!-- wp:button {"className":"is-style-link","fullWidthOnMobile":true,"isTryForFreeLink":true} -->
+<div class="wp-block-button is-style-link full-width-on-mobile" data-try-for-free="true"><a class="wp-block-button__link wp-element-button" href="#" target="_blank" rel="noreferrer noopener nofollow">Try for free</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
