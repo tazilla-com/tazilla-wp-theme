@@ -1,19 +1,13 @@
-<!-- wp:template-part {"slug":"header","area":"header"} /-->
-
-<!-- wp:template-part {"slug":"header-features","area":"header"} /-->
-
-<!-- wp:group {"tagName":"main","metadata":{"name":"Body"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"blockGap":"0"}},"layout":{"type":"constrained"}} -->
-<main class="wp-block-group" style="margin-top:0;margin-bottom:0">
-    <!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"0","padding":{"top":"var:preset|spacing|3xl","bottom":"var:preset|spacing|lg"}}},"backgroundColor":"neutral-7","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group alignfull has-neutral-7-background-color has-background" style="padding-top:var(--wp--preset--spacing--3-xl);padding-bottom:var(--wp--preset--spacing--lg)">
-        <!-- wp:tazilla/features-title /-->
-    </div>
-    <!-- /wp:group -->
-
-    <!-- wp:post-content {"align":"full","style":{"spacing":{"blockGap":"0"}}} /-->
-</main>
-<!-- /wp:group -->
-
+<?php
+/**
+ * Title: Related Posts
+ * Slug: tazilla/related-posts
+ * Categories: footer, posts
+ * Description: The related posts section.
+ *
+ * @package Tazilla
+ */
+?>
 <!-- wp:group {"metadata":{"categories":["footer","posts"],"patternName":"tazilla/related-posts","name":"Related Posts"},"align":"full","style":{"background":{"backgroundImage":{"url":"/wp-content/uploads/2025/10/section-bg.png","id":251,"source":"file","title":"section-bg"},"backgroundSize":"cover"},"spacing":{"padding":{"top":"var:preset|spacing|3xl","bottom":"var:preset|spacing|3xl"}}},"backgroundColor":"neutral-7","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-neutral-7-background-color has-background" style="padding-top:var(--wp--preset--spacing--3-xl);padding-bottom:var(--wp--preset--spacing--3-xl)">
     <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|sm"}}},"layout":{"type":"constrained"}} -->
@@ -54,7 +48,3 @@
     <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
-
-<!-- wp:template-part {"slug":"footer-partners","area":"footer"} /-->
-
-<!-- wp:template-part {"slug":"footer","area":"footer"} /-->

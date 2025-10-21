@@ -481,7 +481,7 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:latest-posts {"postsToShow":3,"postLayout":"grid","displayFeaturedImage":true,"addLinkToFeaturedImage":true,"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|2xl","bottom":"var:preset|spacing|xl"},"margin":{"top":"0","bottom":"0","left":"0","right":"0"}}}} /-->
+<!-- wp:latest-posts {"postsToShow":3,"postLayout":"grid","displayFeaturedImage":true,"addLinkToFeaturedImage":true,"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|2xl","bottom":"var:preset|spacing|xl"},"margin":{"top":"0","bottom":"0","left":"0","right":"0"}}},"showReadMore":true} /-->
 
 <!-- wp:buttons {"align":"wide","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|xl"},"margin":{"top":"0","bottom":"0"}}}} -->
 <div class="wp-block-buttons alignwide" style="margin-top:0;margin-bottom:0;padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:button {"className":"is-style-outline","fullWidthOnMobile":true} -->

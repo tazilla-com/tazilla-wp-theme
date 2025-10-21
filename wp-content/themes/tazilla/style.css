@@ -7,7 +7,7 @@ Description: Tazilla block theme
 Requires at least: 6.8
 Tested up to: 6.8
 Requires PHP: 7.2
-Version: 0.6.3
+Version: 0.6.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: tazilla
@@ -182,17 +182,6 @@ header .wp-block-navigation {
         letter-spacing: -0.03rem;
         text-transform: uppercase;
         text-decoration: none;
-
-        .read-more-text {
-            margin-top: var(--wp--preset--spacing--md, 1rem);
-            font-size: var(--typography-size-xs, 0.75rem);
-            color: var(--wp--preset--color--brand-light, #80C241);
-            text-decoration-line: underline;
-        }
-
-        &:hover .read-more-text {
-            text-decoration-line: none;
-        }
     }
 }
 
@@ -347,21 +336,6 @@ header .wp-block-navigation {
         h2 {
             margin-top: var(--wp--preset--spacing--xs, 0.5rem);
         }
-
-        .wp-block-post-excerpt__more-text {
-            margin-top: var(--wp--preset--spacing--md, 1rem);
-        }
-
-        .wp-block-post-excerpt__more-link {
-            text-transform: uppercase;
-            font-size: var(--wp--preset--font-size--sm, 0.75rem);
-        }
-
-        &:hover {
-            .wp-block-post-excerpt__more-link {
-                text-decoration: none;
-            }
-        }
     }
 
     .wp-block-query-pagination-previous,
@@ -434,13 +408,32 @@ header .wp-block-navigation {
         border-radius: 22rem;
         background-color: var(--wp--preset--color--neutral-8, #F9FCF5);
         color: var(--wp--preset--brand-light, #80C241);
+        font-family: var(--wp--preset--font-family--unbounded), sans-serif;
         font-size: 0.625rem;
         text-decoration: none;
+        text-transform: uppercase;
     }
 
     .wp-block-post-terms__separator {
         display: none;
     }
+}
+
+.wp-block-post-excerpt__more-text,
+.wp-block-latest-posts__more-text {
+    margin-top: var(--wp--preset--spacing--md, 1rem);
+}
+
+.wp-block-post-excerpt__more-link,
+.wp-block-latest-posts__more-link {
+    font-family: var(--wp--preset--font-family--unbounded), sans-serif;
+    font-size: var(--wp--preset--font-size--sm, 0.75rem);
+    text-transform: uppercase;
+}
+
+.wp-block-query .wp-block-post:hover .wp-block-post-excerpt__more-link,
+.wp-block-latest-posts__more-link:hover {
+    text-decoration: none;
 }
 
 .wp-block-post-featured-image.alignwide {

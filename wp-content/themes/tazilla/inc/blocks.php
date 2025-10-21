@@ -12,7 +12,7 @@ function tazilla_enqueue_block_editor_assets(): void {
 	wp_enqueue_script(
 		'tazilla-extensions',
 		get_template_directory_uri() . '/blocks/extensions/build/index.js',
-		[ 'wp-hooks', 'wp-element', 'wp-components', 'wp-block-editor' ],
+		[ 'wp-hooks', 'wp-compose', 'wp-block-editor', 'wp-components', 'wp-element', 'wp-i18n' ],
 		wp_get_theme()->get( 'Version' )
 	);
 
@@ -75,13 +75,27 @@ function tazilla_latest_posts_read_more( $block_content, $block ) {
 		return $block_content;
 	}
 
-	$read_more = esc_html__( 'Read more', 'tazilla' );
+	if ( empty( $block['attrs']['showReadMore'] ) || $block['attrs']['showReadMore'] !== true ) {
+		return $block_content;
+	}
 
-	return preg_replace(
-		'/(<a[^>]+class="[^"]*wp-block-latest-posts__post-title[^"]*"[^>]*>.*?)(<\/a>)/is',
-		'$1 <div class="read-more-text">' . $read_more . '</div>$2',
-		$block_content
-	);
+	// Pattern to match each list item with the actual structure
+	$pattern = '/(<li>)(.*?<a[^>]*href="([^"]*)"[^>]*>.*?<\/a>)(<\/li>)/s';
+
+	return preg_replace_callback( $pattern, function ( $matches ) {
+		$li_open    = $matches[1]; // <li>
+		$li_content = $matches[2]; // Everything between <li> and </li>
+		$post_url   = $matches[3]; // The href URL
+		$li_close   = $matches[4]; // </li>
+
+		$read_more_html = sprintf(
+			'<div class="wp-block-latest-posts__more-text"><a href="%s" class="wp-block-latest-posts__more-link">%s</a></div>',
+			esc_url( $post_url ),
+			esc_html__( 'Read more', 'tazilla' )
+		);
+
+		return $li_open . $li_content . $read_more_html . $li_close;
+	}, $block_content );
 }
 
 add_filter( 'render_block', 'tazilla_latest_posts_read_more', 10, 2 );

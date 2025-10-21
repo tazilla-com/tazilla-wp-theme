@@ -1,56 +1,64 @@
-import { addFilter } from '@wordpress/hooks';
-import { createHigherOrderComponent } from '@wordpress/compose';
-import { useEffect } from '@wordpress/element';
+import {addFilter} from '@wordpress/hooks';
+import {createHigherOrderComponent} from '@wordpress/compose';
+import {InspectorControls} from '@wordpress/block-editor';
+import {PanelBody, ToggleControl} from '@wordpress/components';
+import {Fragment} from '@wordpress/element';
 import {__} from '@wordpress/i18n';
 
-/**
- * Append "Read more" text in the editor live preview
- */
-const withReadMoreEditor = createHigherOrderComponent( ( BlockListBlock ) => {
-    return ( props ) => {
-        if ( props.name === 'core/latest-posts' ) {
-            useEffect(() => {
-                // Access the block’s rendered DOM inside the editor
-                const el = document.querySelector(
-                    `[data-block="${props.clientId}"] .wp-block-latest-posts`
-                );
-                if (!el) return;
+// Add custom attribute
+function addReadMoreAttribute(settings, name) {
+    if (name !== 'core/latest-posts') {
+        return settings;
+    }
 
-                // Avoid duplication
-                el.querySelectorAll('.wp-block-latest-posts__post-title').forEach((link) => {
-                    if (!link.querySelector('.read-more-text')) {
-                        const span = document.createElement('span');
-                        span.className = 'read-more-text';
-                        span.textContent = ' ' + __('Read more', 'tazilla');
-                        link.appendChild(span);
-                    }
-                });
-            }, [props.clientId]);
+    return {
+        ...settings,
+        attributes: {
+            ...settings.attributes,
+            showReadMore: {
+                type: 'boolean',
+                default: false
+            }
         }
-
-        return <BlockListBlock {...props} />;
     };
-}, 'withReadMoreEditor' );
+}
 
 addFilter(
-    'editor.BlockListBlock',
-    'tazilla/latest-posts-read-more/editor',
-    withReadMoreEditor
+    'blocks.registerBlockType',
+    'tazilla/latest-posts-read-more-attribute',
+    addReadMoreAttribute
 );
 
-/**
- * Filter saved markup (frontend)
- */
-addFilter(
-    'blocks.getSaveContent.extraProps',
-    'tazilla/latest-posts-read-more/save',
-    ( extraProps, blockType ) => {
-        if ( blockType.name !== 'core/latest-posts' ) {
-            return extraProps;
+// Add block editor control
+const withReadMoreControl = createHigherOrderComponent((BlockEdit) => {
+    return (props) => {
+        if (props.name !== 'core/latest-posts') {
+            return <BlockEdit {...props} />;
         }
 
-        // Add a data attribute to mark the block for postprocessing
-        extraProps['data-read-more'] = 'true';
-        return extraProps;
-    }
+        const {attributes, setAttributes} = props;
+        const {showReadMore} = attributes;
+
+        return (
+            <Fragment>
+                <BlockEdit {...props} />
+                <InspectorControls>
+                    <PanelBody title={__('Read More Settings')}>
+                        <ToggleControl
+                            label={__('Show Read More Link (on frontend)')}
+                            checked={showReadMore}
+                            onChange={(value) => setAttributes({showReadMore: value})}
+                        />
+                    </PanelBody>
+                </InspectorControls>
+            </Fragment>
+        );
+    };
+}, 'withReadMoreControl');
+
+addFilter(
+    'editor.BlockEdit',
+    'tazilla/latest-posts-read-more-control',
+    withReadMoreControl,
+    4
 );
