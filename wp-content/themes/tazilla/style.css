@@ -7,7 +7,7 @@ Description: Tazilla block theme
 Requires at least: 6.8
 Tested up to: 6.8
 Requires PHP: 7.2
-Version: 0.6.4
+Version: 0.7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: tazilla
@@ -381,7 +381,7 @@ header .wp-block-navigation {
 }
 
 @media (max-width: 767px) {
-    .block-query-blog{
+    .block-query-blog {
         .wp-block-query-pagination-previous,
         .wp-block-query-pagination-next {
             width: 100%;
@@ -438,4 +438,52 @@ header .wp-block-navigation {
 
 .wp-block-post-featured-image.alignwide {
     max-width: 976px;
+}
+
+/* Cookie Consent */
+#cc-main {
+    --cc-font-family: var(--wp--preset--font-family--plus-jakarta-sans) sans-serif;
+    --cc-btn-primary-bg: var(--wp--preset--color--brand-dark, #0E3C20);
+    --cc-btn-primary-color: var(--wp--preset--color--white, #FFFFFF);
+    --cc-btn-primary-border-color: var(--wp--preset--color--brand-dark, #0E3C20);
+    --cc-btn-primary-hover-bg: var(--wp--preset--color--neutral-7, #F3F5F4);
+    --cc-btn-primary-hover-color: var(--wp--preset--color--brand-dark, #0E3C20);
+    --cc-btn-primary-hover-border-color: var(--wp--preset--color--brand-dark, #0E3C20);
+    --cc-btn-secondary-bg: var(--wp--preset--color--brand-light, #80C241);
+    --cc-btn-secondary-color: var(--wp--preset--color--white, #FFFFFF);
+    --cc-btn-secondary-border-color: var(--wp--preset--color--brand-light, #80C241);
+    --cc-btn-secondary-hover-bg: var(--wp--preset--color--brand-100, #E6F3D9);
+    --cc-btn-secondary-hover-color: var(--wp--preset--color--brand-dark, #0E3C20);
+    --cc-btn-secondary-hover-border-color: var(--wp--preset--color--brand-100, #E6F3D9);
+    --cc-toggle-on-bg: var(--cc-btn-primary-bg);
+    --cc-btn-border-radius: var(--wp--custom--radius--sm, 0.25rem);
+    --cc-modal-border-radius: var(--wp--custom--radius--md, 0.5rem);
+    --cc-link-color: var(--wp--preset--color--brand-light, #80C241);
+
+    button.cm__btn,
+    button.pm__btn {
+        font-family: var(--wp--preset--font-family--unbounded), sans-serif;
+        text-transform: uppercase;
+        font-size: 0.625rem;
+        font-weight: 700;
+        letter-spacing: 2.56px;
+        line-height: 1;
+        padding: var(--wp--preset--spacing--sm, 0.75rem) var(--wp--preset--spacing--md, 1rem);
+        min-height: auto;
+        white-space: nowrap;
+    }
+
+    .pm__section-desc a,
+    #cm__desc button {
+        color: var(--cc-link-color);
+        text-decoration: underline;
+        font-weight: normal;
+        background: none;
+        transition: none;
+
+        &:hover {
+            text-decoration: none;
+            color: var(--cc-link-color);
+        }
+    }
 }

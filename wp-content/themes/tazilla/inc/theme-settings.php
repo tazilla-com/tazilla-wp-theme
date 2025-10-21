@@ -61,7 +61,8 @@ function tazilla_theme_settings_init() {
     add_settings_section(
             'tazilla_general',
             __( 'General', 'tazilla' ),
-            function () {},
+            function () {
+            },
             'tazilla-theme-settings'
     );
 
@@ -73,6 +74,15 @@ function tazilla_theme_settings_init() {
             'tazilla_general'
     );
     register_setting( 'tazilla', 'tazilla_try_for_free_url' );
+
+    add_settings_field(
+            'tazilla_gtm',
+            __( 'Google Tag Manager', 'tazilla' ),
+            'tazilla_gtm_html',
+            'tazilla-theme-settings',
+            'tazilla_general'
+    );
+    register_setting( 'tazilla', 'tazilla_gtm' );
 }
 
 add_action( 'admin_init', 'tazilla_theme_settings_init' );
@@ -82,5 +92,13 @@ function tazilla_try_for_free_url_html(): void {
     <input type="url" class="regular-text" name="tazilla_try_for_free_url" id="tazilla_try_for_free_url"
            value="<?php echo get_option( 'tazilla_try_for_free_url' ); ?>"/>
     <p class="description"><?php _e( 'Link to free or trial plan.', 'tazilla' ); ?></p>
+    <?php
+}
+
+function tazilla_gtm_html(): void {
+    ?>
+    <input type="text" class="regular-text" name="tazilla_gtm" id="tazilla_gtm"
+           value="<?php echo get_option( 'tazilla_gtm' ); ?>"/>
+    <p class="description"><?php _e( 'Container ID.', 'tazilla' ); ?></p>
     <?php
 }

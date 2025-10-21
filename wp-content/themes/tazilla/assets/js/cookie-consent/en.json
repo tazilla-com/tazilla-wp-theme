@@ -1,0 +1,40 @@
+{
+  "consentModal": {
+    "title": "We use cookies",
+    "description": "Welcome, this website uses essential cookies to ensure its proper functionality, as well as tracking cookies to analyze user interactions and improve the overall experience. Tracking cookies will only be set upon your explicit consent. <button type='button' data-cc='show-preferencesModal'><span class='link'>View Preferences Modal</span></button>",
+    "acceptAllBtn": "Accept all",
+    "acceptNecessaryBtn": "Reject all"
+  },
+  "preferencesModal": {
+    "title": "Manage cookie preferences",
+    "acceptAllBtn": "Accept all",
+    "acceptNecessaryBtn": "Reject all",
+    "savePreferencesBtn": "Save settings",
+    "closeIconLabel": "Close modal",
+    "sections": [
+      {
+        "title": "Cookie usage \uD83D\uDCE2",
+        "description": "This website uses cookies to ensure essential functionalities and to enhance your browsing experience. You have the option to manage your preferences and opt-in or opt-out of each category at any time. For further information regarding cookies and the handling of sensitive data, please refer to the full <a href='#' class='link-privacy-policy'>privacy policy</a>."
+      },
+      {
+        "title": "Strictly Necessary cookies",
+        "description": "These cookies are essential for the proper functioning of the website and cannot be disabled. Without these cookies, the website would not work properly.",
+        "linkedCategory": "necessary"
+      },
+      {
+        "title": "Performance and Analytics",
+        "description": "These cookies collect information about how you use our website. All of the data is anonymized and cannot be used to identify you.",
+        "linkedCategory": "analytics"
+      },
+      {
+        "title": "Advertisement and targeting",
+        "description": "These cookies are used to deliver personalized ads based on your interests. They also help measure the effectiveness of advertising campaigns and limit the number of times you see an ad.",
+        "linkedCategory": "ads"
+      },
+      {
+        "title": "More information",
+        "description": "For any queries in relation to my policy on cookies and your choices, please <a href='#' class='link-contact'>contact us</a>."
+      }
+    ]
+  }
+}

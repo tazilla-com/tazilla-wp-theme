@@ -1,0 +1,40 @@
+{
+  "consentModal": {
+    "title": "Používame súbory cookie",
+    "description": "Vitajte, táto webová stránka používa nevyhnutné súbory cookie na zabezpečenie správnej funkčnosti, ako aj sledovacie súbory cookie na analýzu interakcií používateľov a zlepšenie celkového zážitku. Sledovacie súbory cookie budú nastavené iba na základe vášho výslovného súhlasu. <button type='button' data-cc='show-preferencesModal'><span class='link'>Zobraziť nastavenia</span></button>",
+    "acceptAllBtn": "Prijať všetko",
+    "acceptNecessaryBtn": "Odmietnuť všetko"
+  },
+  "preferencesModal": {
+    "title": "Spravovať nastavenia súborov cookie",
+    "acceptAllBtn": "Prijať všetko",
+    "acceptNecessaryBtn": "Odmietnuť všetko",
+    "savePreferencesBtn": "Uložiť nastavenia",
+    "closeIconLabel": "Zatvoriť okno",
+    "sections": [
+      {
+        "title": "Cookie usage \uD83D\uDCE2",
+        "description": "Táto webová stránka používa súbory cookie na zabezpečenie základných funkcií a na zlepšenie vášho zážitku z prehliadania. Máte možnosť spravovať svoje preferencie a kedykoľvek sa prihlásiť alebo odhlásiť z každej kategórie. Ďalšie informácie o súboroch cookie a manipulácii s citlivými údajmi nájdete v <a href='#' class='link-privacy-policy'>zásadách ochrany osobných údajov</a>."
+      },
+      {
+        "title": "Nevyhnutne potrebné súbory cookie",
+        "description": "Tieto súbory cookie sú nevyhnutné pre správne fungovanie webovej stránky a nemožno ich zakázať. Bez týchto súborov cookie by webová stránka nefungovala správne.",
+        "linkedCategory": "necessary"
+      },
+      {
+        "title": "Výkon a analytika",
+        "description": "Tieto súbory cookie zhromažďujú informácie o tom, ako používate našu webovú stránku. Všetky údaje sú anonymizované a nemožno ich použiť na vašu identifikáciu.",
+        "linkedCategory": "analytics"
+      },
+      {
+        "title": "Reklama a cielenie",
+        "description": "Tieto súbory cookie sa používajú na zobrazovanie prispôsobených reklám na základe vašich záujmov. Pomáhajú tiež merať účinnosť reklamných kampaní a obmedzovať počet zobrazení reklamy.",
+        "linkedCategory": "ads"
+      },
+      {
+        "title": "Viac informácií",
+        "description": "V prípade akýchkoľvek otázok týkajúcich sa zásad používania súborov cookie a vašich možností nás prosím <a href='#' class='link-contact'>kontaktujte</a>."
+      }
+    ]
+  }
+}
