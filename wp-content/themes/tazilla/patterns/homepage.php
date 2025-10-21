@@ -80,10 +80,10 @@
 <!-- /wp:group --></section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|3xl"}},"background":{"backgroundImage":{"url":"/wp-content/uploads/2025/10/section-bg.png","id":251,"source":"file","title":"section-bg"},"backgroundSize":"cover"}},"backgroundColor":"neutral-7","layout":{"type":"constrained"}} -->
+<!-- wp:group {"tagName":"section","metadata":{"categories":["featured","services"],"patternName":"tazilla/tazilla-features-section","name":"Tazilla Features Section (sample)"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|3xl"}},"background":{"backgroundImage":{"url":"/wp-content/uploads/2025/10/section-bg.png","id":251,"source":"file","title":"section-bg"},"backgroundSize":"cover"}},"backgroundColor":"neutral-7","layout":{"type":"constrained"}} -->
 <section class="wp-block-group alignfull has-neutral-7-background-color has-background" style="padding-top:var(--wp--preset--spacing--3-xl)"><!-- wp:tazilla/features {"activeFeatureId":"feature-1760226494944-3fxjx","align":"wide"} -->
-<div class="wp-block-tazilla-features alignwide tazilla-features" data-active-feature-id="feature-1760226494944-3fxjx"><!-- wp:columns {"style":{"spacing":{"padding":{"top":"var:preset|spacing|xl"},"margin":{"top":"0","bottom":"0"}}}} -->
-<div class="wp-block-columns" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xl)"><!-- wp:column {"width":"50%"} -->
+<div class="wp-block-tazilla-features alignwide tazilla-features" data-active-feature-id="feature-1760226494944-3fxjx"><!-- wp:columns {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns" style="margin-top:0;margin-bottom:0"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:heading {"level":5} -->
 <h5 class="wp-block-heading">The smart way to manage cyber risk</h5>
 <!-- /wp:heading -->
@@ -325,8 +325,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"var:preset|spacing|3xl","bottom":"var:preset|spacing|3xl"}}},"backgroundColor":"brand-dark","textColor":"white","layout":{"type":"constrained"},"hideOnMobile":true} -->
-<section class="wp-block-group alignfull has-white-color has-brand-dark-background-color has-text-color has-background has-link-color hide-on-mobile" style="padding-top:var(--wp--preset--spacing--3-xl);padding-bottom:var(--wp--preset--spacing--3-xl)"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"},"blockGap":"var:preset|spacing|xs"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:heading {"level":5} -->
+<section class="wp-block-group alignfull has-white-color has-brand-dark-background-color has-text-color has-background has-link-color hide-on-mobile" style="padding-top:var(--wp--preset--spacing--3-xl);padding-bottom:var(--wp--preset--spacing--3-xl)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|xs"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<div class="wp-block-group alignwide"><!-- wp:heading {"level":5} -->
 <h5 class="wp-block-heading">Game-changing innovations on the way.</h5>
 <!-- /wp:heading -->
 
@@ -467,8 +467,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|3xl","bottom":"var:preset|spacing|3xl"}}},"layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--3-xl);padding-bottom:var(--wp--preset--spacing--3-xl)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|md"},"padding":{"top":"var:preset|spacing|xl"}}}} -->
-<div class="wp-block-columns alignwide" style="padding-top:var(--wp--preset--spacing--xl)"><!-- wp:column {"verticalAlignment":"top"} -->
+<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--3-xl);padding-bottom:var(--wp--preset--spacing--3-xl)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|md"}}}} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"top"} -->
 <div class="wp-block-column is-vertically-aligned-top"><!-- wp:heading -->
 <h2 class="wp-block-heading"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-brand-light-color">Stay updated</mark><br>with our latest posts</h2>
 <!-- /wp:heading --></div>
@@ -483,16 +483,16 @@
 
 <!-- wp:latest-posts {"postsToShow":3,"postLayout":"grid","displayFeaturedImage":true,"addLinkToFeaturedImage":true,"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|2xl","bottom":"var:preset|spacing|xl"},"margin":{"top":"0","bottom":"0","left":"0","right":"0"}}},"showReadMore":true} /-->
 
-<!-- wp:buttons {"align":"wide","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|xl"},"margin":{"top":"0","bottom":"0"}}}} -->
-<div class="wp-block-buttons alignwide" style="margin-top:0;margin-bottom:0;padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:button {"className":"is-style-outline","fullWidthOnMobile":true} -->
+<!-- wp:buttons {"align":"wide","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-buttons alignwide" style="margin-top:0;margin-bottom:0"><!-- wp:button {"className":"is-style-outline","fullWidthOnMobile":true} -->
 <div class="wp-block-button is-style-outline full-width-on-mobile"><a class="wp-block-button__link wp-element-button" href="/university/">All News</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></section>
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","className":"homepage-section-features","style":{"background":{"backgroundImage":{"url":"/wp-content/uploads/2025/10/section-bg.png","id":251,"source":"file","title":"section-bg"},"backgroundSize":"cover"},"spacing":{"padding":{"top":"var:preset|spacing|3xl","bottom":"var:preset|spacing|3xl"}}},"backgroundColor":"neutral-7","layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull homepage-section-features has-neutral-7-background-color has-background" style="padding-top:var(--wp--preset--spacing--3-xl);padding-bottom:var(--wp--preset--spacing--3-xl)"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"0"},"blockGap":"var:preset|spacing|xs"}},"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:0"><!-- wp:heading {"level":5} -->
+<section class="wp-block-group alignfull homepage-section-features has-neutral-7-background-color has-background" style="padding-top:var(--wp--preset--spacing--3-xl);padding-bottom:var(--wp--preset--spacing--3-xl)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|xs"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group alignwide"><!-- wp:heading {"level":5} -->
 <h5 class="wp-block-heading">The platform that understands your challenges.</h5>
 <!-- /wp:heading -->
 
@@ -535,16 +535,16 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:buttons {"align":"wide","style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|xl"}}}} -->
-<div class="wp-block-buttons alignwide" style="padding-top:0;padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:button {"className":"is-style-fill-secondary"} -->
+<!-- wp:buttons {"align":"wide"} -->
+<div class="wp-block-buttons alignwide"><!-- wp:button {"className":"is-style-fill-secondary"} -->
 <div class="wp-block-button is-style-fill-secondary"><a class="wp-block-button__link wp-element-button" href="/features/">Discover all features</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></section>
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","className":"homepage-section-benefits","style":{"spacing":{"padding":{"top":"var:preset|spacing|3xl","bottom":"var:preset|spacing|3xl"},"blockGap":"0"}},"backgroundColor":"brand-light","layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull homepage-section-benefits has-brand-light-background-color has-background" style="padding-top:var(--wp--preset--spacing--3-xl);padding-bottom:var(--wp--preset--spacing--3-xl)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|md"},"padding":{"top":"var:preset|spacing|xl"}}}} -->
-<div class="wp-block-columns alignwide" style="padding-top:var(--wp--preset--spacing--xl)"><!-- wp:column {"verticalAlignment":"top","style":{"spacing":{"blockGap":"var:preset|spacing|xs"}}} -->
+<section class="wp-block-group alignfull homepage-section-benefits has-brand-light-background-color has-background" style="padding-top:var(--wp--preset--spacing--3-xl);padding-bottom:var(--wp--preset--spacing--3-xl)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|md"}}}} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"top","style":{"spacing":{"blockGap":"var:preset|spacing|xs"}}} -->
 <div class="wp-block-column is-vertically-aligned-top"><!-- wp:heading {"level":5,"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
 <h5 class="wp-block-heading has-white-color has-text-color has-link-color">Simple. Smart. Tazilla.</h5>
 <!-- /wp:heading -->
@@ -667,16 +667,16 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:buttons {"align":"wide","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|xl"},"margin":{"top":"0","bottom":"0"}}}} -->
-<div class="wp-block-buttons alignwide" style="margin-top:0;margin-bottom:0;padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:button {"className":"is-style-fill","fullWidthOnMobile":true} -->
+<!-- wp:buttons {"align":"wide","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-buttons alignwide" style="margin-top:0;margin-bottom:0"><!-- wp:button {"className":"is-style-fill","fullWidthOnMobile":true} -->
 <div class="wp-block-button is-style-fill full-width-on-mobile"><a class="wp-block-button__link wp-element-button">Try it for free</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></section>
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","className":"homepage-section-vision","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"padding":{"top":"var:preset|spacing|3xl","bottom":"var:preset|spacing|3xl"}}},"backgroundColor":"brand-dark","textColor":"white","layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull homepage-section-vision has-white-color has-brand-dark-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--3-xl);padding-bottom:var(--wp--preset--spacing--3-xl)"><!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"}}}} -->
-<div class="wp-block-columns alignwide" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|lg"}}} -->
+<section class="wp-block-group alignfull homepage-section-vision has-white-color has-brand-dark-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--3-xl);padding-bottom:var(--wp--preset--spacing--3-xl)"><!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|lg"}}} -->
 <div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xs"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":5} -->
 <h5 class="wp-block-heading">Towards security. Beyond threats.</h5>

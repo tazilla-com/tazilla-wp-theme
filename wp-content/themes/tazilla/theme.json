@@ -1,4 +1,21 @@
 {
+	"customTemplates": [
+		{
+			"name": "single-feature",
+			"postTypes": [
+				"feature"
+			],
+			"title": "Single Feature"
+		},
+		{
+			"name": "wp-custom-template-pages-full-width",
+			"postTypes": [
+				"page",
+				"post"
+			],
+			"title": "Pages (full width)"
+		}
+	],
 	"patterns": {
 		"core": false
 	},
@@ -160,7 +177,7 @@
 				},
 				{
 					"name": "3X-Large",
-					"size": "clamp(3rem, 10vw, 4rem)",
+					"size": "clamp(4rem, 4vw + 2rem, 6rem);",
 					"slug": "3xl"
 				}
 			],

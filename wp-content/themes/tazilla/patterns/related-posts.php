@@ -8,18 +8,18 @@
  * @package Tazilla
  */
 ?>
-<!-- wp:group {"metadata":{"categories":["footer","posts"],"patternName":"tazilla/related-posts","name":"Related Posts"},"align":"full","style":{"background":{"backgroundImage":{"url":"/wp-content/uploads/2025/10/section-bg.png","id":251,"source":"file","title":"section-bg"},"backgroundSize":"cover"},"spacing":{"padding":{"top":"var:preset|spacing|3xl","bottom":"var:preset|spacing|3xl"}}},"backgroundColor":"neutral-7","layout":{"type":"constrained"}} -->
+<!-- wp:group {"metadata":{"categories":["footer","posts"],"patternName":"tazilla/related-posts","name":"Related Posts"},"align":"full","style":{"background":{"backgroundImage":{"url":"/wp-content/uploads/2025/10/section-bg.png","id":251,"source":"file","title":"section-bg"},"backgroundSize":"cover"},"spacing":{"padding":{"top":"var:preset|spacing|3xl","bottom":"var:preset|spacing|3xl"},"blockGap":"0"}},"backgroundColor":"neutral-7","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-neutral-7-background-color has-background" style="padding-top:var(--wp--preset--spacing--3-xl);padding-bottom:var(--wp--preset--spacing--3-xl)">
-    <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|sm"}}},"layout":{"type":"constrained"}} -->
-    <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--sm)">
+    <!-- wp:group {"layout":{"type":"constrained"}} -->
+    <div class="wp-block-group">
         <!-- wp:heading -->
         <h2 class="wp-block-heading">Explore Related Reads</h2>
         <!-- /wp:heading -->
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|xl"}}},"layout":{"type":"constrained"}} -->
-    <div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--xl)">
+    <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|2xl"}}},"layout":{"type":"constrained"}} -->
+    <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--2-xl)">
         <!-- wp:query {"queryId":6,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":null,"parents":[],"format":[]}} -->
         <div class="wp-block-query">
             <!-- wp:post-template {"style":{"spacing":{"blockGap":"var:preset|spacing|2xl"}}} -->

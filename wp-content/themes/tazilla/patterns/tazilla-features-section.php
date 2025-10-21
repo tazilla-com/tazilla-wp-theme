@@ -7,10 +7,10 @@
  * @package Tazilla
  */
 ?>
-<!-- wp:group {"tagName":"section","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|3xl"}},"background":{"backgroundImage":{"url":"/wp-content/uploads/2025/10/section-bg.png","id":251,"source":"file","title":"section-bg"},"backgroundSize":"cover"}},"backgroundColor":"neutral-7","layout":{"type":"constrained"}} -->
+<!-- wp:group {"tagName":"section","metadata":{"categories":["featured"],"patternName":"tazilla/tazilla-features-section","name":"Tazilla Features Section (sample)"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|3xl"}},"background":{"backgroundImage":{"url":"/wp-content/uploads/2025/10/section-bg.png","id":251,"source":"file","title":"section-bg"},"backgroundSize":"cover"}},"backgroundColor":"neutral-7","layout":{"type":"constrained"}} -->
 <section class="wp-block-group alignfull has-neutral-7-background-color has-background" style="padding-top:var(--wp--preset--spacing--3-xl)"><!-- wp:tazilla/features {"activeFeatureId":"feature-1760226494944-3fxjx","align":"wide"} -->
-<div class="wp-block-tazilla-features alignwide tazilla-features" data-active-feature-id="feature-1760226494944-3fxjx"><!-- wp:columns {"style":{"spacing":{"padding":{"top":"var:preset|spacing|xl"},"margin":{"top":"0","bottom":"0"}}}} -->
-<div class="wp-block-columns" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xl)"><!-- wp:column {"width":"50%"} -->
+<div class="wp-block-tazilla-features alignwide tazilla-features" data-active-feature-id="feature-1760226494944-3fxjx"><!-- wp:columns {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns" style="margin-top:0;margin-bottom:0"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:heading {"level":5} -->
 <h5 class="wp-block-heading">The smart way to manage cyber risk</h5>
 <!-- /wp:heading -->
