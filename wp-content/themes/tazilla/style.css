@@ -7,7 +7,7 @@ Description: Tazilla block theme
 Requires at least: 6.8
 Tested up to: 6.8
 Requires PHP: 7.2
-Version: 0.7.1
+Version: 0.8.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: tazilla
@@ -181,7 +181,7 @@ header .wp-block-navigation {
     .wp-block-latest-posts__post-title {
         color: var(--wp--preset--color--brand-dark, #0E3C20);
         font-family: var(--wp--preset--font-family--unbounded), sans-serif;
-        font-size: var(--wp--preset--font-size--lg, 1.5rem);
+        font-size: var(--wp--preset--font-size--lg, 1.125rem);
         font-style: normal;
         font-weight: 700;
         line-height: var(--wp--custom--line-height--heading, 1.33);
@@ -245,7 +245,7 @@ header .wp-block-navigation {
         color: var(--wp--preset--color--brand-dark, #0E3C20);
         font-family: var(--wp--preset--font-family--unbounded), sans-serif;
         text-transform: uppercase;
-        font-size: var(--wp--preset--font-size--sm, 0.75rem);
+        font-size: var(--wp--preset--font-size--sm, 0.625rem);
     }
 }
 
@@ -285,7 +285,7 @@ header .wp-block-navigation {
         border-style: solid;
         color: var(--wp--preset--color--white, #FFFFFF);
         font-family: var(--wp--preset--font-family--unbounded) sans-serif;
-        font-size: var(--wp--preset--font-size--sm, 0.75rem);
+        font-size: var(--wp--preset--font-size--sm, 0.625rem);
         font-weight: 700;
         letter-spacing: 2.56px;
         line-height: 1;
@@ -351,7 +351,7 @@ header .wp-block-navigation {
         border-width: 1px;
         border-style: solid;
         font-family: var(--wp--preset--font-family--unbounded) sans-serif;
-        font-size: var(--wp--preset--font-size--sm, 0.75rem);
+        font-size: var(--wp--preset--font-size--sm, 0.625rem);
         font-weight: 700;
         letter-spacing: 2.56px;
         line-height: 1;
@@ -433,7 +433,7 @@ header .wp-block-navigation {
 .wp-block-post-excerpt__more-link,
 .wp-block-latest-posts__more-link {
     font-family: var(--wp--preset--font-family--unbounded), sans-serif;
-    font-size: var(--wp--preset--font-size--sm, 0.75rem);
+    font-size: var(--wp--preset--font-size--sm, 0.625rem);
     text-transform: uppercase;
 }
 
