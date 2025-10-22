@@ -10,6 +10,7 @@
   "icon": "table-col-after",
   "textdomain": "tazilla",
   "editorScript": "file:./build/index.jsx.js",
+  "style": "file:./build/style-style.scss.css",
   "supports": {
     "html": false,
     "inserter": false
@@ -24,6 +25,14 @@
     "hasCheckmark": {
       "type": "boolean",
       "default": false
+    },
+    "hasTooltip": {
+      "type": "boolean",
+      "default": false
+    },
+    "tooltipText": {
+      "type": "string",
+      "default": ""
     }
   }
 }

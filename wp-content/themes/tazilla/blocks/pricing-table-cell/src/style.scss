@@ -1,0 +1,46 @@
+.tazilla-pricing-table-cell {
+  position: relative;
+
+  .tooltip-wrapper {
+    display: inline-flex;
+    align-items: center;
+    margin-left: var(--wp--preset--spacing--xs, 0.5rem);
+    position: relative;
+    top: 0.25rem;
+    cursor: help;
+
+    svg {
+      display: block;
+    }
+
+    &:hover .tooltip-text {
+      visibility: visible;
+    }
+  }
+
+  .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    z-index: 100;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--wp--preset--color--brand-dark-2, #0C321B);
+    color: var(--wp--preset--color--white, #FFFFFF);
+    margin-bottom: var(--wp--preset--spacing--xs, 0.5rem);
+    padding: calc(var(--wp--preset--spacing--xs, 0.5rem) / 2) var(--wp--preset--spacing--xs, 0.5rem);
+    border-radius: var(--wp--preset--border-radius--sm, 0.25rem);
+    white-space: nowrap;
+    font-size: var(--wp--preset--font-size--sm, 0.625rem);
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 0.3125rem solid transparent;
+      border-top-color: var(--wp--preset--color--brand-dark-2, #0C321B);
+    }
+  }
+}
