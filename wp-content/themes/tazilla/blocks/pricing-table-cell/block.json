@@ -18,7 +18,12 @@
     "content": {
       "type": "string",
       "source": "html",
-      "selector": "span"
+      "selector": "span",
+      "default": "--"
+    },
+    "hasCheckmark": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

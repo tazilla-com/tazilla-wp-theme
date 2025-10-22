@@ -70,4 +70,8 @@
   &:not(:first-child) {
     font-size: var(--wp--preset--font-size--sm, 0.625rem);
   }
+
+  svg + span {
+    display: block;
+  }
 }
