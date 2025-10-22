@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tazilla/pricing-table-cell",
+  "title": "Cell",
+  "parent": [
+    "tazilla/pricing-table-row"
+  ],
+  "category": "layout",
+  "icon": "table-col-after",
+  "textdomain": "tazilla",
+  "editorScript": "file:./build/index.jsx.js",
+  "supports": {
+    "html": false,
+    "inserter": false
+  },
+  "attributes": {
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": "span"
+    }
+  }
+}

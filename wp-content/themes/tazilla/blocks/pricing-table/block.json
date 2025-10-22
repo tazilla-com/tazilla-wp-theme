@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tazilla/pricing-table",
+  "title": "Tazilla Pricing Table",
+  "category": "layout",
+  "icon": "editor-table",
+  "description": "Create a custom pricing table with editable rows and columns.",
+  "keywords": [
+    "table",
+    "data",
+    "grid",
+    "pricing"
+  ],
+  "textdomain": "tazilla",
+  "editorScript": "file:./build/index.jsx.js",
+  "editorStyle": "file:./build/editor.scss.css",
+  "style": "file:./build/style-style.scss.css",
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ]
+  }
+}

@@ -73,6 +73,13 @@ function tazilla_register_blocks(): void {
 
 	// Custom Block Author Box
 	register_block_type( get_template_directory() . '/blocks/author-box' );
+
+	// Custom Block Pricing Table
+	register_block_type( get_template_directory() . '/blocks/pricing-table' );
+	register_block_type( get_template_directory() . '/blocks/pricing-table-header-row' );
+	register_block_type( get_template_directory() . '/blocks/pricing-table-row' );
+	register_block_type( get_template_directory() . '/blocks/pricing-table-header-cell' );
+	register_block_type( get_template_directory() . '/blocks/pricing-table-cell' );
 }
 
 add_action( 'init', 'tazilla_register_blocks' );

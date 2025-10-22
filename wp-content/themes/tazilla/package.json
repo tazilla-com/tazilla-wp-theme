@@ -20,9 +20,21 @@
     "build:category-filter": "wp-scripts build blocks/category-filter/src/*.* --output-path=blocks/category-filter/build --experimental-modules",
     "start:category-filter": "wp-scripts start blocks/category-filter/src/*.* --output-path=blocks/category-filter/build --experimental-modules",
     "build:author-box": "wp-scripts build blocks/author-box/src/*.* --output-path=blocks/author-box/build",
-    "start:author-box": "wp-scripts start blocks/author-box/src/*.* --output-path=blocks/author-box/build"
+    "start:author-box": "wp-scripts start blocks/author-box/src/*.* --output-path=blocks/author-box/build",
+    "build:pricing-table": "wp-scripts build blocks/pricing-table/src/*.* --output-path=blocks/pricing-table/build",
+    "start:pricing-table": "wp-scripts start blocks/pricing-table/src/*.* --output-path=blocks/pricing-table/build",
+    "build:pricing-table-header-row": "wp-scripts build blocks/pricing-table-header-row/src/*.* --output-path=blocks/pricing-table-header-row/build",
+    "start:pricing-table-header-row": "wp-scripts start blocks/pricing-table-header-row/src/*.* --output-path=blocks/pricing-table-header-row/build",
+    "build:pricing-table-row": "wp-scripts build blocks/pricing-table-row/src/*.* --output-path=blocks/pricing-table-row/build",
+    "start:pricing-table-row": "wp-scripts start blocks/pricing-table-row/src/*.* --output-path=blocks/pricing-table-row/build",
+    "build:pricing-table-cell": "wp-scripts build blocks/pricing-table-cell/src/*.* --output-path=blocks/pricing-table-cell/build",
+    "start:pricing-table-cell": "wp-scripts start blocks/pricing-table-cell/src/*.* --output-path=blocks/pricing-table-cell/build",
+    "build:pricing-table-header-cell": "wp-scripts build blocks/pricing-table-header-cell/src/*.* --output-path=blocks/pricing-table-header-cell/build",
+    "start:pricing-table-header-cell": "wp-scripts start blocks/pricing-table-header-cell/src/*.* --output-path=blocks/pricing-table-header-cell/build"
   },
   "devDependencies": {
+    "@wordpress/icons": "^11.0.0",
+    "@wordpress/interactivity": "^6.33.0",
     "@wordpress/scripts": "^30.25.0"
   }
 }

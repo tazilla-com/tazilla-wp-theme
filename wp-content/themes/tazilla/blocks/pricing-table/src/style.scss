@@ -1,0 +1,73 @@
+.tazilla-pricing-table {
+  border-collapse: collapse;
+  text-align: center;
+  font-size: var(--wp--preset--font-size--md, 1rem);
+  color: var(--wp--preset--color--brand-dark, #0E3C20);
+
+  figcaption h2 {
+    margin-top: 0;
+    margin-bottom: var(--wp--preset--spacing--lg, 1.25rem);
+    text-align: left;
+  }
+
+  table {
+    width: 100%;
+  }
+}
+
+.tazilla-pricing-table-header-cell,
+.tazilla-pricing-table-cell {
+  border-bottom: 1px solid var(--wp--preset--color--neutral-5, #E6E6E6);
+  vertical-align: middle;
+
+  &:first-child {
+    text-align: left;
+  }
+
+  &:not(:first-child) {
+    font-family: var(--wp--preset--font-family--unbounded), sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.tazilla-pricing-table-header-cell {
+  padding: 0 var(--wp--preset--spacing--xs, 0.5rem);
+  font-weight: 700;
+
+  p {
+    margin: 0;
+  }
+
+  .wp-block-buttons {
+    justify-content: center;
+    margin-top: var(--wp--preset--spacing--xs, 0.5rem);
+  }
+
+  &:not(:first-child) {
+    font-size: var(--wp--preset--font-size--md, 1rem);
+
+    .tazilla-pricing-table-header-cell__content {
+      padding: var(--wp--preset--spacing--md, 1rem);
+      border-radius: var(--wp--preset--border-radius--md, 0.5rem);
+      background: var(--wp--preset--color--white, #FFFFFF);
+    }
+
+    &.is-highlighted .tazilla-pricing-table-header-cell__content {
+      background: var(--wp--preset--color--brand-dark, #0E3C20) url('./highlight-bg.png') no-repeat center left / contain;
+      color: var(--wp--preset--color--white, #FFFFFF);
+    }
+  }
+}
+
+.tazilla-pricing-table-cell {
+  padding: var(--wp--preset--spacing--md, 1rem) var(--wp--preset--spacing--xs, 0.5rem);
+
+  &:first-child {
+    color: var(--wp--preset--color--brand-dark-800, #04120A);
+  }
+
+  &:not(:first-child) {
+    font-size: var(--wp--preset--font-size--sm, 0.625rem);
+  }
+}

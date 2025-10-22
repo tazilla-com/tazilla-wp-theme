@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tazilla/pricing-table-header-row",
+  "title": "Header Row",
+  "parent": [
+    "tazilla/pricing-table"
+  ],
+  "category": "layout",
+  "icon": "table-row-before",
+  "textdomain": "tazilla",
+  "editorScript": "file:./build/index.jsx.js",
+  "supports": {
+    "html": false,
+    "inserter": false
+  }
+}

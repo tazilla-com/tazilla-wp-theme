@@ -1,0 +1,12 @@
+.tazilla-pricing-table-header-row,
+.tazilla-pricing-table-row {
+  > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.tazilla-pricing-table-header-cell,
+.tazilla-pricing-table-cell {
+  width: 100%;
+}
