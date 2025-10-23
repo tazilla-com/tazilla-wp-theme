@@ -101,7 +101,9 @@ function use_smtp_email( $phpmailer ): void {
     $phpmailer->SMTPDebug  = SMTP_DEBUG;
 }
 
-add_action( 'phpmailer_init', 'use_smtp_email' );
+if ( defined( 'SMTP_PASS' ) && ! empty( SMTP_PASS ) ) {
+    add_action( 'phpmailer_init', 'use_smtp_email' );
+}
 
 /**
  * Google Tag Manager.
