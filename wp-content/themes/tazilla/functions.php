@@ -106,6 +106,16 @@ if ( defined( 'SMTP_PASS' ) && ! empty( SMTP_PASS ) ) {
 }
 
 /**
+ * Output custom HTML meta tags.
+ */
+function tazilla_add_meta(): void {
+    echo '<meta name="developer" content="Martin Trubíni, Neotrendy (https://www.neotrendy.com)">' . "\n";
+    echo '<meta name="designer" content="Michal Opálek">' . "\n";
+}
+
+add_action( 'wp_head', 'tazilla_add_meta', 2 );
+
+/**
  * Google Tag Manager.
  */
 function tazilla_gtm_head(): void {
