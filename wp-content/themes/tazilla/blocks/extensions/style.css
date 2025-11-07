@@ -13,7 +13,17 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 991px) {
+    .hide-on-tablet {
+        display: none !important;
+    }
+
+    .full-width-on-tablet {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
     .hide-on-desktop {
         display: none !important;
     }

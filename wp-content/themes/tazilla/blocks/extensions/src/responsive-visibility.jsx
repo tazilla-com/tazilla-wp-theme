@@ -14,8 +14,10 @@ addFilter(
     (settings) => {
         settings.attributes = Object.assign(settings.attributes || {}, {
             hideOnMobile: {type: 'boolean', default: false},
+            hideOnTablet: {type: 'boolean', default: false},
             hideOnDesktop: {type: 'boolean', default: false},
             fullWidthOnMobile: {type: 'boolean', default: false},
+            fullWidthOnTablet: {type: 'boolean', default: false},
             firstOnMobile: {type: 'boolean', default: false},
         });
         return settings;
@@ -28,7 +30,14 @@ addFilter(
 const withVisibilityControls = createHigherOrderComponent((BlockEdit) => {
     return (props) => {
         const {attributes, setAttributes, isSelected} = props;
-        const {hideOnMobile, hideOnDesktop, fullWidthOnMobile, firstOnMobile} = attributes;
+        const {
+            hideOnMobile,
+            hideOnTablet,
+            hideOnDesktop,
+            fullWidthOnMobile,
+            fullWidthOnTablet,
+            firstOnMobile
+        } = attributes;
 
         return (
             <Fragment>
@@ -42,6 +51,11 @@ const withVisibilityControls = createHigherOrderComponent((BlockEdit) => {
                                 onChange={(value) => setAttributes({hideOnMobile: value})}
                             />
                             <ToggleControl
+                                label={__('Hide on tablet', 'tazilla')}
+                                checked={!!hideOnTablet}
+                                onChange={(value) => setAttributes({hideOnTablet: value})}
+                            />
+                            <ToggleControl
                                 label={__('Hide on desktop', 'tazilla')}
                                 checked={!!hideOnDesktop}
                                 onChange={(value) => setAttributes({hideOnDesktop: value})}
@@ -50,6 +64,11 @@ const withVisibilityControls = createHigherOrderComponent((BlockEdit) => {
                                 label={__('Full width on mobile', 'tazilla')}
                                 checked={!!fullWidthOnMobile}
                                 onChange={(value) => setAttributes({fullWidthOnMobile: value})}
+                            />
+                            <ToggleControl
+                                label={__('Full width on tablet', 'tazilla')}
+                                checked={!!fullWidthOnTablet}
+                                onChange={(value) => setAttributes({fullWidthOnTablet: value})}
                             />
                             <ToggleControl
                                 label={__('First on mobile', 'tazilla')}
@@ -76,12 +95,21 @@ addFilter(
 const withEditorClassNames = createHigherOrderComponent((BlockListBlock) => {
     return (props) => {
         const {attributes} = props;
-        const {hideOnMobile, hideOnDesktop, fullWidthOnMobile, firstOnMobile} = attributes || {};
+        const {
+            hideOnMobile,
+            hideOnDesktop,
+            hideOnTablet,
+            fullWidthOnMobile,
+            fullWidthOnTablet,
+            firstOnMobile
+        } = attributes || {};
 
         let extraClasses = '';
         if (hideOnMobile) extraClasses += ' hide-on-mobile';
+        if (hideOnTablet) extraClasses += ' hide-on-tablet';
         if (hideOnDesktop) extraClasses += ' hide-on-desktop';
         if (fullWidthOnMobile) extraClasses += ' full-width-on-mobile';
+        if (fullWidthOnTablet) extraClasses += ' full-width-on-tablet';
         if (firstOnMobile) extraClasses += ' first-on-mobile';
 
         return <BlockListBlock {...props} className={(props.className || '') + extraClasses}/>;
@@ -102,12 +130,21 @@ addFilter(
     'tazilla/apply-visibility-classes',
     (extraProps, blockType, attributes) => {
         if (!attributes) return extraProps;
-        const {hideOnMobile, hideOnDesktop, fullWidthOnMobile, firstOnMobile} = attributes;
+        const {
+            hideOnMobile,
+            hideOnTablet,
+            hideOnDesktop,
+            fullWidthOnMobile,
+            fullWidthOnTablet,
+            firstOnMobile
+        } = attributes;
         const classes = [];
 
         if (hideOnMobile) classes.push('hide-on-mobile');
+        if (hideOnTablet) classes.push('hide-on-tablet');
         if (hideOnDesktop) classes.push('hide-on-desktop');
         if (fullWidthOnMobile) classes.push('full-width-on-mobile');
+        if (fullWidthOnTablet) classes.push('full-width-on-tablet');
         if (firstOnMobile) classes.push('first-on-mobile');
 
         if (classes.length) {

@@ -7,7 +7,7 @@ Description: Tazilla block theme
 Requires at least: 6.8
 Tested up to: 6.8
 Requires PHP: 7.2
-Version: 0.8.0
+Version: 0.8.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: tazilla
@@ -61,7 +61,13 @@ body.scrolled .navigation-container {
             }
         }
     }
+}
 
+footer + footer.wp-block-template-part {
+    margin-block-start: 0;
+}
+
+@media (max-width: 991px) {
     html:not(.has-modal-open) {
         header .wp-block-navigation {
             position: absolute;
@@ -89,10 +95,6 @@ body.scrolled .navigation-container {
     }
 }
 
-footer + footer.wp-block-template-part {
-    margin-block-start: 0;
-}
-
 /* Navigation */
 header .wp-block-navigation {
     .wp-block-navigation-item {
@@ -114,12 +116,46 @@ header .wp-block-navigation {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     header .wp-block-navigation {
         gap: var(--wp--preset--spacing--2-xl, 2.5rem);
     }
 }
 
+/* Mobile navigation override default WP breakpoints */
+@media (min-width: 600px) {
+    .wp-block-navigation__responsive-container-open:not(.always-shown) {
+        display: flex;
+    }
+
+    .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .wp-block-navigation__responsive-container-open:not(.always-shown) {
+        display: none
+    }
+
+    .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+        background-color: inherit;
+        display: block;
+        position: relative;
+        width: 100%;
+        z-index: auto
+    }
+
+    .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) .wp-block-navigation__responsive-container-close {
+        display: none
+    }
+
+    .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__submenu-container.wp-block-navigation__submenu-container.wp-block-navigation__submenu-container.wp-block-navigation__submenu-container {
+        left: 0
+    }
+}
+
+/* Features navigation */
 .tazilla-features-navigation-wrapper {
     width: 100vw;
     top: 0;
