@@ -16,6 +16,7 @@
   "editorScript": "file:./build/index.jsx.js",
   "editorStyle": "file:./build/editor.scss.css",
   "style": "file:./build/style-style.scss.css",
+  "viewScript": "file:./build/view.js",
   "supports": {
     "html": false,
     "align": [

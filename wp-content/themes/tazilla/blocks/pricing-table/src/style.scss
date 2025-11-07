@@ -54,7 +54,7 @@
     }
 
     &.is-highlighted .tazilla-pricing-table-header-cell__content {
-      background: var(--wp--preset--color--brand-dark, #0E3C20) url('./highlight-bg.png') no-repeat center left / contain;
+      background: var(--wp--preset--color--brand-dark, #0E3C20) url('./highlight-bg.png') no-repeat center left / cover;
       color: var(--wp--preset--color--white, #FFFFFF);
     }
   }
@@ -73,5 +73,76 @@
 
   svg + span {
     display: block;
+  }
+}
+
+.tazilla-pricing-table-header-row:first-child th:not(:first-child) {
+  position: sticky;
+  top: 4rem;
+  z-index: 10;
+}
+
+/* Pricing table mobile navigation */
+.tazilla-pricing-table table {
+  td,
+  th {
+    display: table-cell;
+  }
+}
+
+.tazilla-pricing-table-nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .tazilla-pricing-table-nav {
+    background-color: var(--wp--preset--color--brand-light, #80C241);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: var(--wp--preset--spacing--xs, .5rem);
+    margin-right: calc(-1 * var(--wp--style--root--padding-right, 0.75rem));
+    margin-left: calc(-1 * var(--wp--style--root--padding-left, 0.75rem));
+    margin-bottom: var(--wp--preset--spacing--md, 1rem);
+    padding: var(--wp--preset--spacing--xs, .5rem) var(--wp--style--root--padding-right, 0.75rem);
+  }
+
+  .tazilla-pricing-table-nav__btn {
+    align-items: center;
+    color: var(--wp--preset--color--brand-100, #e6f3d9);
+    font-family: var(--wp--preset--font-family--unbounded), sans-serif;
+    font-size: var(--wp--preset--font-size--sm, .625rem);
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    line-height: 1.6;
+    padding: var(--wp--preset--spacing--xs, .5rem) var(--wp--preset--spacing--lg, 1.25rem);
+    text-transform: uppercase;
+    border-radius: var(--wp--custom--radius--sm, .25rem);
+    cursor: pointer;
+    background: transparent;
+    border: transparent;
+
+    &.is-active {
+      background: var(--wp--preset--color--neutral-8, #f9fcf5);
+      color: var(--wp--preset--color--brand-light, #80c241);
+    }
+  }
+
+  .tazilla-pricing-table table {
+    /* Hide all columns except first */
+    tr > *:not(:first-child) {
+      display: none;
+    }
+
+    /* Show only selected column */
+    &.tazilla-show-col-1 tr > *:nth-child(2),
+    &.tazilla-show-col-2 tr > *:nth-child(3),
+    &.tazilla-show-col-3 tr > *:nth-child(4),
+    &.tazilla-show-col-4 tr > *:nth-child(5),
+    &.tazilla-show-col-5 tr > *:nth-child(6),
+    &.tazilla-show-col-6 tr > *:nth-child(7) {
+      display: table-cell;
+    }
   }
 }
