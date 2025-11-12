@@ -96,26 +96,36 @@ function tazilla_latest_posts_read_more( $block_content, $block ) {
 		return $block_content;
 	}
 
-	// Pattern to match each list item with the actual structure
-	$pattern = '/(<li>)(.*?<a[^>]*href="([^"]*)"[^>]*>.*?<\/a>)(<\/li>)/s';
+	// Match each <li> in the block
+	$pattern = '/(<li\b[^>]*>)(.*?)(<\/li>)/s';
 
 	return preg_replace_callback( $pattern, function ( $matches ) {
-		$li_open    = $matches[1]; // <li>
-		$li_content = $matches[2]; // Everything between <li> and </li>
-		$post_url   = $matches[3]; // The href URL
-		$li_close   = $matches[4]; // </li>
+		$li_open    = $matches[1]; // <li> opening
+		$li_content = $matches[2]; // inside <li> ... </li>
+		$li_close   = $matches[3]; // </li>
 
-		$read_more_html = sprintf(
-			'<div class="wp-block-latest-posts__more-text"><a href="%s" class="wp-block-latest-posts__more-link">%s</a></div>',
-			esc_url( $post_url ),
-			esc_html__( 'Read more', 'tazilla' )
-		);
+		// Extract URL and title text from <a class="wp-block-latest-posts__post-title">
+		if ( preg_match( '/<a[^>]*class="[^"]*wp-block-latest-posts__post-title[^"]*"[^>]*href="([^"]+)"[^>]*>(.*?)<\/a>/s', $li_content, $post_link ) ) {
+			$post_url   = $post_link[1];
+			$post_title = wp_strip_all_tags( $post_link[2] );
 
-		return $li_open . $li_content . $read_more_html . $li_close;
+			$read_more_html = sprintf(
+				'<div class="wp-block-latest-posts__more-text"><a href="%s" class="wp-block-latest-posts__more-link" title="%s">%s</a></div>',
+				esc_url( $post_url ),
+				esc_attr( $post_title ),
+				esc_html__( 'Read more', 'tazilla' )
+			);
+
+			return $li_open . $li_content . $read_more_html . $li_close;
+		}
+
+		// No match → return unchanged
+		return $matches[0];
 	}, $block_content );
 }
 
 add_filter( 'render_block', 'tazilla_latest_posts_read_more', 10, 2 );
+
 
 /**
  * Category Filter - filter main query
