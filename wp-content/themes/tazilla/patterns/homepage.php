@@ -40,9 +40,9 @@
 <!-- /wp:columns --></section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","align":"full","style":{"spacing":{"padding":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull" style="padding-top:0;padding-bottom:0"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|xs","padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|lg","left":"0","right":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--xl);padding-right:0;padding-bottom:var(--wp--preset--spacing--lg);padding-left:0"><!-- wp:heading {"textAlign":"center","level":5} -->
+<!-- wp:group {"tagName":"section","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xl","bottom":"var:preset|spacing|xl"},"blockGap":"0"}},"layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--xl);padding-bottom:var(--wp--preset--spacing--xl)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|xs"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<div class="wp-block-group alignwide"><!-- wp:heading {"textAlign":"center","level":5} -->
 <h5 class="wp-block-heading has-text-align-center">Our Partners</h5>
 <!-- /wp:heading -->
 
@@ -51,8 +51,8 @@
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"wide","style":{"border":{"bottom":{"color":"var:preset|color|neutral-7-20","width":"1px"}},"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"0","bottom":"var:preset|spacing|xl","left":"0","right":"0"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group alignwide" style="border-bottom-color:var(--wp--preset--color--neutral-7-20);border-bottom-width:1px;margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:var(--wp--preset--spacing--xl);padding-left:0"><!-- wp:gallery {"columns":6,"imageCrop":false,"linkTo":"none","align":"wide"} -->
+<!-- wp:group {"align":"wide","style":{"border":{"bottom":{"color":"var:preset|color|neutral-7-20","width":"1px"}},"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|lg","bottom":"var:preset|spacing|lg","left":"0","right":"0"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group alignwide" style="border-bottom-color:var(--wp--preset--color--neutral-7-20);border-bottom-width:1px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--lg);padding-right:0;padding-bottom:var(--wp--preset--spacing--lg);padding-left:0"><!-- wp:gallery {"columns":6,"imageCrop":false,"linkTo":"none","align":"wide"} -->
 <figure class="wp-block-gallery alignwide has-nested-images columns-6"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/10/logo-google.png" alt=""/></figure>
 <!-- /wp:image -->
@@ -77,6 +77,12 @@
 <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/10/logo-kpmg.png" alt=""/></figure>
 <!-- /wp:image --></figure>
 <!-- /wp:gallery --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p>Interested in becoming a partner? <a href="/about-us/#contact-us" data-type="page" data-id="633">Contact us</a></p>
+<!-- /wp:paragraph --></div>
 <!-- /wp:group --></section>
 <!-- /wp:group -->
 
@@ -342,43 +348,11 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"textAlign":"center","level":4,"style":{"elements":{"link":{"color":{"text":"var:preset|color|brand-light"}}}},"textColor":"brand-light"} -->
-<h4 class="wp-block-heading has-text-align-center has-brand-light-color has-text-color has-link-color">Expanded<br>AI Agents</h4>
+<h4 class="wp-block-heading has-text-align-center has-brand-light-color has-text-color has-link-color">Export<br>All Your Data</h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Q3/2025</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column -->
-
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|md"}}}} -->
-<figure class="wp-block-image size-full" style="margin-bottom:var(--wp--preset--spacing--md)"><img src="/wp-content/uploads/2025/10/milestone-connector-2.png" alt=""/></figure>
-<!-- /wp:image -->
-
-<!-- wp:heading {"textAlign":"center","level":4,"style":{"elements":{"link":{"color":{"text":"var:preset|color|brand-light"}}}},"textColor":"brand-light"} -->
-<h4 class="wp-block-heading has-text-align-center has-brand-light-color has-text-color has-link-color">GDPR<br>compliance</h4>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Q3/2025</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column -->
-
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|md"}}}} -->
-<figure class="wp-block-image size-full" style="margin-bottom:var(--wp--preset--spacing--md)"><img src="/wp-content/uploads/2025/10/milestone-connector-3.png" alt=""/></figure>
-<!-- /wp:image -->
-
-<!-- wp:heading {"textAlign":"center","level":4,"style":{"elements":{"link":{"color":{"text":"var:preset|color|brand-light"}}}},"textColor":"brand-light"} -->
-<h4 class="wp-block-heading has-text-align-center has-brand-light-color has-text-color has-link-color">Active Directory<br>Integration</h4>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Q3/2025</p>
+<p class="has-text-align-center">Q4/2025</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -390,11 +364,43 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"textAlign":"center","level":4,"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
-<h4 class="wp-block-heading has-text-align-center has-white-color has-text-color has-link-color">Export<br>All Your Data</h4>
+<h4 class="wp-block-heading has-text-align-center has-white-color has-text-color has-link-color">Expanded<br>AI Agents</h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","className":"opacity-50"} -->
-<p class="has-text-align-center opacity-50">Q4/2025</p>
+<p class="has-text-align-center opacity-50">Q1/2026</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|md"}}}} -->
+<figure class="wp-block-image size-full" style="margin-bottom:var(--wp--preset--spacing--md)"><img src="/wp-content/uploads/2025/10/milestone-connector-4.png" alt=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":4,"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
+<h4 class="wp-block-heading has-text-align-center has-white-color has-text-color has-link-color">GDPR<br>compliance</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","className":"opacity-50"} -->
+<p class="has-text-align-center opacity-50">Q2/2026</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|md"}}}} -->
+<figure class="wp-block-image size-full" style="margin-bottom:var(--wp--preset--spacing--md)"><img src="/wp-content/uploads/2025/10/milestone-connector-4.png" alt=""/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":4,"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
+<h4 class="wp-block-heading has-text-align-center has-white-color has-text-color has-link-color">Dora<br>compliance</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","className":"opacity-50"} -->
+<p class="has-text-align-center opacity-50">Q3/2026</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -410,7 +416,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","className":"opacity-50"} -->
-<p class="has-text-align-center opacity-50">Q4/2025</p>
+<p class="has-text-align-center opacity-50">Q4/2026</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
