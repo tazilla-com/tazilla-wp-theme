@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tazilla/mega-slide",
+  "title": "Tazilla Mega Slide",
+  "parent": [
+    "tazilla/mega-slider"
+  ],
+  "category": "layout",
+  "icon": "images-alt2",
+  "description": "Create slide for mega slider.",
+  "textdomain": "tazilla",
+  "editorScript": "file:./build/index.jsx.js",
+  "attributes": {
+    "buttonTitle": {
+      "type": "string",
+      "default": ""
+    },
+    "buttonSubtitle": {
+      "type": "string",
+      "default": ""
+    },
+    "buttonImageId": {
+      "type": "number",
+      "default": null
+    },
+    "buttonImageUrl": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false
+  }
+}

@@ -80,6 +80,10 @@ function tazilla_register_blocks(): void {
 	register_block_type( get_template_directory() . '/blocks/pricing-table-row' );
 	register_block_type( get_template_directory() . '/blocks/pricing-table-header-cell' );
 	register_block_type( get_template_directory() . '/blocks/pricing-table-cell' );
+
+	// Custom Block Mega Slider
+	register_block_type( get_template_directory() . '/blocks/mega-slider' );
+	register_block_type( get_template_directory() . '/blocks/mega-slide' );
 }
 
 add_action( 'init', 'tazilla_register_blocks' );

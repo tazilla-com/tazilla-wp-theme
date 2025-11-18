@@ -30,7 +30,11 @@
     "build:pricing-table-cell": "wp-scripts build blocks/pricing-table-cell/src/*.* --output-path=blocks/pricing-table-cell/build",
     "start:pricing-table-cell": "wp-scripts start blocks/pricing-table-cell/src/*.* --output-path=blocks/pricing-table-cell/build",
     "build:pricing-table-header-cell": "wp-scripts build blocks/pricing-table-header-cell/src/*.* --output-path=blocks/pricing-table-header-cell/build",
-    "start:pricing-table-header-cell": "wp-scripts start blocks/pricing-table-header-cell/src/*.* --output-path=blocks/pricing-table-header-cell/build"
+    "start:pricing-table-header-cell": "wp-scripts start blocks/pricing-table-header-cell/src/*.* --output-path=blocks/pricing-table-header-cell/build",
+    "build:mega-slider": "wp-scripts build blocks/mega-slider/src/*.* --output-path=blocks/mega-slider/build",
+    "start:mega-slider": "wp-scripts start blocks/mega-slider/src/*.* --output-path=blocks/mega-slider/build",
+    "build:mega-slide": "wp-scripts build blocks/mega-slide/src/*.* --output-path=blocks/mega-slide/build",
+    "start:mega-slide": "wp-scripts start blocks/mega-slide/src/*.* --output-path=blocks/mega-slide/build"
   },
   "devDependencies": {
     "@wordpress/icons": "^11.0.0",
