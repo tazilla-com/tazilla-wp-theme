@@ -8,7 +8,7 @@
  * @package Tazilla
  */
 ?>
-<!-- wp:group {"metadata":{"categories":["featured","header"],"patternName":"tazilla/features-hero","name":"Features Hero Section"},"align":"full","style":{"spacing":{"blockGap":"0"}},"backgroundColor":"neutral-7","layout":{"type":"constrained"}} -->
+<!-- wp:group {"metadata":{"categories":["featured","posts","header"],"patternName":"tazilla/features-hero","name":"Features Hero Section"},"align":"full","style":{"spacing":{"blockGap":"0"}},"backgroundColor":"neutral-7","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-neutral-7-background-color has-background">
     <!-- wp:heading {"textAlign":"center"} -->
     <h2 class="wp-block-heading has-text-align-center"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-brand-light-color">Don't guess</mark> what<br>cybersecurity to implement.</h2>
@@ -18,8 +18,8 @@
     <p class="has-text-align-center">Just do risk-based planning.</p>
     <!-- /wp:paragraph -->
 
-    <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|lg","bottom":"var:preset|spacing|lg"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
-    <div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--lg);margin-bottom:var(--wp--preset--spacing--lg)">
+    <!-- wp:buttons {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|2xl","top":"var:preset|spacing|lg"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
+    <div class="wp-block-buttons" style="padding-top:var(--wp--preset--spacing--lg);padding-bottom:var(--wp--preset--spacing--2-xl)">
         <!-- wp:button {"className":"is-style-fill-secondary","isTryForFreeLink":true} -->
         <div class="wp-block-button is-style-fill-secondary" data-try-for-free="true"><a class="wp-block-button__link wp-element-button" href="#" target="_blank" rel="noreferrer noopener nofollow">Try for free</a></div>
         <!-- /wp:button -->
@@ -28,8 +28,8 @@
 
     <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
     <div class="wp-block-group alignwide">
-        <!-- wp:image {"id":672,"scale":"cover","sizeSlug":"full","linkDestination":"none","align":"center","className":"is-style-default","style":{"spacing":{"margin":{"top":"var:preset|spacing|2xl"}},"border":{"radius":{"topLeft":"0.5rem","topRight":"0.5rem"}}}} -->
-        <figure class="wp-block-image aligncenter size-full has-custom-border is-style-default" style="margin-top:var(--wp--preset--spacing--2-xl)"><img src="/wp-content/uploads/2025/10/screenshot-risk-analysis.png" alt="" class="wp-image-672" style="border-top-left-radius:0.5rem;border-top-right-radius:0.5rem;object-fit:cover"/></figure>
+        <!-- wp:image {"id":672,"scale":"cover","sizeSlug":"full","linkDestination":"none","align":"center","className":"is-style-default","style":{"border":{"radius":{"topLeft":"0.5rem","topRight":"0.5rem"}}}} -->
+        <figure class="wp-block-image aligncenter size-full has-custom-border is-style-default"><img src="/wp-content/uploads/2025/10/screenshot-risk-analysis.png" alt="" class="wp-image-672" style="border-top-left-radius:0.5rem;border-top-right-radius:0.5rem;object-fit:cover"/></figure>
         <!-- /wp:image -->
     </div>
     <!-- /wp:group -->
