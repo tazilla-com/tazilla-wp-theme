@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         () => {
             const scrollY = window.scrollY;
             const offset = scrollY > 100 ? header1.offsetHeight : 0;
-            const shouldFix = scrollY > header2Height - featuresNavHeight;
+            const shouldFix = window.innerWidth > 768 && scrollY > header2Height - featuresNavHeight;
 
             featuresNavigation.style.position = shouldFix ? "fixed" : "static";
             if (shouldFix) {
