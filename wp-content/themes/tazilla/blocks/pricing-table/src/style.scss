@@ -1,5 +1,4 @@
 .tazilla-pricing-table {
-  border-collapse: collapse;
   text-align: center;
   font-size: var(--wp--preset--font-size--md, 1rem);
   color: var(--wp--preset--color--brand-dark, #0E3C20);
@@ -12,6 +11,8 @@
 
   table {
     width: 100%;
+    border-collapse: separate;
+    border-spacing: var(--wp--preset--spacing--lg, 1.25rem) 0;
   }
 }
 
@@ -32,7 +33,6 @@
 }
 
 .tazilla-pricing-table-header-cell {
-  padding: 0 var(--wp--preset--spacing--xs, 0.5rem);
   font-weight: 700;
 
   p {
@@ -46,14 +46,14 @@
 
   &:not(:first-child) {
     font-size: var(--wp--preset--font-size--md, 1rem);
+    border-radius: var(--wp--preset--border-radius--md, 0.5rem);
+    background: var(--wp--preset--color--white, #FFFFFF);
 
     .tazilla-pricing-table-header-cell__content {
       padding: var(--wp--preset--spacing--md, 1rem);
-      border-radius: var(--wp--preset--border-radius--md, 0.5rem);
-      background: var(--wp--preset--color--white, #FFFFFF);
     }
 
-    &.is-highlighted .tazilla-pricing-table-header-cell__content {
+    &.is-highlighted {
       background: var(--wp--preset--color--brand-dark, #0E3C20) url('./highlight-bg.png') no-repeat center left / cover;
       color: var(--wp--preset--color--white, #FFFFFF);
     }
@@ -61,7 +61,7 @@
 }
 
 .tazilla-pricing-table-cell {
-  padding: var(--wp--preset--spacing--md, 1rem) var(--wp--preset--spacing--xs, 0.5rem);
+  padding: var(--wp--preset--spacing--md, 1rem) 0;
 
   &:first-child {
     color: var(--wp--preset--color--brand-dark-800, #04120A);
