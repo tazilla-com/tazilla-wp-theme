@@ -33,9 +33,37 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"66.66%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/10/tazilla-hero-section-1.png" alt=""/></figure>
-<!-- /wp:image --></div>
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%"><!-- wp:tazilla/mega-slider -->
+<div class="wp-block-tazilla-mega-slider tazilla-mega-slider"><!-- wp:tazilla/mega-slide {"buttonTitle":"Threat","buttonSubtitle":"Intelligence","buttonImageId":1231,"buttonImageUrl":"/wp-content/uploads/2025/11/slide-icon-threat-intelligence.png"} -->
+<div class="wp-block-tazilla-mega-slide tazilla-mega-slide"><div class="tazilla-mega-slide__button"><img src="/wp-content/uploads/2025/11/slide-icon-threat-intelligence.png" alt="" class="tazilla-mega-slide__button-image" aria-hidden="true"/><div class="tazilla-mega-slide__button-text"><strong>Threat</strong><br/><span>Intelligence</span></div><div class="tazilla-mega-slide__button-bullet"></div></div><div class="tazilla-mega-slide__content"><!-- wp:image {"id":1236,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/11/mega-slider-1.png" alt="" class="wp-image-1236"/></figure>
+<!-- /wp:image --></div></div>
+<!-- /wp:tazilla/mega-slide -->
+
+<!-- wp:tazilla/mega-slide {"buttonTitle":"Risk","buttonSubtitle":"Analysis","buttonImageId":1230,"buttonImageUrl":"/wp-content/uploads/2025/11/slide-icon-risk-analysis.png"} -->
+<div class="wp-block-tazilla-mega-slide tazilla-mega-slide"><div class="tazilla-mega-slide__button"><img src="/wp-content/uploads/2025/11/slide-icon-risk-analysis.png" alt="" class="tazilla-mega-slide__button-image" aria-hidden="true"/><div class="tazilla-mega-slide__button-text"><strong>Risk</strong><br/><span>Analysis</span></div><div class="tazilla-mega-slide__button-bullet"></div></div><div class="tazilla-mega-slide__content"><!-- wp:image {"id":1238,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/11/mega-slider-2.png" alt="" class="wp-image-1238"/></figure>
+<!-- /wp:image --></div></div>
+<!-- /wp:tazilla/mega-slide -->
+
+<!-- wp:tazilla/mega-slide {"buttonTitle":"AI","buttonSubtitle":"Advisor","buttonImageId":1229,"buttonImageUrl":"/wp-content/uploads/2025/11/slide-icon-ai.png"} -->
+<div class="wp-block-tazilla-mega-slide tazilla-mega-slide"><div class="tazilla-mega-slide__button"><img src="/wp-content/uploads/2025/11/slide-icon-ai.png" alt="" class="tazilla-mega-slide__button-image" aria-hidden="true"/><div class="tazilla-mega-slide__button-text"><strong>AI</strong><br/><span>Advisor</span></div><div class="tazilla-mega-slide__button-bullet"></div></div><div class="tazilla-mega-slide__content"><!-- wp:image {"id":1236,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/11/mega-slider-1.png" alt="" class="wp-image-1236"/></figure>
+<!-- /wp:image --></div></div>
+<!-- /wp:tazilla/mega-slide -->
+
+<!-- wp:tazilla/mega-slide {"buttonTitle":"Third Party","buttonSubtitle":"Management","buttonImageId":1228,"buttonImageUrl":"/wp-content/uploads/2025/11/slide-icon-third-party.png"} -->
+<div class="wp-block-tazilla-mega-slide tazilla-mega-slide"><div class="tazilla-mega-slide__button"><img src="/wp-content/uploads/2025/11/slide-icon-third-party.png" alt="" class="tazilla-mega-slide__button-image" aria-hidden="true"/><div class="tazilla-mega-slide__button-text"><strong>Third Party</strong><br/><span>Management</span></div><div class="tazilla-mega-slide__button-bullet"></div></div><div class="tazilla-mega-slide__content"><!-- wp:image {"id":1236,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/11/mega-slider-1.png" alt="" class="wp-image-1236"/></figure>
+<!-- /wp:image --></div></div>
+<!-- /wp:tazilla/mega-slide -->
+
+<!-- wp:tazilla/mega-slide {"buttonTitle":"Employee","buttonSubtitle":"Awereness","buttonImageId":1227,"buttonImageUrl":"/wp-content/uploads/2025/11/slide-icon-employee.png"} -->
+<div class="wp-block-tazilla-mega-slide tazilla-mega-slide"><div class="tazilla-mega-slide__button"><img src="/wp-content/uploads/2025/11/slide-icon-employee.png" alt="" class="tazilla-mega-slide__button-image" aria-hidden="true"/><div class="tazilla-mega-slide__button-text"><strong>Employee</strong><br/><span>Awereness</span></div><div class="tazilla-mega-slide__button-bullet"></div></div><div class="tazilla-mega-slide__content"><!-- wp:image {"id":1236,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/11/mega-slider-1.png" alt="" class="wp-image-1236"/></figure>
+<!-- /wp:image --></div></div>
+<!-- /wp:tazilla/mega-slide --></div>
+<!-- /wp:tazilla/mega-slider --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></section>
 <!-- /wp:group -->
