@@ -5,8 +5,80 @@ document.addEventListener("DOMContentLoaded", () => {
         const slides = slider.querySelectorAll(".tazilla-mega-slide");
         if (!slides.length) return;
 
+        const timer = 4000;
+        let autoPlayTimer = null;
+        let currentIndex = 0;
+
         slides[0].classList.add("is-active");
 
+        const showSlide = (index) => {
+            slides.forEach(s => s.classList.remove("is-active"));
+            slides[index].classList.add("is-active");
+            currentIndex = index;
+        };
+
+        const showNext = () => {
+            const next = (currentIndex + 1) % slides.length;
+            showSlide(next);
+        };
+
+        const showPrev = () => {
+            const prev = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(prev);
+        };
+
+        const startAutoplay = () => {
+            stopAutoplay();
+            autoPlayTimer = setInterval(showNext, timer);
+        };
+
+        const stopAutoplay = () => {
+            if (autoPlayTimer) clearInterval(autoPlayTimer);
+        };
+
+        // Add click listeners for manual switching
+        slides.forEach((slide, index) => {
+            const button = slide.querySelector(".tazilla-mega-slide__button");
+            if (!button) return;
+
+            button.addEventListener("click", () => {
+                showSlide(index);
+                startAutoplay(); // Reset timer after manual click
+            });
+        });
+
+        /* Swipe support */
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        const onTouchStart = (e) => {
+            touchStartX = e.touches[0].clientX;
+        };
+
+        const onTouchMove = (e) => {
+            touchEndX = e.touches[0].clientX;
+        };
+
+        const onTouchEnd = () => {
+            const diff = touchStartX - touchEndX;
+            if (Math.abs(diff) < 40) return; // Minimum swipe distance
+
+            if (diff > 40) {
+                // swipe left → next
+                showNext();
+            } else if (diff < -40) {
+                // swipe right → prev
+                showPrev();
+            }
+
+            startAutoplay(); // Reset timer after swipe
+        };
+
+        slider.addEventListener("touchstart", onTouchStart);
+        slider.addEventListener("touchmove", onTouchMove);
+        slider.addEventListener("touchend", onTouchEnd);
+
+        /* Layout calculation */
         const updateSliderLayout = () => {
             let maxHeight = 0;
             let maxWidth = 0;
@@ -45,20 +117,10 @@ document.addEventListener("DOMContentLoaded", () => {
             slider.style.minHeight = `${maxHeight}px`;
         };
 
-        slides.forEach(slide => {
-            const button = slide.querySelector(".tazilla-mega-slide__button");
-            if (!button) return;
-
-            button.addEventListener("click", () => {
-                slides.forEach(s => s.classList.remove("is-active"));
-                slide.classList.add("is-active");
-            });
-        });
-
-        // Initial calculation
         updateSliderLayout();
+        window.addEventListener("resize", updateSliderLayout);
 
-        // Recalculate on window resize
-        window.addEventListener("resize", () => updateSliderLayout());
+        /* Start autoplay */
+        startAutoplay();
     });
 });
