@@ -110,8 +110,9 @@
   }
 
   .tazilla-mega-slide__content {
-    top: var(--wp--preset--spacing--xs, 0.5rem);
     left: auto;
+    top: 50%;
+    transform: translateY(-50%);
     border-radius: var(--wp--custom--radius--md, 0.5rem);
   }
 
