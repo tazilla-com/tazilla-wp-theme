@@ -15,6 +15,7 @@ node_modules
 # WordPress
 /*.*
 !/.gitignore
+!/README.md
 !/robots.txt
 /wp-admin/
 /wp-content/*
