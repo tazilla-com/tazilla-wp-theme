@@ -88,6 +88,49 @@ Theme development scripts are located in `wp-content/themes/tazilla/package.json
 └── index.php              # Entry point
 ```
 
+## Git Mirror
+
+The private BitBucket repo as the primary repository is mirrored to GitHub public repository.
+
+### Initial Setup
+
+1. Create the empty public repository on GitHub (don't initialize it with README, .gitignore, or license)
+2. Add GitHub as a remote (in local repo):
+   ```bash
+   git remote add public https://github.com/tazilla-com/tazilla-wp-theme.git
+   ```
+3. Push everything to the public repo:
+   ```bash
+   git push --mirror public
+   ```
+
+### Ongoing Workflow
+
+After the initial mirror setup, you have two options:
+
+#### Option 1: Manual sync when needed
+
+```bash
+# Work normally on your private repo
+git push origin main
+
+# When ready to sync everything to public
+git push --mirror public
+```
+
+#### Option 2: Always push to both
+
+```bash
+# Push to both remotes
+git push origin main
+git push public main
+
+# For new branches
+git push origin new-branch
+git push public new-branch
+```
+
+
 ## Tests
 
 TODO: Define testing strategy and add tests (e.g., PHPUnit for PHP logic, Playwright/Cypress for E2E).
