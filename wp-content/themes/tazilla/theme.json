@@ -16,9 +16,7 @@
 			"title": "Pages (full width)"
 		}
 	],
-	"patterns": {
-		"core": false
-	},
+	"patterns": [],
 	"settings": {
 		"appearanceTools": true,
 		"color": {
