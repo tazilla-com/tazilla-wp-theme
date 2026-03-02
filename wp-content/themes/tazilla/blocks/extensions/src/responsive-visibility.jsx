@@ -6,20 +6,32 @@ import {Fragment} from '@wordpress/element';
 import {__} from '@wordpress/i18n';
 
 /**
+ * Disable responsive visibility for 3rd party blocks
+ */
+const BLOCKS_BLACKLIST = [
+    'polylang/language-switcher'
+];
+
+/**
  * Add attributes to every block
  */
 addFilter(
     'blocks.registerBlockType',
     'tazilla/extend-visibility-attrs',
-    (settings) => {
+    (settings, name) => {
+        if (BLOCKS_BLACKLIST.includes(name)) {
+            return settings;
+        }
+
         settings.attributes = Object.assign(settings.attributes || {}, {
-            hideOnMobile: {type: 'boolean', default: false},
-            hideOnTablet: {type: 'boolean', default: false},
-            hideOnDesktop: {type: 'boolean', default: false},
-            fullWidthOnMobile: {type: 'boolean', default: false},
-            fullWidthOnTablet: {type: 'boolean', default: false},
-            firstOnMobile: {type: 'boolean', default: false},
+            hideOnMobile: { type: 'boolean', default: false },
+            hideOnTablet: { type: 'boolean', default: false },
+            hideOnDesktop: { type: 'boolean', default: false },
+            fullWidthOnMobile: { type: 'boolean', default: false },
+            fullWidthOnTablet: { type: 'boolean', default: false },
+            firstOnMobile: { type: 'boolean', default: false },
         });
+
         return settings;
     }
 );
@@ -29,6 +41,10 @@ addFilter(
  */
 const withVisibilityControls = createHigherOrderComponent((BlockEdit) => {
     return (props) => {
+        if (BLOCKS_BLACKLIST.includes(props.name)) {
+            return <BlockEdit {...props} />;
+        }
+
         const {attributes, setAttributes, isSelected} = props;
         const {
             hideOnMobile,
@@ -94,6 +110,10 @@ addFilter(
  */
 const withEditorClassNames = createHigherOrderComponent((BlockListBlock) => {
     return (props) => {
+        if (BLOCKS_BLACKLIST.includes(props.name)) {
+            return <BlockListBlock {...props} />;
+        }
+
         const {attributes} = props;
         const {
             hideOnMobile,
@@ -129,6 +149,10 @@ addFilter(
     'blocks.getSaveContent.extraProps',
     'tazilla/apply-visibility-classes',
     (extraProps, blockType, attributes) => {
+        if (BLOCKS_BLACKLIST.includes(blockType.name)) {
+            return extraProps;
+        }
+
         if (!attributes) return extraProps;
         const {
             hideOnMobile,
