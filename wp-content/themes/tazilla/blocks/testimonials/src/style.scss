@@ -1,0 +1,114 @@
+.tazilla-testimonials {
+  position: relative;
+
+  &__track {
+    display: grid;
+    grid-template-areas: 'slide';
+  }
+
+  &__dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--wp--preset--spacing--xs, 0.5rem);
+    margin-top: var(--wp--preset--spacing--lg, 1.25rem);
+  }
+
+  &__dot {
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    border: none;
+    background: var(--wp--preset--color--brand-dark, #0E3C20);
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &.is-active {
+      background: var(--wp--preset--color--white, #FFFFFF);
+    }
+
+    &:hover:not(.is-active) {
+      background: var(--wp--preset--color--brand-dark, #0E3C20);
+    }
+  }
+}
+
+// Single testimonial slide
+.tazilla-testimonial {
+  grid-area: slide;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  pointer-events: none;
+  background-color: var(--wp--preset--color--white, #FFFFFF);
+  border-radius: var(--wp--custom--radius--md, 0.5rem);
+  padding: var(--wp--preset--spacing--lg, 1.25rem);
+  box-shadow: 0 8px 22px -6px rgba(24, 39, 75, 0.12), 0 14px 64px -4px rgba(24, 39, 75, 0.12);
+  text-align: center;
+
+  &.is-active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  // Clickable wrapper when a link is set
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  // Non-link inner wrapper
+  &__inner {
+    display: block;
+  }
+
+  &__logo {
+    margin-bottom: var(--wp--preset--spacing--lg);
+
+    img {
+      max-height: 3rem;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+
+  &__text {
+    font-size: var(--wp--preset--font-size--lg, 1.125rem);
+    line-height: var(--wp--custom--line-height--body);
+    margin: 0 0 var(--wp--preset--spacing--lg) 0;
+
+    &::before {
+      content: '\201C';
+    }
+
+    &::after {
+      content: '\201D';
+    }
+  }
+
+  &__author {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-family: var(--wp--preset--font-family--unbounded), sans-serif;
+    font-size: var(--wp--preset--font-size--sm, 0.625rem);
+    color: var(--wp--preset--color--brand-dark, #0E3C20);
+  }
+
+  &__company {
+    font-size: var(--wp--preset--font-size--sm, 0.625rem);
+  }
+}

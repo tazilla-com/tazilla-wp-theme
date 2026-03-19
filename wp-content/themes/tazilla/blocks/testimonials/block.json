@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tazilla/testimonials",
+  "title": "Tazilla Testimonials",
+  "category": "theme",
+  "icon": "format-quote",
+  "description": "Testimonials slider with autoplay, swipe support and dot navigation.",
+  "keywords": [
+    "testimonial",
+    "review",
+    "slider",
+    "quote",
+    "carousel"
+  ],
+  "textdomain": "tazilla",
+  "editorScript": "file:./build/index.jsx.js",
+  "editorStyle": "file:./build/editor.scss.css",
+  "style": "file:./build/style-style.scss.css",
+  "viewScript": "file:./build/view.js",
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ]
+  }
+}

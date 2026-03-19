@@ -1,0 +1,34 @@
+// Force all slides to be visible inside the block editor
+.wp-block-tazilla-testimonials {
+  .tazilla-testimonial {
+    position: relative !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    border: 1px dashed var(--wp--preset--color--neutral-3);
+    border-radius: var(--wp--custom--radius--md);
+    padding: var(--wp--preset--spacing--md);
+  }
+}
+
+// Logo placeholder shown when no image is selected
+.tazilla-testimonial__logo--placeholder {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+  height: 3rem;
+  background: var(--wp--preset--color--neutral-6);
+  border-radius: var(--wp--custom--radius--sm);
+  color: var(--wp--preset--color--neutral-2);
+  font-size: var(--wp--preset--font-size--sm);
+  margin-bottom: var(--wp--preset--spacing--md);
+}
+
+// Hint shown in editor when a link is configured
+.tazilla-testimonial__link-hint {
+  display: inline-block;
+  font-size: var(--wp--preset--font-size--sm);
+  color: var(--wp--preset--color--blue);
+  margin-top: var(--wp--preset--spacing--xs);
+}

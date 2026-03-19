@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tazilla/testimonial",
+  "title": "Tazilla Testimonial",
+  "parent": [
+    "tazilla/testimonials"
+  ],
+  "category": "theme",
+  "icon": "format-quote",
+  "description": "A single testimonial slide with logo, quote, author and optional link.",
+  "textdomain": "tazilla",
+  "editorScript": "file:./build/index.jsx.js",
+  "attributes": {
+    "logoId": {
+      "type": "number",
+      "default": null
+    },
+    "logoUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "logoAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "text": {
+      "type": "string",
+      "default": ""
+    },
+    "name": {
+      "type": "string",
+      "default": ""
+    },
+    "company": {
+      "type": "string",
+      "default": ""
+    },
+    "linkUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "linkNewTab": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false
+  }
+}

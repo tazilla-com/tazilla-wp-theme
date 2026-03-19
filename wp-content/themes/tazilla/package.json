@@ -34,11 +34,15 @@
     "build:mega-slider": "wp-scripts build blocks/mega-slider/src/*.* --output-path=blocks/mega-slider/build",
     "start:mega-slider": "wp-scripts start blocks/mega-slider/src/*.* --output-path=blocks/mega-slider/build",
     "build:mega-slide": "wp-scripts build blocks/mega-slide/src/*.* --output-path=blocks/mega-slide/build",
-    "start:mega-slide": "wp-scripts start blocks/mega-slide/src/*.* --output-path=blocks/mega-slide/build"
+    "start:mega-slide": "wp-scripts start blocks/mega-slide/src/*.* --output-path=blocks/mega-slide/build",
+    "build:testimonials": "wp-scripts build blocks/testimonials/src/*.* --output-path=blocks/testimonials/build",
+    "start:testimonials": "wp-scripts start blocks/testimonials/src/*.* --output-path=blocks/testimonials/build",
+    "build:testimonial": "wp-scripts build blocks/testimonial/src/*.* --output-path=blocks/testimonial/build",
+    "start:testimonial": "wp-scripts start blocks/testimonial/src/*.* --output-path=blocks/testimonial/build"
   },
   "devDependencies": {
-    "@wordpress/icons": "^11.0.0",
+    "@wordpress/icons": "^12.0.0",
     "@wordpress/interactivity": "^6.33.0",
-    "@wordpress/scripts": "^30.25.0"
+    "@wordpress/scripts": "^31.7.0"
   }
 }

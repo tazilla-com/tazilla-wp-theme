@@ -84,6 +84,10 @@ function tazilla_register_blocks(): void {
 	// Custom Block Mega Slider
 	register_block_type( get_template_directory() . '/blocks/mega-slider' );
 	register_block_type( get_template_directory() . '/blocks/mega-slide' );
+
+	// Custom Block Testimonials
+	register_block_type( get_template_directory() . '/blocks/testimonials' );
+	register_block_type( get_template_directory() . '/blocks/testimonial' );
 }
 
 add_action( 'init', 'tazilla_register_blocks' );
