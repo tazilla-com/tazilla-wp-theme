@@ -9,11 +9,13 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-// Fetch all visible categories (cached for 1 hour)
-$categories = get_transient( 'tazilla_filter_categories' );
+// Fetch all visible categories (cached per language for 1 hour)
+$locale              = get_locale();
+$transient_key       = 'tazilla_filter_categories_' . $locale;
+$categories          = get_transient( $transient_key );
 if ( false === $categories ) {
     $categories = get_categories( [ 'hide_empty' => true ] );
-    set_transient( 'tazilla_filter_categories', $categories, HOUR_IN_SECONDS );
+    set_transient( $transient_key, $categories, HOUR_IN_SECONDS );
 }
 
 if ( empty( $categories ) ) {
