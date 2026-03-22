@@ -1,6 +1,7 @@
 # Tazilla.com
 
-Tazilla.com is a WordPress-based project featuring a custom block-based theme called "Tazilla". The theme is designed with modern WordPress practices, utilizing Gutenberg blocks, patterns, and the Interactivity API.
+Tazilla.com is a WordPress-based project featuring a custom block-based theme called "Tazilla". The theme is designed
+with modern WordPress practices, utilizing Gutenberg blocks, patterns, and the Interactivity API.
 
 ## Tech Stack
 
@@ -25,13 +26,13 @@ Tazilla.com is a WordPress-based project featuring a custom block-based theme ca
    cd tazilla.com
    ```
 2. **install WordPress**
-   - Download the latest version of WordPress from [wordpress.org](https://wordpress.org/download/).
-   - Extract the archive and copy the `wordpress` folder content to the project root.
+    - Download the latest version of WordPress from [wordpress.org](https://wordpress.org/download/).
+    - Extract the archive and copy the `wordpress` folder content to the project root.
 
 2. **Configure WordPress:**
-   - Copy `wp-config-sample.php` to `wp-config.php` (if not already present).
-   - Update database credentials (`DB_NAME`, `DB_USER`, `DB_PASSWORD`, `DB_HOST`).
-   - Add unique keys and salts.
+    - Copy `wp-config-sample.php` to `wp-config.php` (if not already present).
+    - Update database credentials (`DB_NAME`, `DB_USER`, `DB_PASSWORD`, `DB_HOST`).
+    - Add unique keys and salts.
 
 3. **Install Theme Dependencies (for development only):**
    ```bash
@@ -59,13 +60,25 @@ Configuration is primarily handled via `wp-config.php`. Key constants used:
 Theme development scripts are located in `wp-content/themes/tazilla/package.json`.
 
 ### Build Scripts
+
 - `npm run build:editor`: Compiles editor-side assets.
 - `npm run build:extensions`: Compiles block extensions.
 - `npm run build:<block-name>`: Compiles specific blocks (e.g., `mega-slider`, `pricing-table`, `features`).
 
 ### Development (Watch) Scripts
+
 - `npm run start:editor`: Watches and recompiles editor assets.
 - `npm run start:<block-name>`: Watches and recompiles specific blocks.
+
+## Internationalization
+
+[WordPress documentation](https://developer.wordpress.org/apis/internationalization/)
+
+1. To generate or update translation files, run the WP-CLI command:
+
+       wp i18n make-pot wp-content/themes/tazilla languages/tazilla.pot
+2. Use [Poedit](https://poedit.net/) to open `.po` file. Click Translation > Update from POT file. Select `tazilla.pot`
+   file, translate strings, and click Save to generate `.mo` file.
 
 ## Project Structure
 
@@ -129,7 +142,6 @@ git push public main
 git push origin new-branch
 git push public new-branch
 ```
-
 
 ## Tests
 

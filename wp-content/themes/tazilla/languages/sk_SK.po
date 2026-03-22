@@ -1,0 +1,989 @@
+# Copyright (C) 2026 Neotrendy
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Tazilla 1.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/tazilla\n"
+"POT-Creation-Date: 2026-03-22T14:32:02+00:00\n"
+"PO-Revision-Date: 2026-03-22 15:39+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sk_SK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+"X-Domain: tazilla\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Tazilla"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Tazilla block theme"
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Neotrendy"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://neotrendy.com/"
+msgstr ""
+
+#: blocks/category-filter/render.php:20
+msgid "No categories available."
+msgstr "Nie sú k dispozícii žiadne kategórie."
+
+#: blocks/category-filter/render.php:49
+#: blocks/category-filter/build/index.jsx.js:1
+#: blocks/category-filter/src/index.jsx:28
+#: blocks/category-filter/build/index.jsx.js:83
+msgid "Quick filter"
+msgstr "Rýchly filter"
+
+#: blocks/features-navigation/render.php:23
+msgid "No features found."
+msgstr "Neboli nájdené žiadne moduly."
+
+#: inc/blocks.php:49
+msgid "Fill Secondary"
+msgstr ""
+
+#: inc/blocks.php:58
+msgid "Link"
+msgstr ""
+
+#: inc/blocks.php:124
+msgid "Read more"
+msgstr "Čítať ďalej"
+
+#: inc/custom-post-types.php:14
+msgctxt "Post Type General Name"
+msgid "Features"
+msgstr ""
+
+#: inc/custom-post-types.php:15
+msgctxt "Post Type Singular Name"
+msgid "Feature"
+msgstr ""
+
+#: inc/custom-post-types.php:16
+msgid "Features"
+msgstr ""
+
+#: inc/custom-post-types.php:17
+msgid "Feature"
+msgstr ""
+
+#: inc/custom-post-types.php:18
+msgid "Item Archives"
+msgstr ""
+
+#: inc/custom-post-types.php:19
+msgid "Item Attributes"
+msgstr ""
+
+#: inc/custom-post-types.php:20
+msgid "Parent Item:"
+msgstr ""
+
+#: inc/custom-post-types.php:21
+msgid "All Features"
+msgstr ""
+
+#: inc/custom-post-types.php:22
+msgid "Add New Feature"
+msgstr ""
+
+#: inc/custom-post-types.php:23
+msgid "Add New"
+msgstr ""
+
+#: inc/custom-post-types.php:24
+msgid "New Feature"
+msgstr ""
+
+#: inc/custom-post-types.php:25
+msgid "Edit Feature"
+msgstr ""
+
+#: inc/custom-post-types.php:26
+msgid "Update Feature"
+msgstr ""
+
+#: inc/custom-post-types.php:27
+msgid "View Feature"
+msgstr ""
+
+#: inc/custom-post-types.php:28
+msgid "View Features"
+msgstr ""
+
+#: inc/custom-post-types.php:29
+msgid "Search Feature"
+msgstr ""
+
+#: inc/custom-post-types.php:30
+msgid "Not found"
+msgstr ""
+
+#: inc/custom-post-types.php:31
+msgid "Not found in Trash"
+msgstr ""
+
+#: inc/custom-post-types.php:32
+msgid "Featured Image"
+msgstr ""
+
+#: inc/custom-post-types.php:33
+msgid "Set featured image"
+msgstr ""
+
+#: inc/custom-post-types.php:34
+msgid "Remove featured image"
+msgstr ""
+
+#: inc/custom-post-types.php:35
+msgid "Use as featured image"
+msgstr ""
+
+#: inc/custom-post-types.php:36
+msgid "Insert into feature"
+msgstr ""
+
+#: inc/custom-post-types.php:37
+msgid "Uploaded to this feature"
+msgstr ""
+
+#: inc/custom-post-types.php:38
+msgid "Features list"
+msgstr ""
+
+#: inc/custom-post-types.php:39
+msgid "Features list navigation"
+msgstr ""
+
+#: inc/custom-post-types.php:40
+msgid "Filter features list"
+msgstr ""
+
+#: inc/custom-post-types.php:43
+msgid "Post Type"
+msgstr ""
+
+#: inc/custom-post-types.php:44
+msgid "Holds our features and feature specific data"
+msgstr ""
+
+#. translators: %s: Name of the theme.
+#: inc/theme-settings.php:14 inc/theme-settings.php:36
+msgid "%s Theme Settings"
+msgstr ""
+
+#: inc/theme-settings.php:15
+msgid "Theme Settings"
+msgstr ""
+
+#. translators: %s: Theme version.
+#: inc/theme-settings.php:42
+msgid "Theme version: %s"
+msgstr ""
+
+#: inc/theme-settings.php:63
+msgid "General"
+msgstr ""
+
+#: inc/theme-settings.php:71
+msgid "Try for free (URL)"
+msgstr ""
+
+#: inc/theme-settings.php:80
+msgid "Google Tag Manager"
+msgstr ""
+
+#: inc/theme-settings.php:94
+msgid "Link to free or trial plan."
+msgstr ""
+
+#: inc/theme-settings.php:102
+msgid "Container ID."
+msgstr ""
+
+#: inc/user-profile.php:12
+msgid "LinkedIn Profile URL"
+msgstr ""
+
+#: inc/user-profile.php:13
+msgid "Facebook Profile URL"
+msgstr ""
+
+#: inc/user-profile.php:14
+msgid "Instagram Profile URL"
+msgstr ""
+
+#: inc/user-profile.php:29
+msgid "Custom Profile Picture"
+msgstr ""
+
+#: inc/user-profile.php:33 inc/user-profile.php:36
+msgid "Profile Picture"
+msgstr ""
+
+#: inc/user-profile.php:45
+msgid "Upload Picture"
+msgstr ""
+
+#: inc/user-profile.php:48
+msgid "Remove"
+msgstr ""
+
+#: inc/user-profile.php:52
+msgid "Upload a custom profile picture instead of using Gravatar."
+msgstr ""
+
+#: inc/user-profile.php:71
+msgid "Select or Upload Profile Picture"
+msgstr ""
+
+#: inc/user-profile.php:72
+msgid "Use this image"
+msgstr ""
+
+#: patterns/banner.php
+msgctxt "Pattern title"
+msgid "Banner"
+msgstr ""
+
+#: patterns/banner.php
+msgctxt "Pattern description"
+msgid "The banner section."
+msgstr ""
+
+#: patterns/features-body.php
+msgctxt "Pattern title"
+msgid "Features Body"
+msgstr ""
+
+#: patterns/features-body.php
+msgctxt "Pattern description"
+msgid "The body section for the Features page."
+msgstr ""
+
+#: patterns/features-hero.php
+msgctxt "Pattern title"
+msgid "Features Hero Section"
+msgstr ""
+
+#: patterns/features-hero.php
+msgctxt "Pattern description"
+msgid "The hero section for Features page."
+msgstr ""
+
+#: patterns/grid.php
+msgctxt "Pattern title"
+msgid "Grid Boxes"
+msgstr ""
+
+#: patterns/grid.php
+msgctxt "Pattern description"
+msgid "The grid section with boxes with icons."
+msgstr ""
+
+#: patterns/homepage.php
+msgctxt "Pattern title"
+msgid "Homepage Layout"
+msgstr ""
+
+#: patterns/homepage.php
+msgctxt "Pattern description"
+msgid "The main homepage layout with hero, services, and contact blocks."
+msgstr ""
+
+#: patterns/page-header.php
+msgctxt "Pattern title"
+msgid "Page Header"
+msgstr ""
+
+#: patterns/page-header.php
+msgctxt "Pattern description"
+msgid "The header for pages."
+msgstr ""
+
+#: patterns/pricing-table.php
+msgctxt "Pattern title"
+msgid "Pricing Table"
+msgstr ""
+
+#: patterns/pricing-table.php
+msgctxt "Pattern description"
+msgid "Pricing table section."
+msgstr ""
+
+#: patterns/related-posts.php
+msgctxt "Pattern title"
+msgid "Related Posts"
+msgstr ""
+
+#: patterns/related-posts.php
+msgctxt "Pattern description"
+msgid "The related posts section."
+msgstr ""
+
+#: patterns/tazilla-features-section.php
+msgctxt "Pattern title"
+msgid "Tazilla Features Section (sample)"
+msgstr ""
+
+#: blocks/author-box/build/index.jsx.js:1 blocks/author-box/src/index.jsx:29
+msgid ""
+"Author Box – this block displays the post author with social links on the "
+"front end."
+msgstr ""
+
+#: blocks/category-filter/build/index.jsx.js:1
+#: blocks/category-filter/src/index.jsx:29
+#: blocks/category-filter/build/index.jsx.js:84
+msgid "frontend only"
+msgstr ""
+
+#: blocks/extensions/build/index.js:1
+#: blocks/extensions/src/responsive-visibility.jsx:65
+msgid "Hide on mobile"
+msgstr ""
+
+#: blocks/extensions/build/index.js:1
+#: blocks/extensions/src/responsive-visibility.jsx:70
+msgid "Hide on tablet"
+msgstr ""
+
+#: blocks/extensions/build/index.js:1
+#: blocks/extensions/src/responsive-visibility.jsx:75
+msgid "Hide on desktop"
+msgstr ""
+
+#: blocks/extensions/build/index.js:1
+#: blocks/extensions/src/responsive-visibility.jsx:80
+msgid "Full width on mobile"
+msgstr ""
+
+#: blocks/extensions/build/index.js:1
+#: blocks/extensions/src/responsive-visibility.jsx:85
+msgid "Full width on tablet"
+msgstr ""
+
+#: blocks/extensions/build/index.js:1
+#: blocks/extensions/src/responsive-visibility.jsx:90
+msgid "First on mobile"
+msgstr ""
+
+#: blocks/feature-button/build/index.jsx.js:1
+#: blocks/feature-button/src/index.jsx:46
+msgid "Feature label..."
+msgstr ""
+
+#: blocks/features-navigation/build/index.jsx.js:1
+#: blocks/features-navigation/src/index.jsx:11
+msgid "Feature Navigation (Preview only)"
+msgstr ""
+
+#: blocks/features-title/build/index.jsx.js:1
+#: blocks/features-title/src/index.jsx:26
+msgid "No title available"
+msgstr ""
+
+#: blocks/mega-slide/build/index.jsx.js:1 blocks/mega-slide/src/index.jsx:43
+msgid "Slide Button Settings"
+msgstr ""
+
+#: blocks/mega-slide/build/index.jsx.js:1 blocks/mega-slide/src/index.jsx:46
+msgid "Button Title"
+msgstr ""
+
+#: blocks/mega-slide/build/index.jsx.js:1 blocks/mega-slide/src/index.jsx:52
+msgid "Button Subtitle"
+msgstr ""
+
+#: blocks/mega-slide/build/index.jsx.js:1 blocks/mega-slide/src/index.jsx:65
+msgid "Replace Button Image"
+msgstr ""
+
+#: blocks/mega-slide/build/index.jsx.js:1 blocks/mega-slide/src/index.jsx:65
+msgid "Select Button Image"
+msgstr ""
+
+#: blocks/mega-slide/build/index.jsx.js:1 blocks/mega-slide/src/index.jsx:91
+msgid "Button title…"
+msgstr ""
+
+#: blocks/mega-slide/build/index.jsx.js:1 blocks/mega-slide/src/index.jsx:93
+msgid "Button subtitle…"
+msgstr ""
+
+#: blocks/pricing-table-cell/build/index.jsx.js:1
+#: blocks/pricing-table-cell/src/index.jsx:34
+msgid "Toggle Checkmark"
+msgstr ""
+
+#: blocks/pricing-table-cell/build/index.jsx.js:1
+#: blocks/pricing-table-cell/src/index.jsx:40
+msgid "Toggle Tooltip"
+msgstr ""
+
+#: blocks/pricing-table-cell/build/index.jsx.js:1
+#: blocks/pricing-table-cell/src/index.jsx:48
+msgid "Tooltip Settings"
+msgstr ""
+
+#: blocks/pricing-table-cell/build/index.jsx.js:1
+#: blocks/pricing-table-cell/src/index.jsx:50
+msgid "Show Tooltip"
+msgstr ""
+
+#: blocks/pricing-table-cell/build/index.jsx.js:1
+#: blocks/pricing-table-cell/src/index.jsx:56
+msgid "Tooltip Text"
+msgstr ""
+
+#: blocks/pricing-table-cell/build/index.jsx.js:1
+#: blocks/pricing-table-cell/src/index.jsx:59
+msgid "Enter tooltip text..."
+msgstr ""
+
+#: blocks/pricing-table-header-cell/build/index.jsx.js:1
+#: blocks/pricing-table-header-cell/src/index.jsx:73
+msgid "Header Cell Settings"
+msgstr ""
+
+#: blocks/pricing-table-header-cell/build/index.jsx.js:1
+#: blocks/pricing-table-header-cell/src/index.jsx:75
+msgid "Highlight"
+msgstr ""
+
+#: blocks/pricing-table-header-cell/build/index.jsx.js:1
+#: blocks/pricing-table-header-cell/src/index.jsx:85
+msgid "Move column left"
+msgstr ""
+
+#: blocks/pricing-table-header-cell/build/index.jsx.js:1
+#: blocks/pricing-table-header-cell/src/index.jsx:90
+msgid "Move column right"
+msgstr ""
+
+#: blocks/pricing-table-header-cell/build/index.jsx.js:1
+#: blocks/pricing-table-header-cell/src/index.jsx:95
+msgid "Delete column"
+msgstr ""
+
+#: blocks/pricing-table-header-cell/build/index.jsx.js:1
+#: blocks/pricing-table-header-cell/src/index.jsx:105
+msgid "Add header…"
+msgstr ""
+
+#: blocks/pricing-table/build/index.jsx.js:1
+#: blocks/pricing-table/src/index.jsx:76
+msgid "Insert row"
+msgstr ""
+
+#: blocks/pricing-table/build/index.jsx.js:1
+#: blocks/pricing-table/src/index.jsx:81
+msgid "Insert column"
+msgstr ""
+
+#: blocks/pricing-table/build/index.jsx.js:1
+#: blocks/pricing-table/src/index.jsx:86
+msgid "Add caption"
+msgstr ""
+
+#: blocks/pricing-table/build/index.jsx.js:1
+#: blocks/pricing-table/src/index.jsx:97
+msgid "Add table caption…"
+msgstr ""
+
+#: blocks/testimonial/build/index.jsx.js:1 blocks/testimonial/src/index.jsx:39
+msgid "Company Logo"
+msgstr ""
+
+#: blocks/testimonial/build/index.jsx.js:1 blocks/testimonial/src/index.jsx:59
+msgid "Replace Logo"
+msgstr ""
+
+#: blocks/testimonial/build/index.jsx.js:1 blocks/testimonial/src/index.jsx:60
+msgid "Select Logo"
+msgstr ""
+
+#: blocks/testimonial/build/index.jsx.js:1 blocks/testimonial/src/index.jsx:87
+msgid "Remove Logo"
+msgstr ""
+
+#: blocks/testimonial/build/index.jsx.js:1 blocks/testimonial/src/index.jsx:97
+msgid "Testimonial Content"
+msgstr ""
+
+#: blocks/testimonial/build/index.jsx.js:1 blocks/testimonial/src/index.jsx:99
+msgid "Quote Text"
+msgstr ""
+
+#: blocks/testimonial/build/index.jsx.js:1 blocks/testimonial/src/index.jsx:105
+#: blocks/testimonial/src/index.jsx:152
+msgid "Name"
+msgstr ""
+
+#: blocks/testimonial/build/index.jsx.js:1 blocks/testimonial/src/index.jsx:110
+#: blocks/testimonial/src/index.jsx:155
+msgid "Company"
+msgstr ""
+
+#: blocks/testimonial/build/index.jsx.js:1 blocks/testimonial/src/index.jsx:116
+msgid "Link (optional)"
+msgstr ""
+
+#: blocks/testimonial/build/index.jsx.js:1 blocks/testimonial/src/index.jsx:118
+msgid "URL"
+msgstr ""
+
+#: blocks/testimonial/build/index.jsx.js:1 blocks/testimonial/src/index.jsx:126
+msgid "Open in new tab"
+msgstr ""
+
+#: blocks/testimonial/build/index.jsx.js:1 blocks/testimonial/src/index.jsx:141
+msgid "Logo"
+msgstr ""
+
+#: blocks/testimonial/build/index.jsx.js:1 blocks/testimonial/src/index.jsx:147
+msgid "Enter the testimonial quote text in the sidebar…"
+msgstr ""
+
+#: blocks/testimonial/build/index.jsx.js:1 blocks/testimonial/src/index.jsx:162
+msgid "↗ Opens in new tab"
+msgstr ""
+
+#: blocks/testimonial/build/index.jsx.js:1 blocks/testimonial/src/index.jsx:163
+msgid "→ Has link"
+msgstr ""
+
+#: blocks/author-box/block.json
+msgctxt "block title"
+msgid "Tazilla Author Box"
+msgstr ""
+
+#: blocks/author-box/block.json
+msgctxt "block description"
+msgid ""
+"Displays post author details such as name, profile picture, bio and social "
+"links."
+msgstr ""
+
+#: blocks/category-filter/block.json
+msgctxt "block title"
+msgid "Category Filter"
+msgstr ""
+
+#: blocks/category-filter/block.json
+msgctxt "block description"
+msgid "Filter posts by multiple categories and update Query Loop."
+msgstr ""
+
+#: blocks/extensions/block.json
+msgctxt "block title"
+msgid "Tazilla Extensions"
+msgstr ""
+
+#: blocks/feature-button/block.json
+msgctxt "block title"
+msgid "Tazilla Feature Button"
+msgstr ""
+
+#: blocks/feature-content/block.json
+msgctxt "block title"
+msgid "Tazilla Feature Content"
+msgstr ""
+
+#: blocks/features-navigation/block.json
+msgctxt "block title"
+msgid "Tazilla Features Navigation"
+msgstr ""
+
+#: blocks/features-navigation/block.json
+msgctxt "block description"
+msgid "Displays navigation links to all Feature posts."
+msgstr ""
+
+#: blocks/features-title/block.json
+msgctxt "block title"
+msgid "Tazilla Feature Title"
+msgstr ""
+
+#: blocks/features-title/block.json
+msgctxt "block description"
+msgid "Displays the title of Feature posts."
+msgstr ""
+
+#: blocks/features/block.json
+msgctxt "block title"
+msgid "Tazilla Features"
+msgstr ""
+
+#: blocks/features/block.json
+msgctxt "block description"
+msgid "Feature list with synced buttons and content"
+msgstr ""
+
+#: blocks/mega-slide/block.json
+msgctxt "block title"
+msgid "Tazilla Mega Slide"
+msgstr ""
+
+#: blocks/mega-slide/block.json
+msgctxt "block description"
+msgid "Create slide for mega slider."
+msgstr ""
+
+#: blocks/mega-slider/block.json
+msgctxt "block title"
+msgid "Tazilla Mega Slider"
+msgstr ""
+
+#: blocks/mega-slider/block.json
+msgctxt "block description"
+msgid "Create a custom slider for hero section."
+msgstr ""
+
+#: blocks/mega-slider/block.json
+msgctxt "block keyword"
+msgid "slide"
+msgstr ""
+
+#: blocks/mega-slider/block.json blocks/testimonials/block.json
+msgctxt "block keyword"
+msgid "slider"
+msgstr ""
+
+#: blocks/mega-slider/block.json
+msgctxt "block keyword"
+msgid "slideshow"
+msgstr ""
+
+#: blocks/mega-slider/block.json blocks/testimonials/block.json
+msgctxt "block keyword"
+msgid "carousel"
+msgstr ""
+
+#: blocks/pricing-table-cell/block.json
+msgctxt "block title"
+msgid "Cell"
+msgstr ""
+
+#: blocks/pricing-table-header-cell/block.json
+msgctxt "block title"
+msgid "Header Cell"
+msgstr ""
+
+#: blocks/pricing-table-header-row/block.json
+msgctxt "block title"
+msgid "Header Row"
+msgstr ""
+
+#: blocks/pricing-table-row/block.json
+msgctxt "block title"
+msgid "Row"
+msgstr ""
+
+#: blocks/pricing-table/block.json
+msgctxt "block title"
+msgid "Tazilla Pricing Table"
+msgstr ""
+
+#: blocks/pricing-table/block.json
+msgctxt "block description"
+msgid "Create a custom pricing table with editable rows and columns."
+msgstr ""
+
+#: blocks/pricing-table/block.json
+msgctxt "block keyword"
+msgid "table"
+msgstr ""
+
+#: blocks/pricing-table/block.json
+msgctxt "block keyword"
+msgid "data"
+msgstr ""
+
+#: blocks/pricing-table/block.json
+msgctxt "block keyword"
+msgid "grid"
+msgstr ""
+
+#: blocks/pricing-table/block.json
+msgctxt "block keyword"
+msgid "pricing"
+msgstr ""
+
+#: blocks/testimonial/block.json
+msgctxt "block title"
+msgid "Tazilla Testimonial"
+msgstr ""
+
+#: blocks/testimonial/block.json
+msgctxt "block description"
+msgid "A single testimonial slide with logo, quote, author and optional link."
+msgstr ""
+
+#: blocks/testimonials/block.json
+msgctxt "block title"
+msgid "Tazilla Testimonials"
+msgstr ""
+
+#: blocks/testimonials/block.json
+msgctxt "block description"
+msgid "Testimonials slider with autoplay, swipe support and dot navigation."
+msgstr ""
+
+#: blocks/testimonials/block.json
+msgctxt "block keyword"
+msgid "testimonial"
+msgstr ""
+
+#: blocks/testimonials/block.json
+msgctxt "block keyword"
+msgid "review"
+msgstr ""
+
+#: blocks/testimonials/block.json
+msgctxt "block keyword"
+msgid "quote"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single Feature"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Pages (full width)"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Black"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "White"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Brand Dark Green"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Brand Dark Green 2"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Brand Dark Green 100"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Brand Dark Green 800"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Brand Light Green"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Brand Green 100"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Blue"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Orange"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Red"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Neutral 1"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Neutral 1 40% opacity"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Neutral 2"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Neutral 3"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Neutral 4"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Neutral 5"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Neutral 6"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Neutral 7"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Neutral 7 20% opacity"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Neutral 8"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "X-Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "X-Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2X-Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "3X-Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Unbounded"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Plus Jakarta Sans"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Arial"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra Extra Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header Features"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header Blog"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header Blog Single Posts"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer Partners"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer Single Posts"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Blog Query Loop"
+msgstr ""
