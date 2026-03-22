@@ -235,22 +235,34 @@ add_filter( 'render_block', 'tazilla_polylang_translate_synced_pattern', 10, 2 )
 
 /**
  * Replace the link in button blocks with the try-for-free URL.
+ *
+ * Resolves the configured URL to a page ID via url_to_postid() so that
+ * get_permalink() can return the correct translated URL for the current
+ * language (Polylang). Falls back to the raw option value if no page is found.
  */
 function tazilla_replace_try_for_free_urls( $block_content, $block ) {
-	// Check if this is a button block with the try-for-free data attribute
-	if ( 'core/button' === $block['blockName'] && ! empty( $block['attrs']['isTryForFreeLink'] ) ) {
-
-		$try_free_url = get_option( 'tazilla_try_for_free_url', '#' );
-
-		// Replace href with the try-for-free URL
-		$block_content = preg_replace(
-			'/(<a[^>]+href=")[^"]*(")/i',
-			'$1' . esc_url( $try_free_url ) . '$2',
-			$block_content
-		);
+	if ( 'core/button' !== $block['blockName'] || empty( $block['attrs']['isTryForFreeLink'] ) ) {
+		return $block_content;
 	}
 
-	return $block_content;
+	$base_url = get_option( 'tazilla_try_for_free_url', '#' );
+	$page_id  = url_to_postid( $base_url );
+
+	if ( $page_id ) {
+		if ( function_exists( 'pll_get_post' ) ) {
+			$translated_id = pll_get_post( $page_id );
+			$page_id       = $translated_id ?: $page_id;
+		}
+		$try_free_url = get_permalink( $page_id );
+	} else {
+		$try_free_url = $base_url;
+	}
+
+	return preg_replace(
+		'/(<a[^>]+href=")[^"]*(")/i',
+		'$1' . esc_url( $try_free_url ) . '$2',
+		$block_content
+	);
 }
 
 add_filter( 'render_block', 'tazilla_replace_try_for_free_urls', 10, 2 );
