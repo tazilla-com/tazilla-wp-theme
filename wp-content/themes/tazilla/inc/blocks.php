@@ -194,6 +194,46 @@ function tazilla_category_filter_prepare_query( $query_tax_query, $query_id = nu
 }
 
 /**
+ * Polylang Pro — translate synced patterns (core/block) inside FSE templates.
+ *
+ * Polylang swaps the synced-pattern ref via render_block_data when the block
+ * lives inside post content, but that hook does not run reliably when the
+ * block is referenced from a block template (e.g. home.html). This filter
+ * catches any core/block whose ref still points to the default-language post
+ * and re-renders it from the translated post for the current language.
+ */
+function tazilla_polylang_translate_synced_pattern( string $block_content, array $block ): string {
+	if ( ! is_home() ) {
+		return $block_content;
+	}
+
+	if ( 'core/block' !== $block['blockName'] || empty( $block['attrs']['ref'] ) ) {
+		return $block_content;
+	}
+
+	if ( ! function_exists( 'pll_get_post' ) ) {
+		return $block_content;
+	}
+
+	$original_id   = (int) $block['attrs']['ref'];
+	$translated_id = (int) pll_get_post( $original_id );
+
+	// No translation found or already the correct language — nothing to do.
+	if ( ! $translated_id || $translated_id === $original_id ) {
+		return $block_content;
+	}
+
+	$translated_post = get_post( $translated_id );
+	if ( ! $translated_post ) {
+		return $block_content;
+	}
+
+	return do_blocks( $translated_post->post_content );
+}
+
+add_filter( 'render_block', 'tazilla_polylang_translate_synced_pattern', 10, 2 );
+
+/**
  * Replace the link in button blocks with the try-for-free URL.
  */
 function tazilla_replace_try_for_free_urls( $block_content, $block ) {
