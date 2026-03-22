@@ -499,6 +499,11 @@
 			"title": "Header Blog"
 		},
 		{
+			"area": "header",
+			"name": "header-blog-single",
+			"title": "Header Blog Single Posts"
+		},
+		{
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"
@@ -507,6 +512,16 @@
 			"area": "footer",
 			"name": "footer-partners",
 			"title": "Footer Partners"
+		},
+		{
+			"area": "footer",
+			"name": "footer-single",
+			"title": "Footer Single Posts"
+		},
+		{
+			"area": "uncategorized",
+			"name": "blog-query-loop",
+			"title": "Blog Query Loop"
 		}
 	],
 	"version": 3,
