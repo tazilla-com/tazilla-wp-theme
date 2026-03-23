@@ -36,6 +36,17 @@
   }
 }
 
+.has-brand-dark-background-color .tazilla-testimonials__dot{
+  &,
+  &:hover:not(.is-active) {
+    background: var(--wp--preset--color-brand, #80C241);
+  }
+
+  &.is-active {
+    background: var(--wp--preset--color--white, #FFFFFF);
+  }
+}
+
 // Single testimonial slide
 .tazilla-testimonial {
   grid-area: slide;

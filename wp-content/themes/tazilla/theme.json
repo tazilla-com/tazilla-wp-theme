@@ -515,6 +515,11 @@
 		},
 		{
 			"area": "footer",
+			"name": "footer-testimonials",
+			"title": "Footer Testimonials"
+		},
+		{
+			"area": "footer",
 			"name": "footer-single",
 			"title": "Footer Single Posts"
 		},
