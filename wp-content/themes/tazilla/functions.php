@@ -25,21 +25,6 @@ function tazilla_enqueue_scripts_and_styles(): void {
     );
     wp_style_add_data( 'tazilla-extensions', 'rtl', 'replace' );
 
-    wp_enqueue_style(
-            'tazilla',
-            get_stylesheet_uri(),
-            array(),
-            wp_get_theme()->get( 'Version' )
-    );
-
-    wp_enqueue_script(
-            'tazilla',
-            get_template_directory_uri() . '/assets/js/script.js',
-            array(),
-            wp_get_theme()->get( 'Version' ),
-            true
-    );
-
     // Cookie Consent
     wp_enqueue_script(
             'tazilla-cookie-consent',
@@ -59,6 +44,22 @@ function tazilla_enqueue_scripts_and_styles(): void {
     wp_enqueue_style(
             'tazilla-cookie-consent',
             get_template_directory_uri() . '/assets/js/cookie-consent/cookieconsent.css',
+            array(),
+            wp_get_theme()->get( 'Version' )
+    );
+
+    // Tazilla main script and style
+    wp_enqueue_script(
+            'tazilla',
+            get_template_directory_uri() . '/assets/js/script.js',
+            array(),
+            wp_get_theme()->get( 'Version' ),
+            true
+    );
+
+    wp_enqueue_style(
+            'tazilla',
+            get_stylesheet_uri(),
             array(),
             wp_get_theme()->get( 'Version' )
     );
