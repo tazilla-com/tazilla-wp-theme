@@ -11,6 +11,7 @@
   "description": "A single testimonial slide with logo, quote, author and optional link.",
   "textdomain": "tazilla",
   "editorScript": "file:./build/index.jsx.js",
+  "viewScript": "file:./build/view.js",
   "attributes": {
     "logoId": {
       "type": "number",

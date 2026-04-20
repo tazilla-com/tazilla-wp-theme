@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tazilla 1.0.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/tazilla\n"
-"POT-Creation-Date: 2026-03-22T14:32:02+00:00\n"
-"PO-Revision-Date: 2026-03-22 15:40+0100\n"
+"POT-Creation-Date: 2026-04-20T20:18:22+00:00\n"
+"PO-Revision-Date: 2026-04-20 22:21+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: cs_CZ\n"
@@ -35,11 +35,11 @@ msgstr ""
 msgid "https://neotrendy.com/"
 msgstr ""
 
-#: blocks/category-filter/render.php:20
+#: blocks/category-filter/render.php:22
 msgid "No categories available."
 msgstr "Žádné kategorie nejsou k dispozici."
 
-#: blocks/category-filter/render.php:49
+#: blocks/category-filter/render.php:51
 #: blocks/category-filter/build/index.jsx.js:1
 #: blocks/category-filter/src/index.jsx:28
 #: blocks/category-filter/build/index.jsx.js:83
@@ -58,7 +58,8 @@ msgstr ""
 msgid "Link"
 msgstr ""
 
-#: inc/blocks.php:124
+#: inc/blocks.php:124 blocks/testimonial/build/view.js:1
+#: blocks/testimonial/src/view.js:21 blocks/testimonial/src/view.js:33
 msgid "Read more"
 msgstr "Číst dále"
 
@@ -566,6 +567,10 @@ msgstr ""
 msgid "→ Has link"
 msgstr ""
 
+#: blocks/testimonial/build/view.js:1 blocks/testimonial/src/view.js:33
+msgid "Hide"
+msgstr "Skrýt"
+
 #: blocks/author-box/block.json
 msgctxt "block title"
 msgid "Tazilla Author Box"
@@ -976,6 +981,11 @@ msgstr ""
 #: theme.json
 msgctxt "Template part name"
 msgid "Footer Partners"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer Testimonials"
 msgstr ""
 
 #: theme.json
