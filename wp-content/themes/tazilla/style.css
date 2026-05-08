@@ -646,3 +646,8 @@ header .wp-block-navigation {
         }
     }
 }
+
+/* A/B testing */
+.ab-test-hidden {
+    display: none !important;
+}

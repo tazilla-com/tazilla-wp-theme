@@ -75,3 +75,27 @@ document.querySelectorAll(".wp-block-button[data-try-for-free] a, .tazilla-prici
         dataLayer.push({"event": "try_free_button_clicked"});
     });
 });
+
+// Modal sa otvoril
+document.addEventListener("light-modal-block:modal-show", function (e) {
+    dataLayer.push({
+        "event": "modal_opened",
+        "modal_id": e.target.dataset.modalId || "unknown"
+    });
+});
+
+// Modal sa zatvoril
+document.addEventListener("light-modal-block:modal-close", function (e) {
+    dataLayer.push({
+        "event": "modal_closed",
+        "modal_id": e.target.dataset.modalId || "unknown"
+    });
+});
+
+// Contact Form 7 – submit event
+document.addEventListener("wpcf7mailsent", function (e) {
+    dataLayer.push({
+        "event": "form_submitted",
+        "form_id": e.detail?.contactFormId
+    });
+});
