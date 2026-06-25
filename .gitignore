@@ -16,6 +16,7 @@ node_modules
 /*.*
 !/.gitignore
 !/README.md
+/CLAUDE.md
 !/robots.txt
 /wp-admin/
 /wp-content/*
