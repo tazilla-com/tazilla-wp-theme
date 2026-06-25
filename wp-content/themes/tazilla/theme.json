@@ -14,6 +14,13 @@
 				"post"
 			],
 			"title": "Pages (full width)"
+		},
+		{
+			"name": "aidev",
+			"postTypes": [
+				"page"
+			],
+			"title": "AIdev"
 		}
 	],
 	"patterns": [],
