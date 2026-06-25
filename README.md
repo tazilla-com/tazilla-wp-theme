@@ -103,7 +103,7 @@ Theme development scripts are located in `wp-content/themes/tazilla/package.json
 
 ## Git Mirror
 
-The private BitBucket repo as the primary repository is mirrored to GitHub public repository.
+The private GitHub repo as the primary repository is mirrored to GitHub public repository.
 
 ### Initial Setup
 
