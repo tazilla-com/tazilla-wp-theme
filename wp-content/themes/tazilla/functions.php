@@ -55,6 +55,15 @@ function tazilla_enqueue_scripts_and_styles(): void {
             array(),
             wp_get_theme()->get( 'Version' )
     );
+
+    // PostHog scripts
+    wp_enqueue_script(
+            'tazilla-posthog',
+            get_template_directory_uri() . '/assets/js/posthog.js',
+            array(),
+            wp_get_theme()->get( 'Version' ),
+            true
+    );
 }
 
 add_action( 'wp_enqueue_scripts', 'tazilla_enqueue_scripts_and_styles' );
