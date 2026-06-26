@@ -3,38 +3,63 @@ import en from './en.json' with {type: 'json'};
 import sk from './sk.json' with {type: 'json'};
 
 /**
+ * Run a callback once the real posthog-js library has finished loading.
+ *
+ * The HTML snippet installs a stub queue first and swaps in the real library
+ * asynchronously. Until then, query methods like has_opted_in_capturing()
+ * return undefined, so we must wait before reading/changing consent state.
+ *
+ * @param {function(object): void} callback Receives the loaded posthog instance.
+ */
+function whenPostHogReady(callback) {
+    const ph = window.posthog;
+    if (!ph) {
+        return; // Analytics disabled (no API key configured).
+    }
+    if (ph.__loaded) {
+        callback(ph);
+    } else {
+        setTimeout(() => whenPostHogReady(callback), 100);
+    }
+}
+
+/**
+ * Apply the visitor's "analytics" consent choice to PostHog.
+ *
+ * PostHog is loaded opted-out by default (see tazilla_posthog_head in
+ * functions.php), so nothing is captured and no PostHog cookies are stored
+ * until the visitor explicitly grants the analytics category. PostHog persists
+ * the opt-in/out choice itself, so on later loads the guards below prevent a
+ * redundant opt-in (which would otherwise re-fire an "$opt_in" event).
+ *
+ * @param {boolean} granted Whether the analytics category is accepted.
+ */
+function applyAnalyticsConsent(granted) {
+    whenPostHogReady((ph) => {
+        if (granted) {
+            if (!ph.has_opted_in_capturing()) {
+                ph.opt_in_capturing();
+            }
+        } else if (!ph.has_opted_out_capturing()) {
+            ph.opt_out_capturing();
+        }
+    });
+}
+
+/**
  * All config. options available here:
  * https://cookieconsent.orestbida.com/reference/configuration-reference.html
  */
 CookieConsent.run({
-    onFirstConsent: ({cookie}) => {
-        cookie.categories.forEach((category) => {
-            if (category !== 'necessary') {
-                const consent = {};
-
-                consentCategories[category].forEach((service) => {
-                    consent[service] = 'granted';
-                });
-
-                gtag('consent', 'update', consent);
-            }
-        });
-
-        window.dataLayer.push({
-            event: 'consent_set'
-        });
+    // Fires on every page load when valid consent already exists, and right
+    // after the visitor first accepts.
+    onConsent: ({cookie}) => {
+        applyAnalyticsConsent(cookie.categories.includes('analytics'));
     },
 
-    onChange: ({cookie, changedCategories}) => {
-        changedCategories.forEach((category) => {
-            const consent = {};
-
-            consentCategories[category].forEach((service) => {
-                consent[service] = cookie.categories.includes(category) ? 'granted' : 'denied';
-            });
-
-            gtag('consent', 'update', consent);
-        });
+    // Fires when the visitor later changes their preferences.
+    onChange: ({cookie}) => {
+        applyAnalyticsConsent(cookie.categories.includes('analytics'));
     },
 
     categories: {
@@ -46,12 +71,11 @@ CookieConsent.run({
             autoClear: {
                 cookies: [
                     {
-                        name: /^(_ga|_gid)/
+                        name: /^ph_/
                     }
                 ]
             }
-        },
-        ads: {}
+        }
     },
 
     onModalShow: ({modalName}) => {

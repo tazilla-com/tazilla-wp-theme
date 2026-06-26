@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (entry.isIntersecting && !hasTracked) {
                 hasTracked = true;
 
-                dataLayer.push({"event": "pricing_table_viewed"});
+                window.posthog?.capture("pricing_table_viewed");
 
                 observer.disconnect(); // Stop observing after the first trigger
             }
@@ -72,30 +72,27 @@ document.addEventListener("DOMContentLoaded", () => {
 // Track when the "Try for free" button is clicked
 document.querySelectorAll(".wp-block-button[data-try-for-free] a, .tazilla-pricing-table-header-cell .wp-block-button a").forEach((button) => {
     button.addEventListener("click", () => {
-        dataLayer.push({"event": "try_free_button_clicked"});
+        window.posthog?.capture("try_free_button_clicked");
     });
 });
 
 // Modal sa otvoril
 document.addEventListener("light-modal-block:modal-show", function (e) {
-    dataLayer.push({
-        "event": "modal_opened",
+    window.posthog?.capture("modal_opened", {
         "modal_id": e.target.dataset.modalId || "unknown"
     });
 });
 
 // Modal sa zatvoril
 document.addEventListener("light-modal-block:modal-close", function (e) {
-    dataLayer.push({
-        "event": "modal_closed",
+    window.posthog?.capture("modal_closed", {
         "modal_id": e.target.dataset.modalId || "unknown"
     });
 });
 
 // Contact Form 7 – submit event
 document.addEventListener("wpcf7mailsent", function (e) {
-    dataLayer.push({
-        "event": "form_submitted",
+    window.posthog?.capture("form_submitted", {
         "form_id": e.detail?.contactFormId
     });
 });

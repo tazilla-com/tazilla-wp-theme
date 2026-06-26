@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tazilla 1.0.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/tazilla\n"
-"POT-Creation-Date: 2026-04-20T20:18:22+00:00\n"
-"PO-Revision-Date: 2026-04-20 22:22+0200\n"
+"POT-Creation-Date: 2026-06-26T17:46:16+00:00\n"
+"PO-Revision-Date: 2026-06-26 19:49+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -204,15 +204,17 @@ msgid "Try for free (URL)"
 msgstr ""
 
 #: inc/theme-settings.php:80
-msgid "Google Tag Manager"
+msgid "PostHog Project API Key"
 msgstr ""
 
 #: inc/theme-settings.php:94
 msgid "Link to free or trial plan."
 msgstr ""
 
-#: inc/theme-settings.php:102
-msgid "Container ID."
+#: inc/theme-settings.php:103
+msgid ""
+"PostHog Project API key (starts with <code>phc_</code>). Leave empty to "
+"disable analytics. Region: EU Cloud."
 msgstr ""
 
 #: inc/user-profile.php:12
@@ -771,6 +773,11 @@ msgstr ""
 #: theme.json
 msgctxt "Custom template name"
 msgid "Pages (full width)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "AIdev"
 msgstr ""
 
 #: theme.json

@@ -23,13 +23,8 @@
       },
       {
         "title": "Výkon a analytika",
-        "description": "Tieto súbory cookie zhromažďujú informácie o tom, ako používate našu webovú stránku. Všetky údaje sú anonymizované a nemožno ich použiť na vašu identifikáciu.",
+        "description": "Tieto súbory cookie zhromažďujú informácie o tom, ako používate našu webovú stránku, aby sme mohli merať a zlepšovať jej výkon. Údaje spracúva PostHog (EU). Anonymní návštevníci nie sú identifikovaní a tieto súbory cookie sa nastavia až po vašom výslovnom súhlase.",
         "linkedCategory": "analytics"
-      },
-      {
-        "title": "Reklama a cielenie",
-        "description": "Tieto súbory cookie sa používajú na zobrazovanie prispôsobených reklám na základe vašich záujmov. Pomáhajú tiež merať účinnosť reklamných kampaní a obmedzovať počet zobrazení reklamy.",
-        "linkedCategory": "ads"
       },
       {
         "title": "Viac informácií",

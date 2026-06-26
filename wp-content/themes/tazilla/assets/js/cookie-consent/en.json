@@ -23,13 +23,8 @@
       },
       {
         "title": "Performance and Analytics",
-        "description": "These cookies collect information about how you use our website. All of the data is anonymized and cannot be used to identify you.",
+        "description": "These cookies collect information about how you use our website so we can measure and improve its performance. The data is processed by PostHog (EU). Anonymous visitors are not identified, and these cookies are only set after your explicit consent.",
         "linkedCategory": "analytics"
-      },
-      {
-        "title": "Advertisement and targeting",
-        "description": "These cookies are used to deliver personalized ads based on your interests. They also help measure the effectiveness of advertising campaigns and limit the number of times you see an ad.",
-        "linkedCategory": "ads"
       },
       {
         "title": "More information",

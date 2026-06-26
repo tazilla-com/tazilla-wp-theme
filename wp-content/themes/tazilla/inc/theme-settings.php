@@ -76,13 +76,13 @@ function tazilla_theme_settings_init() {
     register_setting( 'tazilla', 'tazilla_try_for_free_url' );
 
     add_settings_field(
-            'tazilla_gtm',
-            __( 'Google Tag Manager', 'tazilla' ),
-            'tazilla_gtm_html',
+            'tazilla_posthog_key',
+            __( 'PostHog Project API Key', 'tazilla' ),
+            'tazilla_posthog_key_html',
             'tazilla-theme-settings',
             'tazilla_general'
     );
-    register_setting( 'tazilla', 'tazilla_gtm' );
+    register_setting( 'tazilla', 'tazilla_posthog_key' );
 }
 
 add_action( 'admin_init', 'tazilla_theme_settings_init' );
@@ -95,10 +95,12 @@ function tazilla_try_for_free_url_html(): void {
     <?php
 }
 
-function tazilla_gtm_html(): void {
+function tazilla_posthog_key_html(): void {
     ?>
-    <input type="text" class="regular-text" name="tazilla_gtm" id="tazilla_gtm"
-           value="<?php echo get_option( 'tazilla_gtm' ); ?>"/>
-    <p class="description"><?php _e( 'Container ID.', 'tazilla' ); ?></p>
+    <input type="text" class="regular-text" name="tazilla_posthog_key" id="tazilla_posthog_key"
+           value="<?php echo esc_attr( get_option( 'tazilla_posthog_key' ) ); ?>"/>
+    <p class="description">
+        <?php _e( 'PostHog Project API key (starts with <code>phc_</code>). Leave empty to disable analytics. Region: EU Cloud.', 'tazilla' ); ?>
+    </p>
     <?php
 }

@@ -26,14 +26,6 @@ function tazilla_enqueue_scripts_and_styles(): void {
     wp_style_add_data( 'tazilla-extensions', 'rtl', 'replace' );
 
     // Cookie Consent
-    wp_enqueue_script(
-            'tazilla-cookie-consent',
-            get_template_directory_uri() . '/assets/js/cookie-consent.js',
-            array(),
-            wp_get_theme()->get( 'Version' ),
-            false
-    );
-
     wp_enqueue_script_module(
             '@tazilla/cookie-consent',
             get_template_directory_uri() . '/assets/js/cookie-consent/cookieconsent-config.js',
@@ -117,47 +109,35 @@ function tazilla_add_meta(): void {
 add_action( 'wp_head', 'tazilla_add_meta', 2 );
 
 /**
- * Google Tag Manager.
+ * PostHog product analytics.
+ *
+ * Loads the official posthog-js HTML snippet (EU Cloud). Capturing is opted out
+ * by default; the cookie-consent integration calls posthog.opt_in_capturing()
+ * once the visitor grants the "analytics" consent category (GDPR).
  */
-function tazilla_gtm_head(): void {
-    $gtm = get_option( 'tazilla_gtm' );
-    if ( ! $gtm ) {
+function tazilla_posthog_head(): void {
+    $key = get_option( 'tazilla_posthog_key' );
+    if ( ! $key ) {
         return;
     }
     //@formatter:off
     ?>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','<?php esc_attr_e( $gtm ); ?>');</script>
-    <!-- End Google Tag Manager -->
+    <!-- PostHog -->
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagResult isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('<?php echo esc_js( $key ); ?>', {
+            api_host: 'https://eu.i.posthog.com',
+            defaults: '2026-05-30',
+            person_profiles: 'identified_only',
+            opt_out_capturing_by_default: true
+        });
+    </script>
+    <!-- End PostHog -->
     <?php
     //@formatter:on
 }
 
-add_action( 'wp_head', 'tazilla_gtm_head', 20 );
-
-/**
- * Google Tag Manager.
- */
-function tazilla_gtm_body(): void {
-    $gtm = get_option( 'tazilla_gtm' );
-    if ( ! $gtm ) {
-        return;
-    }
-    //@formatter:off
-    ?>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=<?php esc_attr_e( $gtm ); ?>"
-                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <?php
-    //@formatter:on
-}
-
-add_action( 'wp_body_open', 'tazilla_gtm_body' );
+add_action( 'wp_head', 'tazilla_posthog_head', 20 );
 
 /**
  * Polylang language switcher - show slug instead of full name
